@@ -1,20 +1,20 @@
+body {
+  background-color: #000;
+}
+
 .App {
   text-align: center;
+  padding: 1rem;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 30rem;
+  width: 30rem;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
+  background-color: #000;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,15 +24,22 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h1, p {
+  color: #01f2fb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p {
+  font-size: 16px;
+}
+
+.fa-instagram {
+  color: #01f2fb;
+}
+.fa-instagram:hover {
+  color: #fff; 
+}
+
+hr {
+  border-top: 1px solid #01f2fb;
+  width: 10vw;
 }

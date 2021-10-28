@@ -6,7 +6,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={clubLogo} className="App-logo" alt="logo" />
-        <p>Follow our instagram for latest news on the club launch</p>
+        <b>Follow our instagram for the latest news on the club launch</b>
+        <br/>
         <a href="https://www.instagram.com/acbelfastfc/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a>
       </header>
     </div>

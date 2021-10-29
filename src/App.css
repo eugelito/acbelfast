@@ -8,8 +8,7 @@ body {
 }
 
 .App-logo {
-  height: 30rem;
-  width: 30rem;
+  width: 100%;
   pointer-events: none;
 }
 
@@ -32,14 +31,23 @@ b {
   font-size: 16px;
 }
 
-.fa-instagram {
+.social-links {
+  display: inline-block;
+}
+
+.social-links > a:not(:first-child)  {
+  margin-left: 1rem;
+}
+
+.fab {
   color: #01f2fb;
 }
-.fa-instagram:hover {
+.fab:hover {
   color: #fff; 
 }
 
 hr {
   border-top: 1px solid #01f2fb;
-  width: 10vw;
+  margin-bottom: 3rem;
+  width: 95%;
 }

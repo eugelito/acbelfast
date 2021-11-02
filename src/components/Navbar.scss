@@ -1,0 +1,48 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    display: inline;
+    >   a {
+        display: block;
+        color: #01f2fb;
+        text-decoration: none;
+        font-weight: bold;
+        &:active {
+            text-decoration: underline;
+        }
+      }
+  }
+
+  .nav-title {
+    display: block;
+    color: #01f2fb;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  
+  nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      .nav-links {
+        display: flex;
+        li {
+            margin: 1rem;
+        }
+    }
+
+    .nav-social {
+        display: flex;
+       
+        li {
+            margin: 1rem;
+        }
+    }
+  }
+

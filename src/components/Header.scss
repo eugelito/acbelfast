@@ -1,0 +1,57 @@
+.App-logo {
+    width: 30rem;
+    height: 30rem;
+    pointer-events: none;
+  }
+  
+  .App-header {
+    background-color: #000;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  b {
+    font-size: 16px;
+  }
+  
+  .social-links {
+    display: inline-block;
+  }
+  
+  .social-links > a:not(:first-child)  {
+    margin-left: 1rem;
+  }
+  
+  .fab {
+    color: #01f2fb;
+  }
+  .fab:hover {
+    color: #fff; 
+  }
+  
+  hr {
+    border-top: 1px solid #01f2fb;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  .container {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 5rem;
+    width: 75rem;
+    > h1 {
+      margin-right: 10rem;
+    }
+  }
+
+  .container > h1 {
+    color: #fff;
+  }
+  

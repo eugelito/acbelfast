@@ -1,55 +1,22 @@
+
+/* Global setup styles */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+html {
+  background-color: #000;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #000;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
-.App {
-  text-align: center;
-  padding: 1rem;
-}
-
-.App-logo {
-  width: 30rem;
-  height: 30rem;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #000;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-h1, b {
-  color: #01f2fb;
-}
-
-b {
-  font-size: 16px;
-}
-
-.social-links {
-  display: inline-block;
-}
-
-.social-links > a:not(:first-child)  {
-  margin-left: 1rem;
-}
-
-.fab {
-  color: #01f2fb;
-}
-.fab:hover {
-  color: #fff; 
-}
-
-hr {
-  border-top: 1px solid #01f2fb;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-  width: 100%;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }

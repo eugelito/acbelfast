@@ -40,12 +40,13 @@ b {
   margin-left: 1rem;
 }
 
-.fab {
+.social-links > a {
   color: #01f2fb;
 }
-.fab:hover {
+
+.social-links > a:hover {
   color: #fff; 
-}
+} 
 
 hr {
   border-top: 1px solid #01f2fb;

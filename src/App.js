@@ -11,8 +11,10 @@ function App() {
         <hr/>
         </div>
         <div className="social-links">
-        <a href="https://www.instagram.com/acbelfast/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a>
         <a href="https://www.facebook.com/athleticclubbelfast" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook fa-2x" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/acbelfast/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/ACBelfast" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter fa-2x" aria-hidden="true"></i></a>
+        <a href="mailto:athleticclubbelfast@gmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
         </div>
       </header>
     </div>

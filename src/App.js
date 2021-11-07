@@ -1,22 +1,30 @@
-import clubLogo from './images/acbelfast.jpg';
-import './App.css';
+import "./App.css";
+import Header from "./components/Header";
+import News from "./components/News";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={clubLogo} className="App-logo" alt="logo" />
-        <div class="follow-us">
-        <b>Follow us for the latest news on the club launch</b>
-        <hr/>
+    <div className="App container">
+      <Header />
+      <main>
+        <div class="row">
+          <div class="column__one">
+            <News />
+            {/** Components still to create 
+        <Results/>
+        <Fixtures/>
+        <League/>
+        <Gallery/>
+        */}
+          </div>
+          <div class="column__two">
+            {/** Components still to create 
+        <FacebookNewsFeed/>
+        <Sponsors/>
+        */}
+          </div>
         </div>
-        <div className="social-links">
-        <a href="https://www.facebook.com/athleticclubbelfast" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook fa-2x" aria-hidden="true"></i></a>
-        <a href="https://www.instagram.com/acbelfast/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a>
-        <a href="https://twitter.com/ACBelfast" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter fa-2x" aria-hidden="true"></i></a>
-        <a href="mailto:athleticclubbelfast@gmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
-        </div>
-      </header>
+      </main>
     </div>
   );
 }

@@ -2,21 +2,30 @@ import "./Navbar.scss";
 
 function Navbar() {
   return (
-    <nav>
+    <nav className="nav__contaner">
+      <div className="nav-main__title">
+        <a className="nav-title" href="#">
+          <span className="nav-title--name">AC Belfast</span>
+          <span className="nav-est">Est. 2022</span>
+        </a>
+      </div>
       <ul className="nav-links">
         <li>
-          <a href="#">Home</a>
+          <a href="#home">Home</a>
         </li>
         <li>
-          <a href="#">Squad</a>
+          <a href="#squad">Squad</a>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <a href="#fixtures">Fixtures</a>
+        </li>
+        <li>
+          <a href="#results">Results</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
         </li>
       </ul>
-
-       <a className="nav-title" href="#">AC Belfast</a>
-
       <ul className="nav-social">
         <li>
           <a
@@ -39,14 +48,20 @@ function Navbar() {
         </li>
         <li>
           <a
-            href="mailto:eugelito@outlook.com"
+            href="https://twitter.com/ACBelfast"
             target="_blank"
             rel="noopener noreferrer"
           >
+            <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:athleticclubbelfast@gmail.com">
             <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
           </a>
         </li>
       </ul>
+      <hr className="nav__hr" />
     </nav>
   );
 }

@@ -96,7 +96,6 @@ nav.nav__container {
       display: flex;
       justify-content: flex-start;
       font-size: 18px;
-      flex-basis: 50rem;
       border-top: 0;
     }
 
@@ -111,6 +110,10 @@ nav.nav__container {
       display: none;
     }
   }
+}
 
-
+@media screen and (min-width: 1024px) {
+  .nav-links {
+    flex-basis: 50rem;
+  }
 }

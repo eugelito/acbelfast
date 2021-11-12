@@ -1,29 +1,40 @@
 import "./Navbar.scss";
+import acbelfastlogo from "../images/acbelfastlogo.png";
 
 function Navbar() {
   return (
-    <nav className="nav__contaner">
+    <nav className="nav__container">
       <div className="nav-main__title">
         <a className="nav-title" href="#">
-          <span className="nav-title--name">AC Belfast</span>
-          <span className="nav-est">Est. 2022</span>
+          <span className="nav-logo">
+            <img src={acbelfastlogo} width="75px" height="70px"></img>
+          </span>
         </a>
       </div>
       <ul className="nav-links">
         <li>
-          <a href="#home">Home</a>
+          <a href="#home">HOME</a>
         </li>
         <li>
-          <a href="#squad">Squad</a>
+          <a href="#squad">SQUAD</a>
+          {/** 
+          <li className="nav-sublinks">
+            {" "}
+            <a>First team</a>
+          </li>
+          <li>
+            <a>Over 35's</a>
+          </li>
+  </li>*/}
         </li>
         <li>
-          <a href="#fixtures">Fixtures</a>
+          <a href="#fixtures">FIXTURES</a>
         </li>
         <li>
-          <a href="#results">Results</a>
+          <a href="#results">RESULTS</a>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <a href="#contact">CONTACT</a>
         </li>
       </ul>
       <ul className="nav-social">

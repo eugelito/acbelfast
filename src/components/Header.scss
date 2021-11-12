@@ -28,14 +28,14 @@ b {
 }
 
 i {
-  color: #01f2fb;
+  color: #a7d8fd;
 }
 i:hover {
   color: #fff;
 }
 
 hr {
-  border-top: 1px solid #01f2fb;
+  border-top: 1px solid #a7d8fd;
   margin-top: 1rem;
   margin-bottom: 2rem;
   width: 100%;
@@ -46,13 +46,12 @@ hr {
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0 auto;
-  margin-top: 5rem;
+  margin-top: 10rem;
   margin-bottom: 6rem;
 }
 
 .hdg-founded {
-  background-color: #01f2fb;
-  border-radius: 1rem;
+  background-color: #a7d8fd;
   color: #000;
   font-size: 1rem;
   padding: 1rem;
@@ -63,20 +62,26 @@ hr {
   margin: 0 1rem 0;
   font-size: 1rem;
   background-color: #222222;
-  border-radius: 1rem;
   color: #fff;
   padding: 1rem;
+}
+
+.header--image {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%
+
 }
 
 @media screen and (min-width: 768px) {
   .header__container {
     > h1 {
       margin-right: 10rem;
-      font-size: revert;
+      font-size: 27px;
     }
 
     .hdg-founded {
-      width: 41rem;
+      width: 37rem;
     }
     .hdg--based {
       width: 50rem;

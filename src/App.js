@@ -1,10 +1,11 @@
 import "./App.css";
 import Header from "./components/Header";
 import News from "./components/News";
+import FacebookNewsFeed from "./components/FacebookNewsFeed";
 
 function App() {
   return (
-    <div className="App container">
+    <div className="App">
       <Header />
       <main>
         <div class="row">
@@ -18,10 +19,7 @@ function App() {
         */}
           </div>
           <div class="column__two">
-            {/** Components still to create 
-        <FacebookNewsFeed/>
-        <Sponsors/>
-        */}
+            <FacebookNewsFeed />
           </div>
         </div>
       </main>

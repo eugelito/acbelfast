@@ -20,22 +20,15 @@ body {
     box-sizing: inherit;
 }
 
+h2 {
+    color: #fff;
+}
+
 .row {
     margin: 1rem;
 }
 
 @media screen and (min-width: 768px) {
-    .container {
-        width: 70rem;
-        margin: 0 auto;
-    }
-
-    .row {
-        display: flex;
-        flex-wrap: wrap;
-        width: 70rem;
-        margin: 0 auto;
-    }
 
     .column__one {
         display: flex;
@@ -54,5 +47,18 @@ body {
         display: flex;
         flex-direction: column;
         flex: 0 1 30%;
+    }
+
+    .column__results__fixtures {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
     }
 }

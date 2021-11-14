@@ -1,6 +1,9 @@
 import "./App.css";
 import Header from "./components/Header";
 import News from "./components/News";
+import Results from "./components/Results";
+import Fixtures from "./components/Fixtures";
+import League from "./components/League";
 import FacebookNewsFeed from "./components/FacebookNewsFeed";
 
 function App() {
@@ -8,17 +11,20 @@ function App() {
     <div className="App">
       <Header />
       <main>
-        <div class="row">
-          <div class="column__one">
+        <div className="row">
+          <div className="column__one">
             <News />
+            <div class="column__results__fixtures">
+              <Results />
+              <Fixtures />
+              </div>
+              <League />
+            
             {/** Components still to create 
-        <Results/>
-        <Fixtures/>
-        <League/>
         <Gallery/>
         */}
           </div>
-          <div class="column__two">
+          <div className="column__two">
             <FacebookNewsFeed />
           </div>
         </div>

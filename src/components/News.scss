@@ -16,7 +16,11 @@
     background-color: #222222;
     border-radius: 16px;
     color: #fff;
-
+    
+    .card-date {
+      color: #e5e5e5;
+      font-size: 10px;
+    }
     .card-description {
       margin-top: 1rem;
       overflow: hidden;

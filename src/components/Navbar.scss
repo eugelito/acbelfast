@@ -28,12 +28,13 @@ li {
 nav.nav__container {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
   font-size: 0.75rem;
   background-color: #a6d9fd;
-  border-bottom: 1px solid #a7d8fd;
+  border-bottom: 3px solid #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 
   .nav-links {
     display: flex;
@@ -112,7 +113,27 @@ nav.nav__container {
   }
 }
 
+// Mobile M 
+@media screen and (min-width: 375) {
+  nav.nav__container .nav-links {
+    border-top: none;
+  }
+}
+
+// Mobile L
+@media screen and (min-width: 425px) {
+  nav.nav__container .nav-links {
+    border-top: none;
+  }
+}
+
+// Desktop
 @media screen and (min-width: 1024px) {
+
+}
+
+// Desktop Large
+@media screen and (min-width: 1440px) {
   .nav-links {
     flex-basis: 50rem;
   }

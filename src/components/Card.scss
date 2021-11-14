@@ -1,0 +1,33 @@
+.card__container {
+    color: #fff;
+    > h2 {
+      margin-bottom: 2em;
+    }
+  
+    .card {
+      padding: 1rem;
+      background-color: #222222;
+      border-radius: 16px;
+      color: #fff;
+      
+      .card-date {
+        color: #e5e5e5;
+        font-size: 10px;
+      }
+      .card-description {
+        margin-top: 1rem;
+        overflow: hidden;
+        word-wrap: break-word;
+        color: #e5e5e5;
+        font-size: 14px;
+      }
+  
+      > .news-link {
+        float: right;
+      }
+  
+      hr.card__news--divider {
+        border-bottom: 1px solid #e5e5e5;
+      }
+    }
+  }

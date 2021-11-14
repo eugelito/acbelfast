@@ -17,7 +17,8 @@ function Navbar() {
         </li>
         <li>
           <a href="#squad">SQUAD</a>
-          {/** 
+        </li>
+        {/** 
           <li className="nav-sublinks">
             {" "}
             <a>First team</a>
@@ -26,13 +27,14 @@ function Navbar() {
             <a>Over 35's</a>
           </li>
   </li>*/}
-        </li>
         <li>
-          <a href="#fixtures">FIXTURES</a>
+          <a href="#fixtures">FIXTURES</a>{" "}
         </li>
-        <li>
-          <a href="#results">RESULTS</a>
-        </li>
+        {/**    <ul className="sub-menu dropdown-menu">
+            <li className="nav-item">
+            <a href="#results">Results</a>
+            </li>
+</ul>*/}
         <li>
           <a href="#contact">CONTACT</a>
         </li>
@@ -44,7 +46,7 @@ function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
+            <i className="fab fa-instagram fa-2x" aria-hidden="true"></i>
           </a>
         </li>
 
@@ -54,7 +56,7 @@ function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i class="fab fa-facebook fa-2x" aria-hidden="true"></i>
+            <i className="fab fa-facebook fa-2x" aria-hidden="true"></i>
           </a>
         </li>
         <li>
@@ -63,12 +65,12 @@ function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
+            <i className="fab fa-twitter fa-2x" aria-hidden="true"></i>
           </a>
         </li>
         <li>
           <a href="mailto:athleticclubbelfast@gmail.com">
-            <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+            <i className="fa fa-envelope fa-2x" aria-hidden="true"></i>
           </a>
         </li>
       </ul>

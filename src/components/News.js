@@ -1,23 +1,53 @@
+import { useEffect, useState } from "react";
 import "./News.scss";
 
-function News() {
+const News = () => {
+  const [data, setData] = useState();
+
+  const getData = async () => {
+    try {
+      const res = await fetch(
+     // fetch from Sheets   "https://sheet.best/api/sheets/4e331b1e-9993-4ffa-908f-d0d729b92a9e"
+      );
+      const data = await res.json();
+      setData(data);
+      console.log(data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
+
   return (
-    <section class="section__container">
-      <div class="card__container card__container--news--columnOne">
-        <h2 className="brushStroke">News</h2>
-        <div class="card">
-          {" "}
-          { /** Loop through news data from Google Sheets API */}
-          <h3>New signing Eugelito Troyo</h3>
-          <p class="card-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-          <hr className="card__news--divider"></hr>
-          <h3>New signing Eugelito Troyo</h3>
-          <p class="card-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-          { /** Loop through news data from Google Sheets API */}
+    <section className="section__container">
+      <div className="card__container card__container--news--columnOne">
+        <h2>News</h2>
+       {/* Populate with sheets data <div className="card">
+          {data?.map((item, i) => (
+            <div key={i}>
+              <b className="card-date">{item.Date}</b>
+              <h3>{item.Heading}</h3>
+              <p className="card-description">{item.Description}</p>
+              <hr className="card__news--divider"></hr>
+            </div>
+          ))}
+        </div>*/} 
+        <div className="card">
+            <div>
+              <b className="card-date">25 Feburary 2022</b>
+              <h3>Heading</h3>
+              <p className="card-description">Lorem ipsum description is here.</p>
+              <hr className="card__news--divider"></hr>
+            </div>
+          
         </div>
+        
       </div>
     </section>
   );
-}
+};
 
 export default News;

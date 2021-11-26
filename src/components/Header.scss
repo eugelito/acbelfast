@@ -1,3 +1,12 @@
+header {
+  //background-color: #a7d8fd;
+  height: 100%;
+  overflow: hidden;  
+  background-image: url(../images/footballhero.jpg);
+  background-position: bottom;
+  background-size: cover;
+}
+
 .App-logo {
   width: 30rem;
   height: 30rem;
@@ -15,10 +24,6 @@
   color: white;
 }
 
-b {
-  font-size: 16px;
-}
-
 .social-links {
   display: inline-block;
 }
@@ -27,32 +32,28 @@ b {
   margin-left: 1rem;
 }
 
-i {
-  color: #01f2fb;
-}
-i:hover {
-  color: #fff;
-}
-
 hr {
-  border-top: 1px solid #01f2fb;
+  border-top: 2px solid #fff;
   margin-top: 1rem;
   margin-bottom: 2rem;
   width: 100%;
 }
 
-.header__container {
+
+
+.heading__container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0 auto;
-  margin-top: 5rem;
-  margin-bottom: 6rem;
+  margin-top: 16rem;
+  margin-bottom: 16rem;
+  margin-left: 1rem;
+
 }
 
 .hdg-founded {
-  background-color: #01f2fb;
-  border-radius: 1rem;
+  background-color: #79c5ff;
   color: #000;
   font-size: 1rem;
   padding: 1rem;
@@ -63,23 +64,25 @@ hr {
   margin: 0 1rem 0;
   font-size: 1rem;
   background-color: #222222;
-  border-radius: 1rem;
   color: #fff;
   padding: 1rem;
 }
 
+.header--image {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
 @media screen and (min-width: 768px) {
-  .header__container {
+  .heading__container {
+    display: flex;
+    width: 1024px;
+    margin-left: auto;
     > h1 {
       margin-right: 10rem;
-      font-size: revert;
-    }
-
-    .hdg-founded {
-      width: 41rem;
-    }
-    .hdg--based {
-      width: 50rem;
+      font-size: 27px;
     }
   }
 }
+

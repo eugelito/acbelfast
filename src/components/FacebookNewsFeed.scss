@@ -1,0 +1,26 @@
+.facebook-newsfeed h2 {
+  color: #fff;
+  margin-top: 2rem;
+  margin-bottom: 3.2rem;
+}
+
+.fb_iframe_widget {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.fb-page .fb_iframe_widget {
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .facebook-newsfeed h2 {
+    margin-top: 0rem;
+  }
+  .fb_iframe_widget {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}

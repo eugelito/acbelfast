@@ -1,0 +1,76 @@
+.league__select {
+  color: #a7d8fb;
+  font-weight: 700;
+}
+
+/* Style the buttons */
+.btn__league {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #222222;
+  cursor: pointer;
+}
+
+.btn__league {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+  background-color: #a7d8fb;
+  color: #000;
+  text-decoration: underline;
+}
+
+.active {
+  background-color: white;
+}
+
+.leagueHeading {
+    margin-bottom: 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  
+  .table__section {
+      background-color: #222222;
+      border-radius: 0 10px 10px 10px;
+  }
+
+  tr:first-child {
+    border-bottom: 5px solid #a7d8fc
+  }
+
+  tr {
+      border-bottom: 1px solid rgb(102, 102, 102);
+  }
+
+  tr:last-child {
+      border-bottom: 0;
+  }
+  
+  td, th {
+    color: #fff;
+    text-align: center;
+    padding: 8px;
+  }
+  
+
+  /**tr:nth-child(even) {
+    background-color: #dddddd;
+  }*/
+
+  .btn__league--overs {
+    background-color: #D1D1D1;
+  }

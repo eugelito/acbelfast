@@ -3,6 +3,16 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+:root { 
+  --primaryColor: #a7d8fc; 
+  --secondaryColor: #00285e;
+  --tertiaryColor: #d1d1d1;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -15,4 +25,117 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/** Footer Styling */
+
+footer {
+  background-color: var(--primaryColor);
+  color: var(--secondaryColor);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  padding: 2rem 0 2rem;
+  width: 70rem;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.footer h3 {
+  font-size: 16px;
+  margin: 0 0 0.5rem;
+}
+
+.footer__heading {
+  margin-bottom: 0rem;
+}
+
+.footer__about--section {
+  color: var(--secondaryColor);
+  margin-bottom: 3rem;
+  display:block;
+  align-items: center;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer a > i {
+  color: var(--secondaryColor);
+}
+
+
+.footer__socials {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 2em;
+}
+
+.footer__socials li i {
+  margin: 0 1rem 0 ;
+  font-size: 1em;
+}
+
+.footer__sponsors {
+  display: flex;
+  justify-content: center;
+  align-content: center; 
+}
+
+.footer__sponsors li img {
+  margin: 0 1rem 0;
+}
+
+.footer__hr {
+  margin: 0;
+}
+
+.footer__designed {
+  display: flex;
+  background-color: #fff;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  bottom: 0;
+  font-size: 12px;
+
+}
+
+.footer__designed a {
+  text-decoration: none;
+  color: var(--secondaryColor);
+}
+
+
+.footer__designed:active {
+  color: #222;
+}
+
+
+
+/** End of Footer styling */
+
+@media screen and (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    height: 7rem;
+    width: 1024px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .footer__about--section {
+    margin-bottom: 0;
+  }
+  .footer__about--section h3 {
+    margin-bottom: 0.5rem;
+  }
 }

@@ -1,3 +1,4 @@
+import acbelfastlogo from "../images/acbelfastlogo.png";
 
 const currentYear = new Date().getFullYear();
 
@@ -5,13 +6,15 @@ const Footer = () => {
   return (
     <footer>
     <div className="footer">
+      <div className="footer__logo__about"> 
+      <img className="footer__logo" src={acbelfastlogo} width="50px" height="50px"></img>
       <div className="footer__about--section">
         <h3 className="footer__heading">Athletic Club Belfast</h3>
         <b>Billy Neill Soccer Centre of Excellence</b><br/>
         <span>341 Comber Rd</span><br/>
         <span>Belfast</span><br/>
         <span>BT16 1RQ</span>
-        </div>
+        </div></div>
       <div className="footer__socials--section">
       <h3>Connect with us on</h3>
       <ul className="footer__socials">
@@ -22,7 +25,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i className="fab fa-facebook fa" aria-hidden="true"></i>
+            <i className="fab fa-facebook fax" aria-hidden="true"></i>
           </a>
         </li>
         <li>

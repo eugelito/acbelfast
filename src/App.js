@@ -19,6 +19,7 @@ function App() {
           {/** HOMEPAGE */}
           <div className="container__sponsors">
             <div className="container__sponsors--centered">
+            <b className="container__divider">OUR SPONSORS</b>
             <ul className="footer__sponsors">
               <li>
                 <img
@@ -53,9 +54,6 @@ function App() {
               {/** <News /> */}
 
               <League />
-              <h2>Instagram Gallery</h2>
-              <div id="instafeed-container"></div>
-
               {/** Components still to create 
         <Gallery/>
         */}
@@ -63,6 +61,9 @@ function App() {
             <div className="column__two">
               <FacebookNewsFeed />
             </div>
+            <div>
+              <div id="instafeed-container"></div>
+              </div>
           </div>
           {/** END OF HOMEPAGE */}
         </main>

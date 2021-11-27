@@ -51,6 +51,26 @@ label {
     align-items: center;
 }
 
+.container__divider { 
+    border-right: 1px solid #e5e5e5b5;
+    line-height: 1.6rem;
+    padding-right: 1rem;
+    color: #ababab;
+    font-size: 14px;
+}
+
+#instafeed-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+#instafeed-container img {
+    width: 300px;
+    height: 300px;
+    margin: 0 1rem 1rem 0;
+}
+
 @media screen and (min-width: 768px) {
 
     .column__one {

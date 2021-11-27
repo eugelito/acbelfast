@@ -1,3 +1,54 @@
+.results__title {
+    border-bottom: 3px solid var(--primaryColor);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+
+    .results__title--link {
+     display: flex;
+     justify-content: end;
+    &::after {
+        color: #a7d8fc;
+        margin-left: 0.5rem;
+        content: ">";
+        text-decoration: none;
+    }
+    }
+}
+
+.match__details {
+    display: block;
+    text-align: center;
+}
+
+
+
+.match__dateTime {
+    display: inline;
+    margin-bottom: 0.5rem;
+}
+
+.match__teams {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    > img
+        &:first-child {
+        margin-right: 0.5rem;
+        &:last-child {
+            margin-left: 0.5rem;
+        }
+    }
+}
+
+.match__result {
+    margin-bottom: 0;
+}
+
+.match__divider {
+    margin: 2rem 0;
+    border-top: 1px solid #fff;
+
+}
 
 .column__half {
     flex-basis: 50%;

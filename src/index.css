@@ -33,6 +33,8 @@ footer {
   background-color: var(--primaryColor);
   color: var(--secondaryColor);
   width: 100%;
+  position: relative;
+  bottom: 0;
 }
 
 .footer {

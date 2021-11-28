@@ -20,13 +20,13 @@ function Navbar() {
               </span>
             </a>
           </div>
-          <Router>
+        
             <ul className="nav-links">
               <li>
                 <Link to="/">HOME</Link>
               </li>
               <li>
-                <Link to="/squad">SQUAD</Link>
+                <Link to="/squads">SQUADS</Link>
               </li>
               {/** 
           <li className="nav-sublinks">
@@ -52,7 +52,6 @@ function Navbar() {
                 <a href="https://www.kitlocker.com/yourclub/club/ac-belfast" target="_blank" rel="noopener noreferrer">SHOP</a>
               </li>
             </ul>
-          </Router>
           </div>
           <ul className="nav-social">
             <li>

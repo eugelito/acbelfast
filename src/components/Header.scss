@@ -4,7 +4,6 @@ header {
   overflow: hidden;  
   background-image: url(../images/footballhero.jpg);
   background-position: bottom;
-  background-size: cover;
 }
 
 .App-logo {
@@ -50,22 +49,6 @@ hr {
   margin-bottom: 16rem;
   margin-left: 1rem;
 
-}
-
-.hdg-founded {
-  background-color: #79c5ff;
-  color: #000;
-  font-size: 1rem;
-  padding: 1rem;
-  margin-bottom: 0;
-}
-
-.hdg--based {
-  margin: 0 1rem 0;
-  font-size: 1rem;
-  background-color: #222222;
-  color: #fff;
-  padding: 1rem;
 }
 
 .header--image {

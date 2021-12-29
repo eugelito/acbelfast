@@ -30,7 +30,7 @@ label {
 }
 
 .container {
-    margin: 1rem;
+    padding: 1rem;
 }
 
 .container__sponsors {
@@ -44,9 +44,10 @@ label {
     height: 6rem;
 }
 
-.container__sponsors--centered {
+.container--centered {
     width: 1024px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -63,10 +64,11 @@ label {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 3rem;
+    justify-content: center;
 }
 
 #instafeed-container img {
-    width: 300px;
+    /* width: 300px; */
     height: 300px;
     margin: 0 1rem 1rem 0;
 }
@@ -95,6 +97,10 @@ label {
         display: flex;
         flex-direction: row;
         width: 100%;
+    }
+
+    .container--centered {
+        flex-wrap: nowrap;
     }
 }
 

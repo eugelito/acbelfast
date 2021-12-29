@@ -6,20 +6,32 @@
     .results__title--link {
      display: flex;
      justify-content: end;
+     color: #fff;
+
+    &:hover {
+        text-decoration: underline;
+    }
     &::after {
         color: #a7d8fc;
         margin-left: 0.5rem;
         content: ">";
+        display: inline-block;
         text-decoration: none;
+        &:hover {
+            text-decoration: none;
+            display: inline-block;
+        }
     }
     }
 }
-
 .match__details {
     display: block;
     text-align: center;
 }
 
+.match__fullTime {
+    font-size: 14px;
+}
 
 
 .match__dateTime {

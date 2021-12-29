@@ -9,12 +9,13 @@ const Results = () => {
   return (
     <div className="card__container column__half column__half--gap">
       <h2>Results</h2>
-      <div className="card">
+      <div className="card card-home">
         <div className="results__title">
         <Link to="/results"><b className="results__title--link">View more results</b></Link>
         </div>
         <div className="match__details">
         <p className="match__competition"><b>League Match</b></p>
+        <span className="match__fullTime">Full Time</span>
         </div>
         <div className="match__teams">
         <img src={acbelfastlogo} width="75px" height="70px"></img>
@@ -24,6 +25,7 @@ const Results = () => {
         <hr className="match__divider"/>
         <div className="match__details">
         <p className="match__competition"><b>League Match</b></p>
+        <span>Full Time</span>
         </div>
         <div className="match__teams">
         <img src={acbelfastlogo} width="75px" height="70px"></img>

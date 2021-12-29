@@ -46,11 +46,6 @@ const Footer = () => {
             <i className="fab fa-twitter fa" aria-hidden="true"></i>
           </a>
         </li>
-        <li>
-          <a href="mailto:athleticclubbelfast@gmail.com">
-            <i className="fa fa-envelope fa" aria-hidden="true"></i>
-          </a>
-        </li>
       </ul>
       </div>
   

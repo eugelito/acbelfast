@@ -1,32 +1,26 @@
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link, NavLink } from "react-router-dom";
 import "./Navbar.scss";
 import acbelfastlogo from "../images/acbelfastlogo.png";
 
 function Navbar() {
   return (
     <nav>
-      <div className="nav__hr">
         <div className="nav__container">
           <div className="nav__logo--links">
-          <div className="nav-main__title">
-            <a
-              className="nav-title"
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span className="nav-logo">
-                <img src={acbelfastlogo} width="75px" height="70px"></img>
-              </span>
-            </a>
-          </div>
-        
+            <div className="nav-main__title">
+              <NavLink to="/" className="nav-title">
+                <span className="nav-logo">
+                  <img src={acbelfastlogo} width="60px" height="60px"></img>
+                </span>
+              </NavLink>
+            </div>
+
             <ul className="nav-links">
               <li>
-                <Link to="/">HOME</Link>
+                <NavLink to="/" activeClassName="active">HOME</NavLink>
               </li>
               <li>
-                <Link to="/squads">SQUADS</Link>
+                <NavLink to="/squads" activeClassName="active">SQUADS</NavLink>
               </li>
               {/** 
           <li className="nav-sublinks">
@@ -37,8 +31,15 @@ function Navbar() {
             <a>Over 35's</a>
           </li>
   </li>*/}
-              <li>
-                <Link to="/fixtures">FIXTURES</Link>
+              <li className="fixtures__dropdown"> 
+              {/** <div className="dropdown">*/}  
+                <NavLink to="/fixtures" activeClassName="active" >
+                  FIXTURES <i class="nav-caret fas fa-caret-down"></i>
+                </NavLink>
+                 <div class="results__expand">
+                  <NavLink to="/results">RESULTS</NavLink>
+                </div> 
+                {/* </div> */}
               </li>
               {/**    <ul className="sub-menu dropdown-menu">
             <li className="nav-item">
@@ -46,10 +47,16 @@ function Navbar() {
             </li>
 </ul>*/}
               <li>
-                <Link to="/contact">CONTACT</Link>
+                <NavLink to="/contact" activeClassName="active">CONTACT</NavLink>
               </li>
               <li>
-                <a href="https://www.kitlocker.com/yourclub/club/ac-belfast" target="_blank" rel="noopener noreferrer">SHOP</a>
+                <a
+                  href="https://www.kitlocker.com/yourclub/club/ac-belfast"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  SHOP
+                </a>
               </li>
             </ul>
           </div>
@@ -81,14 +88,8 @@ function Navbar() {
                 <i className="fab fa-twitter fa-2x" aria-hidden="true"></i>
               </a>
             </li>
-            <li>
-              <a href="mailto:athleticclubbelfast@gmail.com">
-                <i className="fa fa-envelope fa-2x" aria-hidden="true"></i>
-              </a>
-            </li>
           </ul>
         </div>
-      </div>
     </nav>
   );
 }

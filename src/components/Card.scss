@@ -3,14 +3,18 @@
     > h2 {
       margin-bottom: 2em;
     }
-  
+    
     .card {
       padding: 1rem;
       background-color: #222222;
       border-radius: 16px;
       color: #fff;
       margin-bottom: 3rem;
-      
+      &.card-home {
+      min-height: 27rem;
+
+      }
+
       .card-date {
         color: #e5e5e5;
         font-size: 10px;
@@ -31,4 +35,9 @@
         border-bottom: 1px solid #e5e5e5;
       }
     }
+    &.card__fullWidth {
+      width: 100%;
+    }
   }
+
+

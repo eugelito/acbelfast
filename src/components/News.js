@@ -25,7 +25,8 @@ const News = () => {
     <section className="section__container">
       <div className="card__container card__container--news--columnOne">
         <h2>News</h2>
-       {/* Populate with sheets data <div className="card">
+
+     <div className="card">
           {data?.map((item, i) => (
             <div key={i}>
               <b className="card-date">{item.Date}</b>
@@ -34,7 +35,7 @@ const News = () => {
               <hr className="card__news--divider"></hr>
             </div>
           ))}
-        </div>*/} 
+        </div>)
         <div className="card">
             <div>
               <b className="card-date">25 Feburary 2022</b>

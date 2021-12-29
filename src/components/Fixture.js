@@ -1,4 +1,5 @@
 import "./Fixture.scss";
+import "./Card.scss";
 import acbelfastlogo from "../images/acbelfastlogo.png";
 import southsidelogo from "../images/southsidelogo.jpeg";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
@@ -8,7 +9,7 @@ const Fixture = () => {
   return (
     <div className="card__container column__half">
       <h2>Fixtures</h2>
-      <div className="card">
+      <div className="card card-home">
         <div className="results__title">
         <Link to="/fixtures"><b className="results__title--link">View more fixtures</b></Link>
         </div>

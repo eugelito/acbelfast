@@ -1,0 +1,26 @@
+.container__about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00285e;
+  padding: 1rem;
+  flex-wrap: wrap;
+
+  h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+
+
+.instafeed__heading {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+
+}

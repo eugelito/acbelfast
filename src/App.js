@@ -7,10 +7,12 @@ import Squads from "./components/Squads";
 import Fixtures from "./components/fixtures/Fixtures"; 
 import Results from "./components/results/Results"; 
 import Contact from "./components/contact/Contact";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="App">
         <Navbar />
         <main>

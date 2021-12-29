@@ -1,7 +1,11 @@
+import "./Results.scss";
+
 const Results = () => {
   return (
-    <div>
-      <h3 style={{ marginTop: "5rem", color: "white" }}>Results</h3>
+    <div className="results__container">
+      <div className="container">
+        <h1>Results</h1>
+      </div>
     </div>
   );
 };

@@ -1,0 +1,17 @@
+.contact__container {
+    background-color: var(--secondaryColor);
+
+    h1 {
+        color: #fff;
+        margin: 3rem auto 4rem;
+        flex-basis: 100%
+      }
+
+    h3 {
+        margin-bottom: 0.5rem;
+        &~ span {
+            color: white;
+        }
+    }
+    
+}

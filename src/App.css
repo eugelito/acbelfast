@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 
 html {
-    background-color: #000;
+    background-color: black;
     font-size: 100%;
     box-sizing: border-box;
 }
@@ -33,6 +33,15 @@ label {
     padding: 1rem;
 }
 
+.page__heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondaryColor);
+    color: #fff;
+    padding: 100px;
+}
+
 .container__sponsors {
     display: flex;
     justify-content: center;
@@ -49,7 +58,6 @@ label {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
 }
 
 .container__divider { 
@@ -71,6 +79,10 @@ label {
     /* width: 300px; */
     height: 300px;
     margin: 0 1rem 1rem 0;
+}
+
+.column__half {
+    flex-basis: 50%;
 }
 
 @media screen and (min-width: 768px) {

@@ -12,11 +12,6 @@
   cursor: pointer;
 }
 
-.btn__league {
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px
-}
-
 /* Add a light grey background on mouse-over */
 .btn:hover {
   background-color: #ddd;
@@ -25,8 +20,8 @@
 /* Add a dark background to the active button */
 .btn.active {
   background-color: #a7d8fb;
+  border-top: 4px solid #fff;
   color: #000;
-  text-decoration: underline;
 }
 
 .leagueHeading {
@@ -70,3 +65,11 @@ table {
   .btn__league--overs {
     background-color: #D1D1D1;
   }
+
+.content {
+    display: none;
+  }
+
+.active-contaent {
+  display: block;
+}

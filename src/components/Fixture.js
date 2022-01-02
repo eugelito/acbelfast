@@ -3,37 +3,20 @@ import "./Card.scss";
 import acbelfastlogo from "../images/acbelfastlogo.png";
 import southsidelogo from "../images/southsidelogo.jpeg";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import FixturesDetail from "./fixtures/FixturesDetail";
 
 
 const Fixture = () => {
+  //let isFixturesPage = false;
+
   return (
     <div className="card__container column__half">
       <h2>Fixtures</h2>
       <div className="card card-home">
         <div className="results__title">
-        <Link to="/fixtures"><b className="results__title--link">View more fixtures</b></Link>
+        <Link to="/fixtures"><b className="results__title--link">View more fixtures</b></Link><b>{'>'}</b>
         </div>
-        <div className="match__details">
-        <h3 className="match__dateTime">Friday 20 January 2022</h3> {' '}
-        <b>14:00 PM</b>
-        <p className="match__competition"><b>League Match</b> at <b>Lough Moss</b></p> <br/>
-        </div>
-        <div className="match__teams">
-        <img src={acbelfastlogo} width="75px" height="70px"></img>
-        <h4 className="match__result">AC Belfast v Southside II</h4>
-        <img src={southsidelogo} width="75px" height="70px"></img>
-        </div>
-        <hr className="match__divider"/>
-        <div className="match__details">
-        <h3 className="match__dateTime">Friday 20 January 2022</h3> {' '}
-        <b>14:00 PM</b>
-        <p className="match__competition"><b>League Match</b> at <b>Lough Moss</b></p> <br/>
-        </div>
-        <div className="match__teams">
-        <img src={acbelfastlogo} width="75px" height="70px"></img>
-        <h4 className="match__result">AC Belfast 35s v Southside II</h4>
-        <img src={southsidelogo} width="75px" height="70px"></img>
-        </div>
+      <FixturesDetail />
       </div>
     </div>
   );

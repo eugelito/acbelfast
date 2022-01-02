@@ -1,6 +1,7 @@
 import "./FacebookNewsFeed.scss";
 
 const FacebookNewsFeed = () => {
+
   return (
     <div className="facebook-newsfeed">
       <h2> <i className="fab fa-facebook fax" aria-hidden="true"></i> Facebook News Feed</h2>

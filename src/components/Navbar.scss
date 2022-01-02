@@ -6,7 +6,7 @@ ul {
 
 nav {
   width: 100%;
-  height: 75px;
+  height: 122px;
   position: fixed;
   background-color: #a7d8fc;
   top: 0;
@@ -39,7 +39,7 @@ nav li {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   padding: 12px 16px;
   z-index: 1;
   top: 2.7rem;
@@ -48,13 +48,16 @@ nav li {
 .fixtures__dropdown {
   position: relative;
   display: inline-block;
-  margin: 1rem 0.5rem 1rem !important;
+  padding: 1rem 0.5rem 1rem !important;
 }
 
 .fixtures__dropdown:hover .results__expand {
   display: block;
 }
 
+nav:hover + nav .results__expand {
+  display: block;
+}
 
 nav .nav__container {
   height: 80px;
@@ -66,31 +69,27 @@ nav .nav__container {
 
   .nav__logo--links {
     display: flex;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
   }
 
   .nav-links {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    font-size: 12px;
     li {
-      margin: 1rem;
-        >.active {
-          text-decoration: underline;
-          text-decoration-thickness: 10px;
-          text-underline-offset: 14px;
-        }
-        &:hover {
-          text-decoration: underline;
-          text-decoration-thickness: 10px;
-          text-underline-offset: 14px;
-        }
-    }
-    .nav-sublinks {
-      display: none;
-
-      :hover {
-        display: block;
+      padding: 1rem 0.4rem;
+      > .active {
+        text-decoration: underline;
+        text-decoration-thickness: 10px;
+        text-underline-offset: 14px;
+      }
+      &:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 10px;
+        text-underline-offset: 14px;
       }
     }
 
@@ -110,8 +109,7 @@ nav .nav__container {
 
 .dropdown-content {
   display: none;
- }
- 
+}
 
 .dropdown {
   &::after {
@@ -126,9 +124,57 @@ nav .nav__container {
 
 link:active {
   text-decoration: underline;
-  
 }
 
+// Mobile M
+@media screen and (min-width: 375px) {
+  nav .nav__container .nav-links {
+    border-top: none;
+    font-size: 14px;
+
+    li {
+      font-size: 14px;
+    }
+  }
+}
+
+// Navbar breakpoint 1 line
+@media screen and (min-width: 403px) {
+  // navigation to flex-wrap: none;
+  nav {
+    height: 75px;
+
+    .nav__container {
+      flex-wrap: nowrap;
+    }
+  }
+}
+
+// Mobile L
+@media screen and (min-width: 425px) {
+  nav .nav__container .nav-links li {
+padding: 1rem 0.5rem
+ }
+
+}
+
+// Mobile nav breakpoint
+@media screen and (min-width: 480px) {
+  // navigation to flex-wrap: none;
+  nav {
+    height: 75px;
+
+    .nav__logo--links {
+      flex-wrap: wrap;
+      justify-content: center;
+
+    }
+
+    .nav__container .nav-links li {
+      padding: 1rem .75rem; 
+    }
+  }
+}
 
 @media screen and (min-width: 500px) {
   nav .nav__container .nav-links {
@@ -139,7 +185,7 @@ link:active {
 @media screen and (min-width: 768px) {
   nav .nav__container {
     flex-direction: row;
-
+    justify-content: space-between;
     .nav-main__title {
       display: flex;
       margin-right: 1rem;
@@ -169,20 +215,6 @@ link:active {
   }
 }
 
-// Mobile M
-@media screen and (min-width: 375) {
-  nav .nav__container .nav-links {
-    border-top: none;
-  }
-}
-
-// Mobile L
-@media screen and (min-width: 425px) {
-  nav .nav__container .nav-links {
-    border-top: none;
-  }
-}
-
 // Desktop
 @media screen and (min-width: 1024px) {
   nav .nav__container {
@@ -190,7 +222,7 @@ link:active {
     margin: 0 auto;
     justify-content: space-between;
 
-   /** .nav-links {
+    /** .nav-links {
       flex-basis: 55vw;
     }*/
   }

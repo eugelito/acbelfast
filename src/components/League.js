@@ -2,12 +2,18 @@ import { useEffect, useState } from "react";
 import "./League.scss";
 
 const League = () => {
-  const [data, setData] = useState();
+  const [toggleState, setToggleState] = useState(1);
+
+  const toggleTab = (index) => {
+    setToggleState(index);
+  };
+
+  // const [data, setData] = useState();
 
   // const getData = async () => {
   //   try {
   //    const res = await fetch("https://sheet.best/api/sheets/5c9c879e-6085-4094-b40d-306cfb215fd8");
-  //     //fetch from Sheets   
+  //     //fetch from Sheets
   //     const data = await res.json();
   //     setData(data);
   //     console.log(data);
@@ -20,15 +26,17 @@ const League = () => {
   //   getData();
   // }, []);
 
+  // const [oversData, setOversData] = useState();
+
   // const getOversData = async () => {
   //   try {
   //     const res = await fetch(
-  //   //"https://sheet.best/api/sheets/b845bdaf-061c-48e1-bcc9-e607e494cfe9"
+  //   "https://sheet.best/api/sheets/b845bdaf-061c-48e1-bcc9-e607e494cfe9"
   //     );
-  //     //fetch from Sheets   
-  //     const Oversdata = await res.json();
-  //     setData(Oversdata);
-  //     console.log(Oversdata);
+  //     //fetch from Sheets
+  //     const oversData = await res.json();
+  //     setOversData(oversData);
+  //     console.log(oversData);
   //   } catch (error) {
   //     console.log(error);
   //   }
@@ -38,38 +46,43 @@ const League = () => {
   //   getOversData();
   // }, []);
 
-  const onClick = () => {
-    console.log("onClick");
-  };
   return (
     <div>
       {/** Display First Team if First Team is selected */}
-      <h2 className="leagueHeading">Belfast District League 3</h2>
-      <p style={{ color: "#fff", marginBottom: "3rem" }}>2021 - 2022 Season</p>
+      <h2 className="leagueHeading">{toggleState === 1 ? 'Belfast District League 4' : 'Emerge Invitational League'}</h2>
+      <p style={{ color: "#fff", marginBottom: "3rem" }}>2022 - 2023 Season</p>
 
       <div className="league__select">
-        <button class="btn btn__league active">First Team</button>
         <button
-          className="btn btn__league btn__league--overs"
-          onClick={onClick}
+          id="firstTeamLeagueBtn"
+          className={toggleState === 1 ? "active btn btn__league": "btn btn__league btn__league--overs"}
+          onClick={() => toggleTab(1)}
+        >
+          First Team
+        </button>
+        <button
+          id="oversTeamLeagueBtn"
+          className={toggleState === 2 ? "active btn btn__league btn__league--overs": "btn btn__league btn__league--overs"}
+          onClick={() => toggleTab(2)}
         >
           {" "}
           Over 35s
         </button>
       </div>
 
-        <div class="table__section">
-          <table class="table">
-            <tr>
-              <th>Position</th>
-              <th>Club</th>
-              <th>Played</th>
-              <th>Won</th>
-              <th>Drawn</th>
-              <th>Lost</th>
-              <th>Points</th>
-            </tr>
-            {data?.map((item, i) => (
+      <div className={toggleState === 1 ? "table__section active-content" : "table__section content"}>
+        <table class="table">
+          <tr>
+            <th>Pos</th>
+            <th>Club</th>
+            <th>Played</th>
+            <th>W</th>
+            <th>D</th>
+            <th>L</th>
+            <th>Pts</th>
+          </tr>
+          <tr><td>Firsts</td></tr>
+          {/* * Firsts league table, we want to display on click of first team buttom{data?.map((item, i) => (
             <tr key={i}>
               <td>{item.Position}</td>
               <td>{item.Club}</td>
@@ -79,12 +92,35 @@ const League = () => {
               <td>{item.Lost}</td>
               <td>{item.Points}</td>
             </tr>
-             ))}
-          </table>
-               
+             ))} */}
+        </table>
+        </div>
+      <div className={toggleState === 2 ? "table__section active-content" : "table__section content"}>
+        <table class="table">
+          <tr>
+            <th>Pos</th>
+            <th>Club</th>
+            <th>Played</th>
+            <th>W</th>
+            <th>D</th>
+            <th>L</th>
+            <th>Pts</th>
+          </tr>
+          <tr><td>Over 35s</td></tr>
 
-      {/** Display Over 35s league table if over 35s team is selected */}
-    </div>
+          {/* Overs league table, we want to display on click of first team buttom {oversData?.map((item, i) => (
+            <tr key={i}>
+              <td>{item.Position}</td>
+              <td>{item.Club}</td>
+              <td>{item.Played}</td>
+              <td>{item.Won}</td>
+              <td>{item.Drawn}</td>
+              <td>{item.Lost}</td>
+              <td>{item.Points}</td>
+            </tr>
+             ))} */}
+        </table>
+      </div>
     </div>
   );
 };

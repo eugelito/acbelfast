@@ -24,7 +24,7 @@ const Squads = () => {
             <div className="player__profile">
               <img src={playerPlaceholder} height="75px"></img>
 
-              <p className="marginBottom-2">John Doe</p>
+              <p className="marginBottom-2">TBA</p>
             </div>
           </div>
           <h3>Defenders</h3>

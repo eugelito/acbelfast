@@ -23,8 +23,6 @@ const FixturesDetail = () => {
         <h4 className="match__result">{ fixture.homeTeamName } v { fixture.awayTeamName }</h4>
         <img src={`${ fixture.awayTeamImageUrl }`}width="75px" height="70px"></img>
       </div>
-      <hr className="match__divider" />
-
       </>
       )
     } )}

@@ -4,6 +4,7 @@ import ardsrangerslogo from "../../images/ardsrangerslogo.jpeg";
 import belfastceltic from "../../images/belfastceltic.png";
 import bocalogo from "../../images/bocalogo.jpeg";
 import ResultsData from "../../resultData.json";
+import './Results.scss'
 
 const ResultsDetail = ({ showAllResults }) => {
   return (
@@ -18,9 +19,10 @@ const ResultsDetail = ({ showAllResults }) => {
                     <b>League Match</b>
                   </p>
                   <span className="match__fullTime">Full Time</span>
-                  <h4>
+                  <h4 className="match__score">
                     {result.homeTeamScore} - {result.awayTeamScore}
                   </h4>
+                  <br/>
                 </div>
                 <div className="match__teams">
                   <div className="match__teamOne">
@@ -57,9 +59,10 @@ const ResultsDetail = ({ showAllResults }) => {
                     <b>League Match</b>
                   </p>
                   <span className="match__fullTime">Full Time</span>
-                  <h4>
+                  <h4 className="match__score">
                     {result.homeTeamScore} - {result.awayTeamScore}
                   </h4>
+                  <br/>
                 </div>
                 <div className="match__teams">
                   <div className="match__teamOne">

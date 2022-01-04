@@ -3,7 +3,6 @@
 }
 
 .container__squads--first {
-    background-color: white;
 }
 
 .container__squads--overs {
@@ -32,17 +31,20 @@
     }
 
     .squads__position {
-        margin-left: 1rem;
-        
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        &.squads__position--manager {
+            justify-content: start;
+        }
+
         .marginBottom-2 {
             margin-bottom: 2rem;
         }
 
         h3 {
             margin: 0;
-        }
-        p:last-child, p:first-child {
-            margin: 0 0 2rem;
         }
         
     }
@@ -52,6 +54,17 @@
         width: 100%;
     }
     
+}
+
+
+.player__profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    p {
+        margin: 1rem 0 2rem;
+    }
 }
 
 @media screen and (min-width: 768px) {

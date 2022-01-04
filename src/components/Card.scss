@@ -41,11 +41,12 @@
     &.card__threeQuarterWidth {
       width: 100%;
       margin: 0 auto;
+      margin-top: -7.5rem;
     }
 
     @media screen and (min-width: 768px) {
       &.card__threeQuarterWidth {
-        width: 60%;
+        width: 70%;
       }
     }
   }

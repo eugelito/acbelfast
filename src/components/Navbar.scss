@@ -85,13 +85,15 @@ nav .nav__container {
       padding: 1rem 0.4rem;
       > .active {
         text-decoration: underline;
+        text-decoration-color: var(--secondaryColor);
         text-decoration-thickness: 10px;
-        text-underline-offset: 14px;
+        text-underline-offset: 15px;
       }
       &:hover {
         text-decoration: underline;
+        text-decoration-color: var(--secondaryColor);
         text-decoration-thickness: 10px;
-        text-underline-offset: 14px;
+        text-underline-offset: 15px;
       }
     }
 
@@ -209,8 +211,9 @@ padding: 1rem 0.5rem
         color: #00285e;
         &:hover {
           text-decoration: underline;
+          text-decoration-color: var(--secondaryColor);
           text-decoration-thickness: 10px;
-          text-underline-offset: 14px;
+          text-underline-offset: 15px;
         }
       }
     }

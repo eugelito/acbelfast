@@ -14,7 +14,7 @@ html {
 }
 
 main {
-  margin-top: 4.2rem;
+  margin-top: 7.1rem;
 }
 
 main h2, main h3, main p {
@@ -145,11 +145,14 @@ footer {
   color: #222;
 }
 
-
-
-/** End of Footer styling */
+@media screen and (min-width: 413px) {
+  main {
+    margin-top: 4.2rem;
+  }
+}
 
 @media screen and (min-width: 768px) {
+
   .footer {
     flex-direction: row;
     height: 7rem;
@@ -176,6 +179,12 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
+
+  main {
+    margin-top: 4.2rem;
+  }
+
+  
   .footer { 
     width: 1024px;
   }

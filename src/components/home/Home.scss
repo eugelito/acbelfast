@@ -1,0 +1,69 @@
+.container__about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00285e;
+  padding: 3rem 1rem;
+  flex-wrap: wrap;
+
+  h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+    margin-bottom: 0;
+  }
+
+  .container--centered {
+    align-items: center;
+  }
+
+  .about__founded {
+    width: 100%;
+    color: #fff;
+
+    span {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .about__description {
+    line-height:1.5;
+  }
+}
+
+
+
+.instafeed__heading {
+  text-align: center;
+}
+
+.getInTouchBtn {
+  width: 10rem;
+  padding: 12px;
+  background-color: var(--primaryColor);
+  border-radius: 16px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--primaryColor);
+    background-color: var(--secondaryColor);
+    outline: 1px solid var(--primaryColor);
+    cursor: pointer;
+  }
+}
+
+
+.sponsors__centered {
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+
+}

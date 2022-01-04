@@ -1,0 +1,88 @@
+.results__title {
+    display: flex;
+    border-bottom: 3px solid var(--primaryColor);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    justify-content: end;
+    > a {
+        text-decoration: none;
+        margin-right: 0.5rem;
+    }
+    .results__title--link {
+     display: flex;
+     justify-content: end;
+     color: #fff;
+
+    &:hover {
+        text-decoration: underline;
+    }
+    // &::after {
+    //     color: #a7d8fc;
+    //     margin-left: 0.5rem;
+    //     content: ">";
+    //     display: inline-block;
+    //     text-decoration: none;
+    //     &:hover {
+    //         text-decoration: none;
+    //         display: inline-block;
+    //     }
+    // }
+    }
+}
+.match__details {
+    display: block;
+    text-align: center;
+    &.match__details--divider {
+        border-bottom: 1px solid #fff;
+        margin: 0 0 1rem;
+    }
+}
+
+.match__fullTime {
+    font-size: 14px;
+}
+
+
+.match__dateTime {
+    display: inline;
+    margin-bottom: 0.5rem;
+}
+
+.match__teams {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    > img
+        &:first-child {
+        margin-right: 0.5rem;
+        &:last-child {
+            margin-left: 0.5rem;
+        }
+    }
+}
+
+.match__result {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.match__divider {
+    margin: 2rem 0;
+    border-top: 0px solid #fff;
+}
+
+.column__half {
+    flex-basis: 50%;
+}
+
+.match__teamOne img, .match__teamTwo img {
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+@media screen and (min-width: 768px) {
+.column__half--gap {
+    margin-right: 1rem;
+ }
+}

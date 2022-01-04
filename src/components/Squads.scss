@@ -1,0 +1,76 @@
+.container--column {
+    flex-direction: column;
+}
+
+.container__squads--first {
+}
+
+.container__squads--overs {
+    background-color: var(--tertiaryColor);
+    h1, h2, h3, p {
+        color: black;
+    }
+}
+
+.container__squads {
+    flex-direction: column;
+    h2 {
+        width: fit-content;
+        padding: 12px;
+        margin: 0;
+    }
+    
+    .squads__heading--first {
+        background-color: var(--tertiaryColor);
+        color: var(--secondaryColor);
+    }
+
+    .squads__heading--overs {
+        background-color: var(--secondaryColor);;
+        color: #fff;
+    }
+
+    .squads__position {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        &.squads__position--manager {
+            justify-content: start;
+        }
+
+        .marginBottom-2 {
+            margin-bottom: 2rem;
+        }
+
+        h3 {
+            margin: 0;
+        }
+        
+    }
+
+    .squads__image {
+        border: 12px solid var(--secondaryColor);
+        width: 100%;
+    }
+    
+}
+
+
+.player__profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    p {
+        margin: 1rem 0 2rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container__squads {
+    .squads__image {
+        width: 50%;
+    }    
+}
+}

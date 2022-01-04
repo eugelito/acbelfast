@@ -2,13 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/acbelfast.png" />
+    <link rel="icon" href="%PUBLIC_URL%/acbelfastlogo.png" />
     <script src="https://kit.fontawesome.com/d76e5cb34e.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Athletic Club Belfast | Belfast based Football Club for all"
+      content="Athletic Club Belfast | Firsts and Over 35s Belfast based Football Club for all"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
@@ -25,7 +25,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>Athletic Club Belfast</title>
+    <title>Athletic Club Belfast | Football club for all</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -41,4 +41,19 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v12.0" nonce="mI52Pj6L"></script>
+
+  <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+	<script type="text/javascript">
+	var userFeed = new Instafeed({
+		get: 'user',
+		target: "instafeed-container",
+    resolution: 'low_resolution',
+		accessToken: 'IGQVJYakxCb0s0ejZAMUFRFLUFvWlUtMHhRc3NLSmJJNDJlSkhwd3M5aXZAVcnFubFppS0NWNDZAteTFWVDVQVmJ1SHFDT0xqRFhyRE01OS1xNllkYmFzQTRJSUo3MUE5M0ptbnFuV1BuNDhibUhsS25lVAZDZD',
+    sortBy:'most-recent',
+    limit: 6
+	});
+	userFeed.run();
+	</script>
 </html>

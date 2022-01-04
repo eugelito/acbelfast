@@ -81,7 +81,6 @@ const League = () => {
             <th>L</th>
             <th>Pts</th>
           </tr>
-          <tr><td>Firsts</td></tr>
           {/* Firsts league table, we want to display on click of first team buttom */}{data?.map((item, i) => (
             <tr key={i}>
               <td>{item.Position}</td>
@@ -106,8 +105,6 @@ const League = () => {
             <th>L</th>
             <th>Pts</th>
           </tr>
-          <tr><td>Over 35s</td></tr>
-
           {/* Overs league table, we want to display on click of first team buttom */}{oversData?.map((item, i) => (
             <tr key={i}>
               <td>{item.Position}</td>

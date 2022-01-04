@@ -68,7 +68,6 @@ nav .nav__container {
   height: 80px;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
   font-size: 14px;
 
@@ -146,7 +145,7 @@ link:active {
 }
 
 // Navbar breakpoint 1 line
-@media screen and (min-width: 403px) {
+@media screen and (min-width: 413px) {
   // navigation to flex-wrap: none;
   nav {
     height: 75px;

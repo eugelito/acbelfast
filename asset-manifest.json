@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.d6b78a27.chunk.css",
-    "main.js": "/static/js/main.4ccb76a0.chunk.js",
-    "runtime-main.js": "/static/js/runtime-main.13dab6c4.js",
-    "static/js/2.8c79d00f.chunk.js": "/static/js/2.8c79d00f.chunk.js",
-    "static/js/3.b73c76b5.chunk.js": "/static/js/3.b73c76b5.chunk.js",
+    "main.css": "/static/css/main.c79d6a73.chunk.css",
+    "main.js": "/static/js/main.4d67d5da.chunk.js",
+    "runtime-main.js": "/static/js/runtime-main.d7664e35.js",
+    "static/js/2.530f7b5c.chunk.js": "/static/js/2.530f7b5c.chunk.js",
+    "static/js/3.e67f5ec8.chunk.js": "/static/js/3.e67f5ec8.chunk.js",
     "index.html": "/index.html",
-    "static/js/2.8c79d00f.chunk.js.LICENSE.txt": "/static/js/2.8c79d00f.chunk.js.LICENSE.txt",
+    "static/js/2.530f7b5c.chunk.js.LICENSE.txt": "/static/js/2.530f7b5c.chunk.js.LICENSE.txt",
     "static/media/acbelfastlogo.2f8b8098.png": "/static/media/acbelfastlogo.2f8b8098.png",
     "static/media/ardsrangerslogo.f49a0788.jpeg": "/static/media/ardsrangerslogo.f49a0788.jpeg",
     "static/media/belfastceltic.3fafaab6.png": "/static/media/belfastceltic.3fafaab6.png",
@@ -17,9 +17,9 @@
     "static/media/southsidelogo.fc4585f2.jpeg": "/static/media/southsidelogo.fc4585f2.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.13dab6c4.js",
-    "static/js/2.8c79d00f.chunk.js",
-    "static/css/main.d6b78a27.chunk.css",
-    "static/js/main.4ccb76a0.chunk.js"
+    "static/js/runtime-main.d7664e35.js",
+    "static/js/2.530f7b5c.chunk.js",
+    "static/css/main.c79d6a73.chunk.css",
+    "static/js/main.4d67d5da.chunk.js"
   ]
 }

@@ -31,7 +31,7 @@ const Home = () => {
             </div>
             <div> 
             <p className="about__description">
-              Senior Men's Amatuer Football Club based in Belfast, Northern Ireland. The club have a firsts and an over 35s team playing in the TBA and Emerge Invitational League respectively.
+              Senior Men's Amateur Football Club based in Belfast, Northern Ireland. The club have a firsts and an over 35s team playing in the TBA and Emerge Invitational League respectively.
             </p>                 <br/>
      <button className="getInTouchBtn" type="button" onClick={navigateToContact}>Get in touch</button>
 

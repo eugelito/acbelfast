@@ -21,8 +21,8 @@
 {
     "id": 3,
     "competition": "League Match",
-    "homeTeamName": "Oxford Sunnyside (Over 35s)",
-    "homeTeamImageUrl": "../images/oxfordsunnyside.jpeg",
+    "homeTeamName": "AC Belfast (Over 35s)",
+    "homeTeamImageUrl": "../images/acbelfastlogo.png`",
     "homeTeamScore": "0",
     "awayTeamName": "Ards Rangers (Over 35s)",
     "awayTeamImageUrl": "../images/ardsrangerslogo.jpeg",

@@ -81,6 +81,7 @@ const League = () => {
             <th>L</th>
             <th>Pts</th>
           </tr>
+          <tr><td>Exceeded plan request for best.sheets API connection</td></tr>
           {/* Firsts league table, we want to display on click of first team buttom {data?.map((item, i) => (
             <tr key={i}>
               <td>{item.Position}</td>

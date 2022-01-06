@@ -1,5 +1,6 @@
 import React from "react";
 import FixtureData from "../../fixtureData.json";
+import "./Fixtures.scss";
 
 
 
@@ -11,8 +12,8 @@ const FixturesDetail = () => {
       return(
         <>
         <div className="match__details" key={ fixture.id }>
-        <h3 className="match__dateTime">{ fixture.date }</h3>{" "}
-        <b>{ fixture.time }</b>
+        <b className="match__date">{ fixture.date }</b>{" "}
+        <b className="match__time">{ fixture.time }</b>
         <p className="match__competition">
           <b>{ fixture.competition }</b> at <b>{ fixture.venue }</b>
         </p>{" "}

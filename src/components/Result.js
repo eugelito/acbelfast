@@ -11,7 +11,7 @@ const Results = () => {
       <h2>Results</h2>
       <div className="card card-home">
         <div className="results__title">
-        <Link to="/results"><b className="results__title--link">View more results</b></Link><b>{'>'}</b>
+        <Link to="/results"><b className="results__title--link">View more results</b></Link><b className="viewMore__carot">{'>'}</b>
         </div>
         <ResultsDetail showAllResults={false} />
       </div>

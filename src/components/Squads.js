@@ -1,6 +1,9 @@
 import "./Squads.scss";
 import over35s from "../images/over35s.jpeg";
 import playerPlaceholder from "../images/player.png";
+import firstSquadData from "../squadFirstList.json";
+import oversSquadData from "../squadOversList.json";
+
 
 const Squads = () => {
   return (
@@ -21,72 +24,56 @@ const Squads = () => {
           </div>
           <h3>Goalkeepers</h3>
           <div className="squads__position">
-            <div className="player__profile">
-              <img src={playerPlaceholder} height="75px"></img>
-
-              <p className="marginBottom-2">TBA</p>
-            </div>
+            {firstSquadData
+              .filter((position) => position.position.includes("Goalkeeper"))
+              .map((player) => {
+                return (
+                  <div className="player__profile">
+                    <img src={playerPlaceholder} height="75px"></img>
+                    <p className="marginBottom-2">{player.fullName}</p>
+                  </div>
+                );
+              })}
           </div>
           <h3>Defenders</h3>
           <div className="squads__position">
-            <div className="player__profile">
-              <img src={playerPlaceholder} height="75px"></img>
-
-              <p>TBA</p>
-            </div>
-            <div className="player__profile">
-              <img src={playerPlaceholder} height="75px"></img>
-
-              <p>TBA</p>
-            </div>
-            <div className="player__profile">
-              <img src={playerPlaceholder} height="75px"></img>
-
-              <p>TBA</p>
-            </div>
-            <div className="player__profile">
-              <img src={playerPlaceholder} height="75px"></img>
-
-              <p>TBA</p>
-            </div>
+            {firstSquadData
+              .filter((position) => position.position.includes("Defender"))
+              .map((player) => {
+                return (
+                  <div className="player__profile">
+                    <img src={playerPlaceholder} height="75px"></img>
+                    <p className="marginBottom-2">{player.fullName}</p>
+                  </div>
+                );
+              })}
           </div>
           <h3>Midfielders</h3>
           <div className="squads__position">
-            <div className="player__profile">
-              <img src={playerPlaceholder} height="75px"></img>
-
-              <p>TBA</p>
-            </div>
-            <div className="player__profile">
-              <img src={playerPlaceholder} height="75px"></img>
-
-              <p>TBA</p>
-            </div>
-            <div className="player__profile">
-              <img src={playerPlaceholder} height="75px"></img>
-
-              <p>TBA</p>
-            </div>
-
-            <div className="player__profile">
-              <img src={playerPlaceholder} height="75px"></img>
-
-              <p>TBA</p>
-            </div>
+            {firstSquadData
+              .filter((position) => position.position.includes("Midfielder"))
+              .map((player) => {
+                return (
+                  <div className="player__profile">
+                    <img src={playerPlaceholder} height="75px"></img>
+                    <p className="marginBottom-2">{player.fullName}</p>
+                  </div>
+                );
+              })}
           </div>
 
           <h3>Fowards</h3>
           <div className="squads__position">
-            <div className="player__profile">
-              <img src={playerPlaceholder} height="75px"></img>
-
-              <p>TBA</p>
-            </div>
-            <div className="player__profile">
-              <img src={playerPlaceholder} height="75px"></img>
-
-              <p>TBA</p>
-            </div>
+            {firstSquadData
+              .filter((position) => position.position.includes("Forward"))
+              .map((player) => {
+                return (
+                  <div className="player__profile">
+                    <img src={playerPlaceholder} height="75px"></img>
+                    <p className="marginBottom-2">{player.fullName}</p>
+                  </div>
+                );
+              })}
           </div>
         </div>
       </div>
@@ -105,71 +92,56 @@ const Squads = () => {
           </div>
           <h3>Goalkeepers</h3>
           <div className="squads__position">
-            <div className="player__profile">
-              <img src={playerPlaceholder} height="75px"></img>
-              <p className="marginBottom-2">TBA</p>
-            </div>
+            {oversSquadData
+              .filter((position) => position.position.includes("Goalkeeper"))
+              .map((player) => {
+                return (
+                  <div className="player__profile">
+                    <img src={playerPlaceholder} height="75px"></img>
+                    <p className="marginBottom-2">{player.fullName}</p>
+                  </div>
+                );
+              })}
           </div>
           <h3>Defenders</h3>
           <div className="squads__position">
-            <div className="player__profile">
-              <img src={playerPlaceholder} height="75px"></img>
-
-              <p>TBA</p>
-            </div>
-            <div className="player__profile">
-              <img src={playerPlaceholder} height="75px"></img>
-
-              <p>TBA</p>
-            </div>
-            <div className="player__profile">
-              <img src={playerPlaceholder} height="75px"></img>
-
-              <p>TBA</p>
-            </div>
-            <div className="player__profile">
-              <img src={playerPlaceholder} height="75px"></img>
-
-              <p>TBA</p>
-            </div>
+            {oversSquadData
+              .filter((position) => position.position.includes("Defender"))
+              .map((player) => {
+                return (
+                  <div className="player__profile">
+                    <img src={playerPlaceholder} height="75px"></img>
+                    <p className="marginBottom-2">{player.fullName}</p>
+                  </div>
+                );
+              })}
           </div>
           <h3>Midfielders</h3>
           <div className="squads__position">
-            <div className="player__profile">
-              <img src={playerPlaceholder} height="75px"></img>
-
-              <p>TBA</p>
-            </div>
-            <div className="player__profile">
-              <img src={playerPlaceholder} height="75px"></img>
-
-              <p>TBA</p>
-            </div>
-            <div className="player__profile">
-              <img src={playerPlaceholder} height="75px"></img>
-
-              <p>TBA</p>
-            </div>
-
-            <div className="player__profile">
-              <img src={playerPlaceholder} height="75px"></img>
-
-              <p>TBA</p>
-            </div>
+            {oversSquadData
+              .filter((position) => position.position.includes("Midfielder"))
+              .map((player) => {
+                return (
+                  <div className="player__profile">
+                    <img src={playerPlaceholder} height="75px"></img>
+                    <p className="marginBottom-2">{player.fullName}</p>
+                  </div>
+                );
+              })}
           </div>
 
           <h3>Fowards</h3>
           <div className="squads__position">
-            <div className="player__profile">
-              <img src={playerPlaceholder} height="75px"></img>
-
-              <p>TBA</p>
-            </div>
-            <div className="player__profile">
-              <img src={playerPlaceholder} height="75px"></img>
-
-              <p>TBA</p>
-            </div>
+            {oversSquadData
+              .filter((position) => position.position.includes("Forward"))
+              .map((player) => {
+                return (
+                  <div className="player__profile">
+                    <img src={playerPlaceholder} height="75px"></img>
+                    <p className="marginBottom-2">{player.fullName}</p>
+                  </div>
+                );
+              })}
           </div>
         </div>
       </div>

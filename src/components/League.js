@@ -49,7 +49,7 @@ const League = () => {
   return (
     <div>
       {/** Display First Team if First Team is selected */}
-      <h2 className="leagueHeading">{toggleState === 1 ? 'Belfast District League 4' : 'Emerge Invitational League'}</h2>
+      <h2 className="leagueHeading">{toggleState === 1 ? 'TBA First Team League' : 'Emerge Invitational League'}</h2>
       <p style={{ color: "#fff", marginBottom: "3rem" }}>2022 - 2023 Season</p>
 
       <div className="league__select">

@@ -1,7 +1,5 @@
 import React from "react";
 import "./Fixtures.scss";
-import acbelfastlogo from "../../images/acbelfastlogo.png";
-import southsidelogo from "../../images/southsidelogo.jpeg";
 import FixturesDetail from "./FixturesDetail";
 
 const Fixtures = () => {

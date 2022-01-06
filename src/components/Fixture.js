@@ -14,7 +14,7 @@ const Fixture = () => {
       <h2>Fixtures</h2>
       <div className="card card-home">
         <div className="results__title">
-        <Link to="/fixtures"><b className="results__title--link">View more fixtures</b></Link><b>{'>'}</b>
+        <Link to="/fixtures"><b className="results__title--link">View more fixtures</b></Link><b className="viewMore__carot">{'>'}</b>
         </div>
       <FixturesDetail />
       </div>

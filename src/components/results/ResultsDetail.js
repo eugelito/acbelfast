@@ -1,8 +1,4 @@
 import React from "react";
-import acbelfastlogo from "../../images/acbelfastlogo.png";
-import ardsrangerslogo from "../../images/ardsrangerslogo.jpeg";
-import belfastceltic from "../../images/belfastceltic.png";
-import bocalogo from "../../images/bocalogo.jpeg";
 import ResultsData from "../../resultData.json";
 import './Results.scss'
 
@@ -16,6 +12,7 @@ const ResultsDetail = ({ showAllResults }) => {
               <>
                   <div className="match__details">
                   <p className="match__competition">
+                  <span className="match__date">{result.date}</span>
                     <b>League Match</b>
                   </p>
                   <span className="match__fullTime">Full Time</span>
@@ -56,6 +53,7 @@ const ResultsDetail = ({ showAllResults }) => {
               <>
                 <div className="match__details">
                   <p className="match__competition">
+                  <span className="match__date">{result.date}</span>
                     <b>League Match</b>
                   </p>
                   <span className="match__fullTime">Full Time</span>

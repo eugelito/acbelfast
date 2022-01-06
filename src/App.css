@@ -85,6 +85,10 @@ label {
     flex-basis: 50%;
 }
 
+.viewMore__carot {
+    color: #86868b;
+  }
+
 @media screen and (min-width: 768px) {
 
     .column__one {

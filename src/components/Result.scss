@@ -11,7 +11,7 @@
     .results__title--link {
      display: flex;
      justify-content: end;
-     color: #fff;
+     color: #86868b;
 
     &:hover {
         text-decoration: underline;
@@ -36,6 +36,11 @@
         border-bottom: 1px solid #fff;
         margin: 0 0 1rem;
     }
+}
+
+.match__date {
+    font-size: 14px;
+    display:block;
 }
 
 .match__fullTime {
@@ -79,6 +84,7 @@
 .match__teamOne img, .match__teamTwo img {
     display: block;
     margin: 0 auto 1rem;
+    border-radius: 48px;
 }
 
 @media screen and (min-width: 768px) {

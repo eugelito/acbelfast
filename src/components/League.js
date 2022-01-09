@@ -10,6 +10,9 @@ const League = () => {
 
   // const [data, setData] = useState();
 
+  // const errorMesssage = "You already used all of your plan's requests this month.";
+  // var isPlanUsed = false;
+
   // const getData = async () => {
   //   try {
   //    const res = await fetch("https://sheet.best/api/sheets/5c9c879e-6085-4094-b40d-306cfb215fd8");
@@ -19,6 +22,7 @@ const League = () => {
   //     console.log(data);
   //   } catch (error) {
   //     console.log(error);
+  //     isPlanUsed = true;
   //   }
   // };
 
@@ -81,7 +85,8 @@ const League = () => {
             <th>L</th>
             <th>Pts</th>
           </tr>
-          <tr><td>Exceeded plan request for best.sheets API connection</td></tr>
+         {/*  <tr><td>{isPlanUsed ? 'plan used' : 'not plan used'}</td></tr> */}
+          <tr><td>Exceeded requests best.sheets API</td></tr>
           {/* Firsts league table, we want to display on click of first team buttom {data?.map((item, i) => (
             <tr key={i}>
               <td>{item.Position}</td>

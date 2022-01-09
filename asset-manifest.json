@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.f4ade761.chunk.css",
-    "main.js": "/static/js/main.d171f287.chunk.js",
-    "runtime-main.js": "/static/js/runtime-main.e18997fc.js",
-    "static/js/2.0b58e63b.chunk.js": "/static/js/2.0b58e63b.chunk.js",
-    "static/js/3.f3a6c914.chunk.js": "/static/js/3.f3a6c914.chunk.js",
+    "main.js": "/static/js/main.be107247.chunk.js",
+    "runtime-main.js": "/static/js/runtime-main.466e18af.js",
+    "static/js/2.7af08953.chunk.js": "/static/js/2.7af08953.chunk.js",
+    "static/js/3.ad239984.chunk.js": "/static/js/3.ad239984.chunk.js",
     "index.html": "/index.html",
-    "static/js/2.0b58e63b.chunk.js.LICENSE.txt": "/static/js/2.0b58e63b.chunk.js.LICENSE.txt",
+    "static/js/2.7af08953.chunk.js.LICENSE.txt": "/static/js/2.7af08953.chunk.js.LICENSE.txt",
     "static/media/acbelfastlogo.2f8b8098.png": "/static/media/acbelfastlogo.2f8b8098.png",
     "static/media/Header.scss": "/static/media/footballhero.6d45f53d.jpg",
     "static/media/over35s.b9d6d90c.jpeg": "/static/media/over35s.b9d6d90c.jpeg",
@@ -14,9 +14,9 @@
     "static/media/southsidelogo.fc4585f2.jpeg": "/static/media/southsidelogo.fc4585f2.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.e18997fc.js",
-    "static/js/2.0b58e63b.chunk.js",
+    "static/js/runtime-main.466e18af.js",
+    "static/js/2.7af08953.chunk.js",
     "static/css/main.f4ade761.chunk.css",
-    "static/js/main.d171f287.chunk.js"
+    "static/js/main.be107247.chunk.js"
   ]
 }

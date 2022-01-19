@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f4ade761.chunk.css",
-    "main.js": "/static/js/main.31a4a1af.chunk.js",
+    "main.css": "/static/css/main.e54da9ef.chunk.css",
+    "main.js": "/static/js/main.d73c526b.chunk.js",
     "runtime-main.js": "/static/js/runtime-main.e18997fc.js",
     "static/js/2.0b58e63b.chunk.js": "/static/js/2.0b58e63b.chunk.js",
     "static/js/3.f3a6c914.chunk.js": "/static/js/3.f3a6c914.chunk.js",
@@ -10,13 +10,12 @@
     "static/media/acbelfastlogo.2f8b8098.png": "/static/media/acbelfastlogo.2f8b8098.png",
     "static/media/Header.scss": "/static/media/footballhero.6d45f53d.jpg",
     "static/media/over35s.b9d6d90c.jpeg": "/static/media/over35s.b9d6d90c.jpeg",
-    "static/media/player.65f9347f.png": "/static/media/player.65f9347f.png",
-    "static/media/southsidelogo.fc4585f2.jpeg": "/static/media/southsidelogo.fc4585f2.jpeg"
+    "static/media/player.65f9347f.png": "/static/media/player.65f9347f.png"
   },
   "entrypoints": [
     "static/js/runtime-main.e18997fc.js",
     "static/js/2.0b58e63b.chunk.js",
-    "static/css/main.f4ade761.chunk.css",
-    "static/js/main.31a4a1af.chunk.js"
+    "static/css/main.e54da9ef.chunk.css",
+    "static/js/main.d73c526b.chunk.js"
   ]
 }

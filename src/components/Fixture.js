@@ -1,7 +1,5 @@
 import "./Fixture.scss";
 import "./Card.scss";
-import acbelfastlogo from "../images/acbelfastlogo.png";
-import southsidelogo from "../images/southsidelogo.jpeg";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import FixturesDetail from "./fixtures/FixturesDetail";
 

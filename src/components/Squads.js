@@ -42,7 +42,7 @@ const Squads = () => {
               .map((player) => {
                 return (
                   <div className="player__profile">
-                    <img src={playerPlaceholder} height="75px"></img>
+                    <img src={playerPlaceholder} height="75px" alt=""></img>
                     <p className="marginBottom-2">{player.fullName}</p>
                   </div>
                 );
@@ -55,7 +55,7 @@ const Squads = () => {
               .map((player) => {
                 return (
                   <div className="player__profile">
-                    <img src={playerPlaceholder} height="75px"></img>
+                    <img src={playerPlaceholder} height="75px" alt=""></img>
                     <p className="marginBottom-2">{player.fullName}</p>
                   </div>
                 );
@@ -69,7 +69,7 @@ const Squads = () => {
               .map((player) => {
                 return (
                   <div className="player__profile">
-                    <img src={playerPlaceholder} height="75px"></img>
+                    <img src={playerPlaceholder} height="75px" alt=""></img>
                     <p className="marginBottom-2">{player.fullName}</p>
                   </div>
                 );
@@ -80,12 +80,12 @@ const Squads = () => {
       <div className="container__squads--overs">
         <div className="container container--column">
           <h2 className="squads__heading--overs">Over 35s Team</h2>
-          <img src={over35s} className="squads__image" height="300px"></img>
+          <img src={over35s} className="squads__image" height="300px" alt=""></img>
           <br />
           <h3>Manager</h3>
           <div className="squads__position squads__position--manager">
             <div className="player__profile">
-              <img src={playerPlaceholder} height="75px"></img>
+              <img src={playerPlaceholder} height="75px" alt=""></img>
 
               <p>Colin 'Colly' Walker</p>
             </div>
@@ -97,7 +97,7 @@ const Squads = () => {
               .map((player) => {
                 return (
                   <div className="player__profile">
-                    <img src={playerPlaceholder} height="75px"></img>
+                    <img src={playerPlaceholder} height="75px" alt=""></img>
                     <p className="marginBottom-2">{player.fullName}</p>
                   </div>
                 );
@@ -110,7 +110,7 @@ const Squads = () => {
               .map((player) => {
                 return (
                   <div className="player__profile">
-                    <img src={playerPlaceholder} height="75px"></img>
+                    <img src={playerPlaceholder} height="75px" alt=""></img>
                     <p className="marginBottom-2">{player.fullName}</p>
                   </div>
                 );
@@ -123,7 +123,7 @@ const Squads = () => {
               .map((player) => {
                 return (
                   <div className="player__profile">
-                    <img src={playerPlaceholder} height="75px"></img>
+                    <img src={playerPlaceholder} height="75px" alt=""></img>
                     <p className="marginBottom-2">{player.fullName}</p>
                   </div>
                 );
@@ -137,7 +137,7 @@ const Squads = () => {
               .map((player) => {
                 return (
                   <div className="player__profile">
-                    <img src={playerPlaceholder} height="75px"></img>
+                    <img src={playerPlaceholder} height="75px" alt=""></img>
                     <p className="marginBottom-2">{player.fullName}</p>
                   </div>
                 );

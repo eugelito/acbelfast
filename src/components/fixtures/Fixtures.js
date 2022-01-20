@@ -3,8 +3,6 @@ import "./Fixtures.scss";
 import FixturesDetail from "./FixturesDetail";
 
 const Fixtures = () => {
-  // const isFixturesPage = true;
-  // isFixturesPage
 
   return (
     <div className="container__fixtures">
@@ -12,7 +10,7 @@ const Fixtures = () => {
       <div className="container">
         <div className="card__container card__threeQuarterWidth">
           <div className="card">
-            <FixturesDetail />
+            <FixturesDetail isHomepageFixture={true}/>
           </div>
         </div>
       </div>

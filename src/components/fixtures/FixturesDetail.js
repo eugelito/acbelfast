@@ -4,7 +4,7 @@ import "./Fixtures.scss";
 
 
 
-const FixturesDetail = () => {
+const FixturesDetail = ({isHomePageFixture}) => {
   return (
     <div>
 
@@ -21,7 +21,7 @@ const FixturesDetail = () => {
       </div>
       <div className="match__teams">
         <img src={`${ fixture.homeTeamImageUrl }`} width="75px" height="70px"></img>
-        <h4 className="match__result">{ fixture.homeTeamName } v { fixture.awayTeamName }</h4>
+        <h4 className={isHomePageFixture ? 'match__teams--name' : 'match__result'}>{ fixture.homeTeamName } v { fixture.awayTeamName }</h4>
         <img src={`${ fixture.awayTeamImageUrl }`}width="75px" height="70px"></img>
       </div>
       </>

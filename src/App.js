@@ -11,7 +11,7 @@ import ScrollToTop from "./ScrollToTop";
 
 function App() {
   return (
-    <Router basename="/acbelfast">
+    <Router>
       <ScrollToTop />
       <div className="App">
         <Navbar />

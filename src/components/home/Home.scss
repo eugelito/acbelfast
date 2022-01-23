@@ -55,6 +55,7 @@
   &:hover {
     color: var(--primaryColor);
     background-color: var(--secondaryColor);
+    border-radius: 16px;
     outline: 1px solid var(--primaryColor);
     cursor: pointer;
   }

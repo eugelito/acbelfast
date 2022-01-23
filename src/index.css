@@ -13,10 +13,6 @@ html {
   --tertiaryColor: #d1d1d1;
 }
 
-main {
-  margin-top: 7.1rem;
-}
-
 main h2, main h3, main p {
   color: #fff;
 }
@@ -145,12 +141,6 @@ footer {
   color: #222;
 }
 
-@media screen and (min-width: 413px) {
-  main {
-    margin-top: 4.2rem;
-  }
-}
-
 @media screen and (min-width: 768px) {
 
   .footer {
@@ -179,11 +169,6 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
-
-  main {
-    margin-top: 4rem;
-  }
-
   
   .footer { 
     width: 1024px;

@@ -39,7 +39,7 @@ label {
     align-items: center;
     background-color: var(--secondaryColor);
     color: #fff;
-    padding: 125px;
+    padding: 60px;
 }
 
 .container__sponsors {
@@ -90,6 +90,10 @@ label {
   }
 
 @media screen and (min-width: 768px) {
+
+    .page__heading {
+        padding: 125px;
+    }
 
     .column__one {
         display: flex;

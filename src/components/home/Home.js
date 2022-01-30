@@ -20,23 +20,29 @@ const Home = () => {
       <>
         <Header />
         {/** HOMEPAGE */}
-        <div
-          className="container__about">
+        <div className="container__about">
           <div className="container--centered">
             <div className="about__founded">
-            <h2>
-              Athletic Club Belfast
-            </h2>
-            <span>Est. 2021</span>
+              <h2>Athletic Club Belfast</h2>
+              <span>Est. 2021</span>
             </div>
-            <div> 
-            <p className="about__description">
-              Senior Men's Amateur Football Club based in Belfast, Northern Ireland. The club have a firsts and an over 35s team playing in the TBA and Emerge Invitational League respectively. Both teams are currently on the look out for high quality players.
-            </p>                 <br/>
-     <button className="getInTouchBtn" type="button" onClick={navigateToContact}>Get in touch</button>
-
-          </div></div>
-
+            <div>
+              <p className="about__description">
+                Senior Men's Amateur Football Club based in Belfast, Northern
+                Ireland. The club have a firsts and an over 35s team playing in
+                the TBA and Emerge Invitational League respectively. Both teams
+                are currently on the look out for high quality players.
+              </p>{" "}
+              <br />
+              <button
+                className="getInTouchBtn"
+                type="button"
+                onClick={navigateToContact}
+              >
+                Get in touch
+              </button>
+            </div>
+          </div>
         </div>
         <div className="container__sponsors">
           <div className="container--centered sponsors__centered">
@@ -81,8 +87,9 @@ const Home = () => {
           <div>
             <div class="row__social">
               <h2 className="instafeed__heading">
+                Follow us on{" "}
                 <i className="fab fa-instagram fa" aria-hidden="true"></i>{" "}
-                Instagram Posts
+                Instagram <br/>@acbelfast
               </h2>
               <div id="instafeed-container"></div>
             </div>

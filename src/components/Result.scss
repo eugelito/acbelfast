@@ -81,6 +81,10 @@
     flex-basis: 50%;
 }
 
+.match__teamOne, .match__teamTwo {
+    width: 50%;
+}
+
 .match__teamOne img, .match__teamTwo img {
     display: block;
     margin: 0 auto 1rem;

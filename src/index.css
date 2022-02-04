@@ -174,3 +174,7 @@ footer {
     width: 1024px;
   }
 }
+
+.fb_iframe_widget {
+  margin-bottom: 0;
+}

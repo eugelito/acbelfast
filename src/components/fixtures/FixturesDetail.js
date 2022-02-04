@@ -12,8 +12,7 @@ const FixturesDetail = ({isHomePageFixture}) => {
       return(
         <>
         <div className="match__details" key={ fixture.id }>
-        <b className="match__date">{ fixture.date }</b>{" "}
-        <b className="match__time">{ fixture.time }</b>
+        <b className="match__date">{ fixture.date } { fixture.time }</b>
         <p className="match__competition">
           <b>{ fixture.competition }</b> at <b>{ fixture.venue }</b>
         </p>{" "}

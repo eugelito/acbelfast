@@ -11,7 +11,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 
-const Home = () => {  
+const Home = () => {
   const navigate = useNavigate()
 
   const navigateToContact = () => navigate('/Contact');

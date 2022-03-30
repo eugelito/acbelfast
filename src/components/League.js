@@ -10,9 +10,9 @@ const League = () => {
 
   const [data, setData] = useState();
 
-  const errorMesssage =
-    "You already used all of your plan's requests this month.";
-  var isPlanUsed = false;
+  // const errorMesssage =
+  //   "You already used all of your plan's requests this month.";
+  // var isPlanUsed = false;
 
   const getData = async () => {
     try {
@@ -96,7 +96,7 @@ const League = () => {
             : "table__section content"
         }
       >
-        <table class="table">
+        <table className="table">
           <tr>
             <th>Pos</th>
             <th>Club</th>
@@ -128,7 +128,7 @@ const League = () => {
             : "table__section content"
         }
       >
-        <table class="table">
+        <table className="table">
           <tr>
             <th>Pos</th>
             <th>Club</th>

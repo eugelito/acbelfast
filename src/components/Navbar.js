@@ -34,9 +34,9 @@ function Navbar() {
               <li className="fixtures__dropdown"> 
               {/** <div className="dropdown">*/}  
                 <NavLink to="/fixtures" activeClassName="active" >
-                  FIXTURES <i class="nav-caret fas fa-caret-down"></i>
+                  FIXTURES <i className="nav-caret fas fa-caret-down"></i>
                 </NavLink>
-                 <div class="results__expand">
+                 <div className="results__expand">
                   <NavLink to="/results">RESULTS</NavLink>
                 </div> 
                 {/* </div> */}

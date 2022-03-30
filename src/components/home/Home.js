@@ -85,7 +85,7 @@ const Home = () => {
             <FacebookNewsFeed />
           </div>
           <div>
-            <div class="row__social">
+            <div className="row__social">
               <h2 className="instafeed__heading">
                 Follow us on{" "}
                 <i className="fab fa-instagram fa" aria-hidden="true"></i>{" "}

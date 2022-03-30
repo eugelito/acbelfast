@@ -1,11 +1,11 @@
 [{
     "id": 1,
-    "date": "Saturday 6th February 2022",
-    "time": "12:00 PM",
+    "date": "Saturday 2nd April 2022",
+    "time": "14:00 PM",
     "competition": "Friendly",
-    "venue": "Billy Neill Soccer Centre of Excellence",
-    "homeTeamName": "AC Belfast (Over 35s)",
-    "homeTeamImageUrl": "../images/acbelfastlogo.png", 
-    "awayTeamName": "Boca Seniors (Over 35s)",
-    "awayTeamImageUrl": "../images/bocalogo.jpeg"
+    "venue": "Grove Playing Fields",
+    "homeTeamName": "AC Belfast (Firts)",
+    "homeTeamImageUrl": "./images/acbelfastlogo.png", 
+    "awayTeamName": "Cruestondians",
+    "awayTeamImageUrl": "./images/placeholderLogo.jpeg"
 }]

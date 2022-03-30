@@ -25,7 +25,7 @@ const League = () => {
       console.log(data);
     } catch (error) {
       console.log(error);
-      isPlanUsed = true;
+      //isPlanUsed = true;
     }
   };
 

@@ -1,11 +1,11 @@
 [{
     "id": 1,
-    "date": "Saturday 2nd April 2022",
-    "time": "14:00 PM",
-    "competition": "Friendly",
-    "venue": "Grove Playing Fields",
-    "homeTeamName": "AC Belfast (Firsts)",
+    "date": "TBA",
+    "time": "TBA",
+    "competition": "TBA",
+    "venue": "TBA",
+    "homeTeamName": "AC Belfast",
     "homeTeamImageUrl": "./images/acbelfastlogo.png", 
-    "awayTeamName": "Cruestondians",
+    "awayTeamName": "TBA",
     "awayTeamImageUrl": "./images/placeholderlogo.jpeg"
 }]

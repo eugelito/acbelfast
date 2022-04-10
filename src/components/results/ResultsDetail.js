@@ -13,7 +13,7 @@ const ResultsDetail = ({ showAllResults }) => {
                   <div className="match__details">
                   <p className="match__competition">
                   <span className="match__date">{result.date}</span>
-                    <b>League Match</b>
+                    <b>{result.competition}</b>
                   </p>
                   <span className="match__fullTime">Full Time</span>
                   <h4 className="match__score">
@@ -54,7 +54,7 @@ const ResultsDetail = ({ showAllResults }) => {
                 <div className="match__details">
                   <p className="match__competition">
                   <span className="match__date">{result.date}</span>
-                    <b>League Match</b>
+                    <b>{result.competition}</b>
                   </p>
                   <span className="match__fullTime">Full Time</span>
                   <h4 className="match__score">

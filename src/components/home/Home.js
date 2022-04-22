@@ -31,8 +31,9 @@ const Home = () => {
                 Senior Men's Amateur Football Club based in Belfast, Northern
                 Ireland. The club have a firsts and an over 35s team playing in
                 the TBA and Emerge Invitational League respectively. Both teams
-                are currently on the look out for high quality players.
-              </p>{" "}
+                are currently on the look out for high quality players. 
+              </p>{" "}<br/>
+              <p>The teams train on a Monday and Thursday 19:00 pm to 21:00 pm at Dunville Park, Falls Road, Belfast BT12 6AN.</p>
               <br />
               <button
                 className="getInTouchBtn"

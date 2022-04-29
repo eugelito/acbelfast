@@ -33,7 +33,7 @@ const Home = () => {
                 the TBA and Emerge Invitational League respectively. Both teams
                 are currently on the look out for high quality players. 
               </p>{" "}<br/>
-              <p>The teams train on a Monday and Thursday 19:00 pm to 21:00 pm at Dunville Park, Falls Road, Belfast BT12 6AN.</p>
+              <p>The teams train on Mondays (7pm to 9pm) and Thursdays (8pm to 9:15pm) at Dunville Park, Falls Road, Belfast BT12 6AN.</p>
               <br />
               <button
                 className="getInTouchBtn"

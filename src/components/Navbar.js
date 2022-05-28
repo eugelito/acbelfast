@@ -63,7 +63,7 @@ function Navbar() {
           <ul className="nav-social">
             <li>
               <a
-                href="https://www.facebook.com/athleticclubbelfast"
+                href="https://www.facebook.com/acbelfast"
                 target="_blank"
                 rel="noopener noreferrer"
               >

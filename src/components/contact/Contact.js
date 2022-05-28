@@ -14,7 +14,7 @@ const Contact = () => {
       <div className="container">
         <div className="column">
         <div className="">
-          <div>
+          {/* <div>
             <h3>
               <FontAwesomeIcon
                 icon={faPhone}
@@ -24,7 +24,7 @@ const Contact = () => {
               Telephone
             </h3>
             <a href="tel: 028999999999">028 9999 9999</a>
-          </div>
+          </div> */}
           <div className="contact__email">
             <h3>
               {" "}

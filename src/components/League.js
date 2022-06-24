@@ -14,44 +14,44 @@ const League = () => {
   //   "You already used all of your plan's requests this month.";
   // var isPlanUsed = false;
 
-  const getData = async () => {
-    try {
-      const res = await fetch(
-        "https://sheet.best/api/sheets/5c9c879e-6085-4094-b40d-306cfb215fd8"
-      );
-      //fetch from Sheets
-      const data = await res.json();
-      setData(data);
-      console.log(data);
-    } catch (error) {
-      console.log(error);
-      //isPlanUsed = true;
-    }
-  };
+  // const getData = async () => {
+  //   try {
+  //     const res = await fetch(
+  //       "https://sheet.best/api/sheets/5c9c879e-6085-4094-b40d-306cfb215fd8"
+  //     );
+  //     //fetch from Sheets
+  //     const data = await res.json();
+  //     setData(data);
+  //     console.log(data);
+  //   } catch (error) {
+  //     console.log(error);
+  //     //isPlanUsed = true;
+  //   }
+  // };
 
-  useEffect(() => {
-    getData();
-  }, []);
+  // useEffect(() => {
+  //   getData();
+  // }, []);
 
-  const [oversData, setOversData] = useState();
+  // const [oversData, setOversData] = useState();
 
-  const getOversData = async () => {
-    try {
-      const res = await fetch(
-        "https://sheet.best/api/sheets/b845bdaf-061c-48e1-bcc9-e607e494cfe9"
-      );
-      //fetch from Sheets
-      const oversData = await res.json();
-      setOversData(oversData);
-      console.log(oversData);
-    } catch (error) {
-      console.log(error);
-    }
-  };
+  // const getOversData = async () => {
+  //   try {
+  //     const res = await fetch(
+  //       "https://sheet.best/api/sheets/b845bdaf-061c-48e1-bcc9-e607e494cfe9"
+  //     );
+  //     //fetch from Sheets
+  //     const oversData = await res.json();
+  //     setOversData(oversData);
+  //     console.log(oversData);
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
 
-  useEffect(() => {
-    getOversData();
-  }, []);
+  // useEffect(() => {
+  //   getOversData();
+  // }, []);
 
   return (
     <div>
@@ -108,7 +108,7 @@ const League = () => {
           </tr>
            {/* <tr><td>{isPlanUsed ? 'plan used' : 'plan not used'}</td></tr> */}
           {/* Firsts league table, we want to display on click of first team buttom  */}
-          { data?.map((item, i) => (
+          {/* { data?.map((item, i) => (
             <tr key={i}>
               <td>{item.Position}</td>
               <td>{item.Club}</td>
@@ -118,7 +118,7 @@ const League = () => {
               <td>{item.Lost}</td>
               <td>{item.Points}</td>
             </tr>
-          ))}
+          ))} */}
         </table>
       </div>
       <div
@@ -139,7 +139,7 @@ const League = () => {
             <th>Pts</th>
           </tr>
           {/* Overs league table, we want to display on click of first team buttom*/}
-          {oversData?.map((item, i) => (
+          {/* {oversData?.map((item, i) => (
             <tr key={i}>
               <td>{item.Position}</td>
               <td>{item.Club}</td>
@@ -149,7 +149,7 @@ const League = () => {
               <td>{item.Lost}</td>
               <td>{item.Points}</td>
             </tr>
-          ))}
+          ))} */}
         </table>
       </div>
     </div>

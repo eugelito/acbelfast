@@ -4,15 +4,67 @@
     "position": "Goalkeeper"
   },
   {
-    "fullName": "TBA",
+    "fullName": "Aaron Crawford",
     "position": "Defender"
   },
   {
-    "fullName": "TBA",
+    "fullName": "Marty McDonnell",
+    "position": "Defender"
+  },
+  {
+    "fullName": "Ryan Wharry",
+    "position": "Defender"
+  },
+  {
+    "fullName": "Oluwasanmi “AJ” Ajayi",
+    "position": "Defender"
+  },
+  {
+    "fullName": "Aaron McKee",
+    "position": "Defender"
+  },
+  {
+    "fullName": "Niall McInerney",
+    "position": "Defender"
+  },
+  {
+    "fullName": "Scott Evanson",
     "position": "Midfielder"
   },
   {
-    "fullName": "TBA",
+    "fullName": "Dylan Geraghty",
+    "position": "Midfielder"
+  },
+  {
+    "fullName": "Mark Kavanagh",
+    "position": "Midfielder"
+  },
+  {
+    "fullName": "Eugelito Troyo",
+    "position": "Midfielder"
+  },
+  {
+    "fullName": "Guillermo Álvarez Narciandi",
+    "position": "Midfielder"
+  },
+  {
+    "fullName": "Steven Darby",
+    "position": "Midfielder"
+  },
+  {
+    "fullName": "Iñigo Rodriguez Garcia",
+    "position": "Forward"
+  },
+  {
+    "fullName": "Diarmuid Waide",
+    "position": "Forward"
+  },
+  {
+    "fullName": "Conor McFerran",
+    "position": "Forward"
+  },
+  {
+    "fullName": "Eoin Devenny",
     "position": "Forward"
   }
 ]

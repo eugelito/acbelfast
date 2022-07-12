@@ -1,82 +1,55 @@
 [
   {
-    "fullName": "Chris",
+    "fullName": "Chris White",
     "position": "Goalkeeper"
   },
   {
-    "fullName": "Jobin",
+    "fullName": "James Magee",
     "position": "Goalkeeper"
   },
   {
-    "fullName": "Trevor",
+    "fullName": "Colin Walker",
+    "position": "Goalkeeper"
+  },
+  {
+    "fullName": "James Marley",
+    "position": "Goalkeeper"
+  },
+  {
+    "fullName": "Chris Plunkett",
     "position": "Defender"
   },
   {
-    "fullName": "Sean",
+    "fullName": "Stephen Rice",
     "position": "Defender"
   },
   {
-    "fullName": "Graham",
+    "fullName": "Nick Patterson",
     "position": "Defender"
   },
   {
-    "fullName": "Ray",
+    "fullName": "Phil Leckenby",
     "position": "Defender"
   },
   {
-    "fullName": "Aaron",
+    "fullName": "Sean Bowers",
     "position": "Defender"
   },
   {
-    "fullName": "Chris",
+    "fullName": "Trevor Whiteside",
     "position": "Defender"
   },
+
   {
-    "fullName": "Phil",
-    "position": "Defender"
-  },
-  {
-    "fullName": "Edward",
-    "position": "Defender"
-  },
-  {
-    "fullName": "Sean D",
-    "position": "Defender"
-  },
-  {
-    "fullName": "Peter M",
-    "position": "Defender"
-  },
-  {
-    "fullName": "Adrian",
+    "fullName": "Robert Smith",
     "position": "Midfielder"
   },
   {
-    "fullName": "Scott",
+    "fullName": "Jamie Everden",
     "position": "Midfielder"
   },
   {
-    "fullName": "Jamie",
-    "position": "Midfielder"
-  },
-  {
-    "fullName": "Gareth Tilley",
-    "position": "Midfielder"
-  },
-  {
-    "fullName": "Robby",
-    "position": "Midfielder"
-  },
-  {
-    "fullName": "Ciaran",
-    "position": "Midfielder"
-  },
-  {
-    "fullName": "Stephen R",
-    "position": "Midfielder"
-  },
-  {
-    "fullName": "Ken",
+    "fullName": "Edward Ridgwell",
     "position": "Midfielder"
   },
   {
@@ -84,35 +57,28 @@
     "position": "Midfielder"
   },
   {
-    "fullName": "Jeff (J. Hughes)",
+    "fullName": "Adrian Murphy",
     "position": "Midfielder"
   },
   {
-    "fullName": "Conor",
+    "fullName": "Gareth Tilley",
     "position": "Midfielder"
   },
   {
-    "fullName": "Stephen",
+    "fullName": "Ken Golden",
+    "position": "Midfielder"
+  },
+
+  {
+    "fullName": "Stephen Tinsley",
     "position": "Forward"
   },
   {
-    "fullName": "Chris",
+    "fullName": "Gerard Houston",
     "position": "Forward"
   },
   {
-    "fullName": "Kieran",
-    "position": "Forward"
-  },
-  {
-    "fullName": "Nial",
-    "position": "Forward"
-  },
-  {
-    "fullName": "Farook",
-    "position": "Forward"
-  },
-  {
-    "fullName": "Will",
+    "fullName": "Milad Darrat",
     "position": "Forward"
   }
 ]

@@ -2,38 +2,44 @@
     flex-direction: column;
 }
 
-.container__squads--first {
-}
+.container__squads--first {}
 
 .container__squads--overs {
     background-color: var(--tertiaryColor);
-    h1, h2, h3, p {
+
+    h1,
+    h2,
+    h3,
+    p {
         color: black;
     }
 }
 
 .container__squads {
     flex-direction: column;
+
     h2 {
         width: fit-content;
         padding: 12px;
         margin: 0;
     }
-    
+
     .squads__heading--first {
         background-color: var(--tertiaryColor);
         color: var(--secondaryColor);
     }
 
     .squads__heading--overs {
-        background-color: var(--secondaryColor);;
+        background-color: var(--secondaryColor);
+        ;
         color: #fff;
     }
 
     .squads__position {
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
 
         &.squads__position--manager {
             justify-content: start;
@@ -46,14 +52,14 @@
         h3 {
             margin: 0;
         }
-        
+
     }
 
     .squads__image {
         border: 12px solid var(--secondaryColor);
         width: 100%;
     }
-    
+
 }
 
 .player__profile {
@@ -62,6 +68,7 @@
     justify-content: space-between;
     align-items: center;
     margin: 0 2rem;
+
     p {
         margin: 1rem 0 2rem;
     }
@@ -69,13 +76,15 @@
 
 @media screen and (min-width: 768px) {
     .container__squads {
-    .squads__position {
-        justify-content: space-evenly;
-        align-self: center;
-        max-width: 64%;
+        .squads__position {
+            // justify-content: space-evenly;
+            // align-self: center;
+            // max-width: 64%;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .squads__image {
+            width: 50%;
+        }
     }
-    .squads__image {
-        width: 50%;
-    }    
-}
 }

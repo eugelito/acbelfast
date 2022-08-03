@@ -28,7 +28,7 @@ const Home = () => {
             <p className="about__description">
               Senior Men's Amateur Football Club based in Belfast, Northern
               Ireland. The club have a firsts and an over 35s team playing in
-              the Belfast and District Football League (Division 5) and Emerge
+              the Belfast and District Football League (Division 3) and Emerge
               Invitational League (Section D) respectively.
             </p>{" "}
             <br />

@@ -41,7 +41,7 @@ function Navbar() {
               </li>
             )}
             {auth.currentUser && (
-              <li onClick={logoutAccount}>
+              <li className="signOutList" onClick={logoutAccount}>
                 <NavLink to="" activeClassName="active">
                   SIGN OUT <i className="nav-caret fas fa-caret-right"></i>
                 </NavLink>

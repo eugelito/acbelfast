@@ -57,88 +57,97 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
       <br />
       {!showAllFixtures ? (
         <>
-          {fixtures.slice(0, 2).map((fixture) => {
-            return (
-              <>
-                <div className="match__details" key={fixture.id}>
-                  <b className="match__date">
-                    <b>
+          {fixtures
+            .slice(0, 2)
+            .sort((a, b) => b.date - a.date)
+            .map((fixture) => {
+              return (
+                <>
+                  <div className="match__details" key={fixture.id}>
+                    <b className="match__date">
+                      <b>
+                        {moment
+                          .utc(fixture.dateTime)
+                          .format("dddd MMM Do, YYYY hh:mm A")}
+                      </b>
+                    </b>
+                    <p className="match__competition">
+                      <b>{fixture.competition}</b> at <b>{fixture.venue}</b>
+                    </p>{" "}
+                    <br />
+                  </div>
+                  <div className="match__teams">
+                    <img
+                      // src={`${fixture.homeTeamImageUrl}`}
+                      src={placeHolderImage}
+                      width="75px"
+                      height="70px"
+                    ></img>
+                    <h4
+                      className={
+                        isHomePageFixture
+                          ? "match__teams--name"
+                          : "match__result"
+                      }
+                    >
+                      {fixture.homeTeamName} v {fixture.awayTeamName}
+                    </h4>
+                    <img
+                      //src={`${fixture.awayTeamImageUrl}`}
+                      src={placeHolderImage}
+                      width="75px"
+                      height="70px"
+                    ></img>
+                  </div>
+
+                  {fixtures.length > 1 && <hr />}
+                </>
+              );
+            })}{" "}
+        </>
+      ) : (
+        <>
+          {fixtures
+            .sort((a, b) => b.date - a.date)
+            .map((fixture) => {
+              return (
+                <>
+                  {/* {auth.currentUser && ( */}
+                  <div className="match__details" key={fixture.id}>
+                    <b className="match__date">
                       {moment
                         .utc(fixture.dateTime)
                         .format("dddd MMM Do, YYYY hh:mm A")}
                     </b>
-                  </b>
-                  <p className="match__competition">
-                    <b>{fixture.competition}</b> at <b>{fixture.venue}</b>
-                  </p>{" "}
-                  <br />
-                </div>
-                <div className="match__teams">
-                  <img
-                    // src={`${fixture.homeTeamImageUrl}`}
-                    src={placeHolderImage}
-                    width="75px"
-                    height="70px"
-                  ></img>
-                  <h4
-                    className={
-                      isHomePageFixture ? "match__teams--name" : "match__result"
-                    }
-                  >
-                    {fixture.homeTeamName} v {fixture.awayTeamName}
-                  </h4>
-                  <img
-                    //src={`${fixture.awayTeamImageUrl}`}
-                    src={placeHolderImage}
-                    width="75px"
-                    height="70px"
-                  ></img>
-                </div>
-
-                <hr />
-              </>
-            );
-          })}{" "}
-        </>
-      ) : (
-        <>
-          {fixtures.map((fixture) => {
-            return (
-              <>
-                {/* {auth.currentUser && ( */}
-                <div className="match__details" key={fixture.id}>
-                  <b className="match__date">
-                    {moment
-                      .utc(fixture.dateTime)
-                      .format("dddd MMM Do, YYYY hh:mm A")}
-                  </b>
-                  <p className="match__competition">
-                    <b>{fixture.competition}</b> at <b>{fixture.venue}</b>
-                  </p>{" "}
-                  <br />
-                </div>
-                <div className="match__teams">
-                  <img
-                    //src={`${fixture.homeTeamImageUrl}`}
-                    src={placeHolderImage}
-                    width="75px"
-                    height="70px"
-                  ></img>
-                  <h4
-                    className={
-                      isHomePageFixture ? "match__teams--name" : "match__result"
-                    }
-                  >
-                    {fixture.homeTeamName} v {fixture.awayTeamName}
-                  </h4>
-                  <img
-                    //src={`${fixture.awayTeamImageUrl}`}
-                    src={placeHolderImage}
-                    width="75px"
-                    height="70px"
-                  ></img>
-                </div>
-                {/* <button
+                    <p className="match__competition">
+                      <b>{fixture.competition}</b> at <b>{fixture.venue}</b>
+                    </p>{" "}
+                    <br />
+                  </div>
+                  <div className="match__teams">
+                    <img
+                      //src={`${fixture.homeTeamImageUrl}`}
+                      src={placeHolderImage}
+                      width="75px"
+                      height="70px"
+                    ></img>
+                    <h4
+                      className={
+                        isHomePageFixture
+                          ? "match__teams--name"
+                          : "match__result"
+                      }
+                    >
+                      {fixture.homeTeamName} v {fixture.awayTeamName}
+                    </h4>
+                    <img
+                      //src={`${fixture.awayTeamImageUrl}`}
+                      src={placeHolderImage}
+                      width="75px"
+                      height="70px"
+                    ></img>
+                  </div>
+                  {/* <button
                   type="button"
                   className="editBtn"
                   // onClick={editFixture(
@@ -154,18 +163,18 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
                 >
                   Edit
                 </button> */}
-                {auth.currentUser && (
-                  <button
-                    className="deleteBtn"
-                    onClick={() => deleteFixture(fixture.id)}
-                  >
-                    Delete
-                  </button>
-                )}
-                <hr />
-              </>
-            );
-          })}
+                  {auth.currentUser && (
+                    <button
+                      className="deleteBtn"
+                      onClick={() => deleteFixture(fixture.id)}
+                    >
+                      Delete
+                    </button>
+                  )}
+                  {fixtures.length > 1 && <hr />}
+                </>
+              );
+            })}
         </>
       )}
     </div>

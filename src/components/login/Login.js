@@ -26,8 +26,10 @@ const Login = () => {
     setUser(currentUser);
   });
 
-  const loginAccount = async () => {
+  const loginAccount = async (event) => {
     try {
+      event.preventDefault();
+
       const userCredential = await signInWithEmailAndPassword(
         auth,
         loginEmail,
@@ -39,10 +41,6 @@ const Login = () => {
     }
   };
 
-  const logoutAccount = async () => {
-    await signOut(auth);
-  };
-
   return (
     <div>
       <div style={{ display: "block", margin: "0 1rem" }}>
@@ -50,35 +48,28 @@ const Login = () => {
         <br />
         <label>{errorMessage}</label>
         <br />
-        <input
-          type="text"
-          placeholder="email"
-          onChange={(event) => {
-            setLoginEmail(event.target.value);
-          }}
-        />
-        <input
-          type="password"
-          placeholder="password"
-          onChange={(event) => {
-            setPassword(event.target.value);
-          }}
-        />
-        <br />
-        {!auth.currentUser && (
-          <button className="loginBtn" type="submit" onClick={loginAccount}>
-            Log in
-          </button>
-        )}
-
-        {auth.currentUser && (
-          <>
-            <label>{"Logged in: " + user?.email}</label>
-            <button className="logoutBtn" type="submit" onClick={logoutAccount}>
-              Sign Out
+        <form onSubmit={loginAccount}>
+          <input
+            type="text"
+            placeholder="email"
+            onChange={(event) => {
+              setLoginEmail(event.target.value);
+            }}
+          />
+          <input
+            type="password"
+            placeholder="password"
+            onChange={(event) => {
+              setPassword(event.target.value);
+            }}
+          />
+          <br />
+          {!auth.currentUser && (
+            <button className="loginBtn" type="submit">
+              Log in
             </button>
-          </>
-        )}
+          )}
+        </form>
       </div>
     </div>
   );

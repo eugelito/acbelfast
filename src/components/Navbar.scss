@@ -258,6 +258,11 @@ nav .nav__logo--links {
     align-self: center;
     list-style: none;
 
+    &.loginList,
+    &.signOutList {
+      padding: 8px;
+      border: 1px solid var(--secondaryColor);
+    }
   }
 }
 

@@ -18,7 +18,7 @@ const AddFixture = () => {
   const [newCompetition, setNewCompetition] = useState("League");
   const [newVenue, setNewVenue] = useState("");
 
-  const createFixture = async () => {
+  const handleAddFixture = async (event) => {
     await addDoc(fixturesCollectionRef, {
       homeTeamName: newHomeTeamName,
       homeTeamImage: newHomeTeamImage,
@@ -50,14 +50,14 @@ const AddFixture = () => {
   return (
     <div>
       {auth.currentUser && (
-        <>
+        <div>
           <div className="inline--flex">
             <div className="column--half">
               {" "}
-              <label>Upload Home Team Name</label>
+              <label>Home team name</label>
               <input
                 type="text"
-                placeholder="Upload Home Team Name"
+                placeholder="Enter Home Team Name"
                 required
                 onChange={(event) => {
                   setNewHomeTeamName(event.target.value);
@@ -75,7 +75,7 @@ const AddFixture = () => {
             </div>
             <span className="versus">v</span>
             <div className="column--half">
-              <label>Enter Away Team name</label>
+              <label>Away team name</label>
               <input
                 type="text"
                 placeholder="Enter Away Team Name"
@@ -96,7 +96,7 @@ const AddFixture = () => {
             </div>
           </div>
           <hr />
-          <label>Enter Date and Time</label>
+          <label>Enter date and time</label>
           <input
             className="picker"
             type="datetime-local"
@@ -105,15 +105,16 @@ const AddFixture = () => {
               setNewDateTime(event.target.value);
             }}
           ></input>
-          <label>Enter Competition</label>
+          <label>Select competition</label>
           <select onChange={handleCompetitionSelect} value={newCompetition}>
             <option value="League">League</option>
             <option value="Cup">Cup</option>
             <option value="Friendly">Friendly</option>
           </select>
+          <label>Venue</label>
           <input
             type="text"
-            placeholder="Venue"
+            placeholder="Enter venue"
             required
             onChange={(event) => {
               setNewVenue(event.target.value);
@@ -123,11 +124,11 @@ const AddFixture = () => {
             className="BlueBtn"
             type="submit"
             value="Submit fixture"
-            onClick={createFixture}
+            onClick={handleAddFixture}
           >
             Submit
           </button>
-        </>
+        </div>
       )}
     </div>
   );

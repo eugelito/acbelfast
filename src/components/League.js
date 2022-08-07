@@ -58,7 +58,7 @@ const League = () => {
       {/** Display First Team if First Team is selected */}
       <h2 className="leagueHeading">
         {toggleState === 1
-          ? "Belfast and District League (Division 5)"
+          ? "Belfast and District League (Division 3)"
           : "Emerge Invitational League (Section D)"}
       </h2>
       <p style={{ color: "#fff", marginBottom: "3rem" }}>2022 - 2023 Season</p>

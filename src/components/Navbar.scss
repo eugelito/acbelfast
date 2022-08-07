@@ -13,9 +13,10 @@ nav {
   z-index: 999;
 }
 
-nav li {
+nav {
   display: inline;
-  > a {
+
+  a {
     display: block;
     color: #00285e;
     text-decoration: none;
@@ -26,6 +27,7 @@ nav li {
 .nav-title {
   text-decoration: none;
 }
+
 .nav-logo {
   display: block;
   color: #fff;
@@ -45,7 +47,7 @@ nav li {
   z-index: 1;
   top: 2.7rem;
 
-  > a.active {
+  >a.active {
     color: var(--secondaryColor);
   }
 }
@@ -60,18 +62,20 @@ nav li {
   display: block;
 }
 
-nav:hover + nav .results__expand {
+nav:hover+nav .results__expand {
   display: block;
 }
 
 nav .nav__container {
-  display: flex;
+  display: inline;
   justify-content: center;
   flex-wrap: wrap;
   font-size: 14px;
+  background-color: #a7d8fc;
+
 
   .nav__logo--links {
-    display: flex;
+    display: inline;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -82,14 +86,17 @@ nav .nav__container {
     flex-direction: row;
     justify-content: space-around;
     font-size: 12px;
+
     li {
       padding: 1rem 0.4rem;
-      > .active {
+
+      >.active {
         text-decoration: underline;
         text-decoration-color: var(--secondaryColor);
         text-decoration-thickness: 10px;
         text-underline-offset: 12px;
       }
+
       &:hover {
         text-decoration: underline;
         text-decoration-color: var(--secondaryColor);
@@ -124,6 +131,7 @@ nav .nav__container {
     content: "↧";
     text-decoration: none;
   }
+
   &:hover .dropdown-content {
     display: block;
   }
@@ -147,6 +155,7 @@ link:active {
 
 // Navbar breakpoint 1 line
 @media screen and (min-width: 413px) {
+
   // navigation to flex-wrap: none;
   nav {
 
@@ -159,24 +168,19 @@ link:active {
 // Mobile L
 @media screen and (min-width: 425px) {
   nav .nav__container .nav-links li {
-padding: 1rem 0.5rem
- }
+    padding: 1rem 0.5rem
+  }
 
 }
 
 // Mobile nav breakpoint
 @media screen and (min-width: 480px) {
+
   // navigation to flex-wrap: none;
   nav {
 
-    .nav__logo--links {
-      flex-wrap: wrap;
-      justify-content: center;
-
-    }
-
     .nav__container .nav-links li {
-      padding: 1rem .75rem; 
+      padding: 1rem .75rem;
     }
   }
 }
@@ -191,9 +195,11 @@ padding: 1rem 0.5rem
   nav .nav__container {
     flex-direction: row;
     justify-content: space-between;
+
     .nav-main__title {
       display: flex;
       margin-right: 1rem;
+
       .nav-title--name {
         font-size: 2rem;
       }
@@ -208,8 +214,10 @@ padding: 1rem 0.5rem
 
     .nav-social {
       display: flex;
-      > li > a > i {
+
+      >li>a>i {
         color: #00285e;
+
         &:hover {
           text-decoration: underline;
           text-decoration-color: var(--secondaryColor);
@@ -219,6 +227,68 @@ padding: 1rem 0.5rem
       }
     }
   }
+}
+
+
+// New nav code
+
+
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+nav .nav__logo--links {
+  display: flex;
+  align-items: center;
+
+
+
+}
+
+.nav__logo--link--login {
+  background-color: #a7d8fc;
+  display: flex;
+  justify-content: space-between;
+
+  >li {
+    margin-right: 1rem;
+    align-self: center;
+    list-style: none;
+
+  }
+}
+
+div.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+  background-color: var(--primaryColor);
+
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: var(--secondaryColor);
+  text-align: center;
+  padding: 14px;
+  border-bottom: 4px solid var(--primaryColor);
+
+
+
+  &.active {
+    background-color: var(--secondaryColor);
+    color: #fff;
+    border-bottom: 4px solid var(--secondaryColor);
+
+  }
+}
+
+div.scrollmenu a:hover {
+  background-color: var(--secondaryColor);
+  color: #fff;
+  border-bottom: 4px solid var(--secondaryColor);
 }
 
 // Desktop
@@ -231,5 +301,9 @@ padding: 1rem 0.5rem
     /** .nav-links {
       flex-basis: 55vw;
     }*/
+    nav .nav__logo--links {
+      display: flex;
+      align-items: center;
+    }
   }
 }

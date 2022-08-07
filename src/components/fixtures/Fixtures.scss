@@ -1,9 +1,9 @@
 .container__fixtures {
-   h1 {
+  h1 {
     color: #fff;
-    margin: 0 auto 4rem;
+    margin: 0 auto 0;
     flex-basis: 100%
-  } 
+  }
 }
 
 .match__time {
@@ -16,4 +16,44 @@
 
 .match__teams--name {
   font-size: 12px;
+}
+
+// AddFixture .scss
+.inline--flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.column--half {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .container__fixtures--column {
+    flex-direction: column;
+  }
+
+  .column--half {
+    width: 45%;
+  }
+
+  .versus {
+    align-self: center;
+  }
+}
+
+input.picker[type="datetime-local"] {
+  position: relative;
+}
+
+input.picker[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  color: transparent;
+  background: transparent;
 }

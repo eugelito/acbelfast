@@ -23,4 +23,4 @@ yarn-debug.log*
 yarn-error.log*
 
 #Ignore component when deploying
-/src/components/League.js
+.env

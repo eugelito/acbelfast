@@ -1,11 +1,13 @@
-[{
+[
+  {
     "id": 1,
-    "date": "TBA",
-    "time": "TBA",
+    "date": "16th July 2022",
+    "time": "14:00 PM",
     "competition": "TBA",
     "venue": "TBA",
     "homeTeamName": "TBA",
-    "homeTeamImageUrl": "./images/placeholderlogo.jpeg", 
+    "homeTeamImageUrl": "./images/placeholderlogo.jpeg",
     "awayTeamName": "TBA",
     "awayTeamImageUrl": "./images/placeholderlogo.jpeg"
-}]
+  }
+]

@@ -38,7 +38,7 @@ const Home = () => {
             </p>
             <br />
             <button
-              className="getInTouchBtn"
+              className="BlueBtn"
               type="button"
               onClick={navigateToContact}
             >

@@ -89,3 +89,8 @@
         }
     }
 }
+
+.btn__navy.active {
+    background-color: var(--secondaryColor);
+    color: #fff;
+}

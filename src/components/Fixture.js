@@ -3,18 +3,34 @@ import "./Card.scss";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import FixturesDetail from "./fixtures/FixturesDetail";
 
+// import from firestore fixtures
+import { useState, useEffect } from "react";
+import { db } from "../firebase-config";
+import { collection } from "firebase/firestore";
 
 const Fixture = () => {
   //let isFixturesPage = false;
+  const [fixtures, setFixtures] = useState([]);
+  const fixtureCollectionRef = collection(db, "fixtures");
+
+  useEffect(() => {
+    const getFixtures = async () => {};
+
+    getFixtures();
+  }, []);
 
   return (
     <div className="card__container column__half">
       <h2>Fixtures</h2>
+
       <div className="card card-home">
         <div className="results__title">
-        <Link to="/fixtures"><b className="results__title--link">View more fixtures</b></Link><b className="viewMore__carot">{'>'}</b>
+          <Link to="/fixtures">
+            <b className="results__title--link">View more fixtures</b>
+          </Link>
+          <b className="viewMore__carot">{">"}</b>
         </div>
-      <FixturesDetail />
+        <FixturesDetail showAllFixtures={false} />
       </div>
     </div>
   );

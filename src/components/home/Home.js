@@ -31,11 +31,22 @@ const Home = () => {
               the Belfast and District Football League (Division 3) and Emerge
               Invitational League (Section D) respectively.
             </p>{" "}
-            <br />
-            <p>
-              The teams train on Tuesdays and Thursdays (7pm to 9pm) at Hydebank
-              Playing Fields, 4 Newtownbreda Rd, Belfast BT8 6QB
-            </p>
+            <div className="training__schedule">
+              <strong>Football Training Schedule</strong>
+              <br />
+              <ul>
+                <li>
+                  {" "}
+                  <i className="fab fas fa-home" aria-hidden="true"></i>{" "}
+                  Hydebank Playing Fields | 4 Newtownbreda Rd BT8 6QB
+                </li>
+                <li>
+                  {" "}
+                  <i className="fab fas fa-clock" aria-hidden="true"></i>{" "}
+                  <span>Tuesdays and Thursdays | 7pm to 9pm</span>
+                </li>
+              </ul>
+            </div>
             <br />
             <button
               className="BlueBtn"
@@ -77,8 +88,8 @@ const Home = () => {
       </div>
       <div className="container">
         <div className="column__results__fixtures">
-          <Result />
           <Fixture />
+          <Result />
         </div>
         <div className="column__one">
           {/** <News /> */}

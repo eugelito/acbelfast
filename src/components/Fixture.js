@@ -20,7 +20,7 @@ const Fixture = () => {
   }, []);
 
   return (
-    <div className="card__container column__half">
+    <div className="card__container column__half column__half--gap">
       <h2>Fixtures</h2>
 
       <div className="card card-home">

@@ -66,6 +66,7 @@ nav:hover+nav .results__expand {
   display: block;
 }
 
+
 nav .nav__container {
   display: inline;
   justify-content: center;
@@ -76,9 +77,6 @@ nav .nav__container {
 
   .nav__logo--links {
     display: inline;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
   }
 
   .nav-links {
@@ -120,6 +118,7 @@ nav .nav__container {
     }
   }
 }
+
 
 .dropdown-content {
   display: none;
@@ -186,15 +185,21 @@ link:active {
 }
 
 @media screen and (min-width: 500px) {
-  nav .nav__container .nav-links {
-    border-top: 0;
+  nav .nav__container {
+    display: flex;
+
+    .nav-links {
+      border-top: 0;
+    }
   }
+
 }
 
 @media screen and (min-width: 768px) {
   nav .nav__container {
-    flex-direction: row;
+    background-color: var(--primaryColor);
     justify-content: space-between;
+
 
     .nav-main__title {
       display: flex;
@@ -232,20 +237,9 @@ link:active {
 
 // New nav code
 
-
-
-nav {
-  justify-content: space-around;
-  align-items: center;
-}
-
-
 nav .nav__logo--links {
   display: flex;
   align-items: center;
-
-
-
 }
 
 .nav__logo--link--login {
@@ -281,11 +275,15 @@ div.scrollmenu a {
   border-bottom: 4px solid var(--primaryColor);
 
 
+  &.loginDesktop,
+  &.signOutDesktop {
+    display: none;
+  }
 
   &.active {
     background-color: var(--secondaryColor);
     color: #fff;
-    border-bottom: 4px solid var(--secondaryColor);
+    border-bottom: 4px solid var(--white);
 
   }
 }
@@ -293,22 +291,52 @@ div.scrollmenu a {
 div.scrollmenu a:hover {
   background-color: var(--secondaryColor);
   color: #fff;
-  border-bottom: 4px solid var(--secondaryColor);
+  border-bottom: 4px solid var(--white);
 }
 
 // Desktop
 @media screen and (min-width: 1024px) {
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+
   nav .nav__container {
-    width: 1024px;
     margin: 0 auto;
     justify-content: space-between;
+
+
+    .loginList,
+    .signOutlist {
+      display: none;
+    }
 
     /** .nav-links {
       flex-basis: 55vw;
     }*/
-    nav .nav__logo--links {
+    .nav__logo--links {
       display: flex;
       align-items: center;
+      justify-content: space-between;
+      width: 1024px;
+
+      .nav__login--scrollmenu {
+        flex-direction: row-reverse;
+      }
+    }
+
+  }
+
+  div.scrollmenu a {
+
+    &.loginDesktop,
+    &.signOutDesktop {
+      display: inline-block;
     }
   }
+
+
 }

@@ -50,7 +50,7 @@ const Squads = () => {
           <h2 className="squads__heading--first">First Team</h2>
           {/* <img className="squads__image" height="300px"></img> */}
           <br />
-          <h3>Manager</h3>
+          <h3>Player / Manager</h3>
           <div className="squads__position squads__position--manager">
             <div className="player__profile">
               <img src={playerPlaceholder} height="75px"></img>

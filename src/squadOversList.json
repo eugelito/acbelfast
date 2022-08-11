@@ -32,14 +32,13 @@
     "position": "Defender"
   },
   {
-    "fullName": "Sean Bowers",
+    "fullName": "Sean Bowers (C)",
     "position": "Defender"
   },
   {
-    "fullName": "Trevor Whiteside",
+    "fullName": "David Gibson",
     "position": "Defender"
   },
-
   {
     "fullName": "Robert Smith",
     "position": "Midfielder"
@@ -57,18 +56,13 @@
     "position": "Midfielder"
   },
   {
-    "fullName": "Adrian Murphy",
-    "position": "Midfielder"
-  },
-  {
-    "fullName": "Gareth Tilley",
+    "fullName": "Adrian Murphy (VC)",
     "position": "Midfielder"
   },
   {
     "fullName": "Ken Golden",
     "position": "Midfielder"
   },
-
   {
     "fullName": "Stephen Tinsley",
     "position": "Forward"
@@ -79,6 +73,10 @@
   },
   {
     "fullName": "Milad Darrat",
+    "position": "Forward"
+  },
+  {
+    "fullName": "Conor McFerran",
     "position": "Forward"
   }
 ]

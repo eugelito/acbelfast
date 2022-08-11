@@ -1,6 +1,6 @@
 [
   {
-    "fullName": "Jamie King",
+    "fullName": "Jamie King (C)",
     "position": "Goalkeeper"
   },
   {
@@ -28,6 +28,14 @@
     "position": "Defender"
   },
   {
+    "fullName": "Steve O'Hara",
+    "position": "Defender"
+  },
+  {
+    "fullName": "James Bainbridge",
+    "position": "Defender"
+  },
+  {
     "fullName": "Scott Evanson",
     "position": "Midfielder"
   },
@@ -52,6 +60,14 @@
     "position": "Midfielder"
   },
   {
+    "fullName": "James Hewitt",
+    "position": "Midfielder"
+  },
+  {
+    "fullName": "Jack Kerr",
+    "position": "Midfielder"
+  },
+  {
     "fullName": "Iñigo Rodriguez Garcia",
     "position": "Forward"
   },
@@ -60,11 +76,11 @@
     "position": "Forward"
   },
   {
-    "fullName": "Conor McFerran",
+    "fullName": "Eoin Devenny",
     "position": "Forward"
   },
   {
-    "fullName": "Eoin Devenny",
+    "fullName": "Richard Winder",
     "position": "Forward"
   }
 ]

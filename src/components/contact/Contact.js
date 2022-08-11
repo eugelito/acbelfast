@@ -10,11 +10,11 @@ import {
 const Contact = () => {
   return (
     <div className="contact__container">
-     <h1 className="page__heading">Contact</h1>
+      <h1 className="page__heading">Contact</h1>
       <div className="container">
         <div className="column">
-        <div className="">
-          {/* <div>
+          <div className="">
+            {/* <div>
             <h3>
               <FontAwesomeIcon
                 icon={faPhone}
@@ -25,37 +25,46 @@ const Contact = () => {
             </h3>
             <a href="tel: 028999999999">028 9999 9999</a>
           </div> */}
-          <div className="contact__email">
-            <h3>
-              {" "}
-              <FontAwesomeIcon
-                icon={faEnvelope}
-                color={"#fff"}
-                flip="horizontal"
-              />{" "}
-              Email
-            </h3>
-            <a href="mailto:athleticclubbelfast@gmail.com?subject=Athletic Club Belfast Contact Form">athleticclubbelfast@gmail.com</a>
-          </div>{" "}
-
-          <div className="contact__address">
-          <h3>
-              {" "}
-              <FontAwesomeIcon
-                icon={faHome}
-                color={"#fff"}
-                flip="horizontal"
-              />{" "}
-              Address
-            </h3>
-          <a href="https://goo.gl/maps/8J8viGQuBmpEL5js8" target="_blank" rel="noopener">Billy Neill Soccer Centre of Excellence<br/>
-341 Comber Rd<br/>
-Belfast<br/>
-BT16 1RQ</a>
-            
+            <div className="contact__email">
+              <h3>
+                {" "}
+                <FontAwesomeIcon
+                  icon={faEnvelope}
+                  color={"#fff"}
+                  flip="horizontal"
+                />{" "}
+                Email
+              </h3>
+              <a href="mailto:athleticclubbelfast@gmail.com?subject=Athletic Club Belfast Contact Form">
+                athleticclubbelfast@gmail.com
+              </a>
+            </div>{" "}
+            <div className="contact__address">
+              <h3>
+                {" "}
+                <FontAwesomeIcon
+                  icon={faHome}
+                  color={"#fff"}
+                  flip="horizontal"
+                />{" "}
+                Address
+              </h3>
+              <a
+                href="https://goo.gl/maps/rZkvzLqjxefUpkEK8"
+                target="_blank"
+                rel="noopener"
+              >
+                Hydebank Playing Fields
+                <br />
+                4 Newtownbreda Rd
+                <br />
+                Belfast
+                <br />
+                BT8 6QB
+              </a>
+            </div>
           </div>
-        </div>
-        {/* <form className="form">
+          {/* <form className="form">
           <div>
             <label>Full name:</label>
             <input
@@ -88,7 +97,7 @@ BT16 1RQ</a>
             <input type="submit" id="submitBtn" className="submitBtn" />
           </div>
         </form> */}
-  {/* //Google Maps
+          {/* //Google Maps
 
       <div className="">
           <div>
@@ -105,9 +114,9 @@ BT16 1RQ</a>
 
       </div>
       </div>
-      </div>*/} 
-      </div> 
-    </div>
+      </div>*/}
+        </div>
+      </div>
     </div>
   );
 };

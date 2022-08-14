@@ -129,12 +129,15 @@ const Squads = () => {
             alt=""
           ></img>
           <br />
-          <h3>Manager</h3>
+          <h3>Player / Manager</h3>
           <div className="squads__position squads__position--manager">
             <div className="player__profile">
               <img src={playerPlaceholder} height="75px" alt=""></img>
-
               <p>Colin 'Colly' Walker</p>
+            </div>
+            <div className="player__profile">
+              <img src={playerPlaceholder} height="75px" alt=""></img>
+              <p>Graham Parkinson</p>
             </div>
           </div>
           <h3>Goalkeepers</h3>

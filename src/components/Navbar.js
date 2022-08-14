@@ -35,14 +35,14 @@ function Navbar() {
             {!auth.currentUser && (
               <li className="loginList">
                 <NavLink to="/login" activeClassName="active">
-                  LOG IN <i className="nav-caret fas fa-user"></i>
+                  <i className="nav-caret fas fa-user"></i> LOG IN
                 </NavLink>
               </li>
             )}
             {auth.currentUser && (
               <li className="signOutList" onClick={logoutAccount}>
                 <NavLink to="" activeClassName="active">
-                  SIGN OUT <i className="nav-caret fas fa-caret-right"></i>
+                  <i className="nav-caret fas fa-caret-right"></i> SIGN OUT
                 </NavLink>
               </li>
             )}
@@ -74,7 +74,7 @@ function Navbar() {
                 className="loginDesktop"
                 activeClassName="active"
               >
-                LOG IN <i className="nav-caret fas fa-user"></i>
+                <i className="nav-caret fas fa-user"></i> LOG IN
               </NavLink>
             )}
             {auth.currentUser && (
@@ -83,7 +83,7 @@ function Navbar() {
                 className="signOutDesktop"
                 activeClassName="active"
               >
-                SIGN OUT <i className="nav-caret fas fa-caret-right"></i>
+                <i className="nav-caret fas fa-caret-right"></i> SIGN OUT
               </NavLink>
             )}
           </div>

@@ -24,3 +24,4 @@ yarn-error.log*
 
 #Ignore component when deploying
 .env
+.config.js

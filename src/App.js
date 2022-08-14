@@ -14,12 +14,6 @@ import FixtureEdit from "./components/login/secured/FixtureEdit";
 import MessengerCustomerChat from "react-messenger-customer-chat";
 
 function App() {
-  useEffect(() => {
-    window.process = {
-      ...window.process,
-    };
-  }, []);
-
   return (
     <Router>
       <div className="App">

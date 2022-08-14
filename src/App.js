@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 import Home from "./components/home/Home";
@@ -13,6 +14,12 @@ import FixtureEdit from "./components/login/secured/FixtureEdit";
 import MessengerCustomerChat from "react-messenger-customer-chat";
 
 function App() {
+  useEffect(() => {
+    window.process = {
+      ...window.process,
+    };
+  }, []);
+
   return (
     <Router>
       <div className="App">

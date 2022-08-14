@@ -1,3 +1,4 @@
+// instafeed
 const accessToken = process.env.INSTAGRAM_ACCESS_KEY;
 var userFeed = new Instafeed({
   get: "user",

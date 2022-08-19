@@ -277,6 +277,12 @@ div.scrollmenu a {
   &.loginDesktop,
   &.signOutDesktop {
     display: none;
+
+    &.active {
+      background-color: var(--primaryColor);
+      border-bottom: 0;
+      color: var(--secondaryColor);
+    }
   }
 
   &.active {

@@ -79,7 +79,7 @@ function Navbar() {
             )}
             {auth.currentUser && (
               <NavLink
-                to=""
+                to="/"
                 className="signOutDesktop"
                 activeClassName="active"
               >

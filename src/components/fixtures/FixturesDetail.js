@@ -10,7 +10,9 @@ import {
   updateDoc,
   doc,
   deleteDoc,
+  orderBy,
 } from "firebase/firestore";
+
 import { auth } from "../../firebase-config";
 import AddFixture from "./AddFixture";
 import moment from "moment";
@@ -24,8 +26,15 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
 
   useEffect(() => {
     const getFixtures = async () => {
-      const data = await getDocs(fixturesCollectionRef);
+      const data = await getDocs(
+        fixturesCollectionRef,
+        orderBy("dateTime", "asc")
+      );
       setFixtures(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+
+      // let fireStoreTimestamp = data.doc.data().dateTime;
+      // let javascriptDate = fireStoreTimestamp.toDate();
+      // console.log(javascriptDate);
     };
 
     getFixtures();
@@ -52,6 +61,23 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
     window.location.reload();
   };
 
+  // const handleFixtureDateTime = (seconds, nanoseconds) => {
+  //   let time = {
+  //     seconds,
+  //     nanoseconds,
+  //   };
+
+  //   const fireBaseTime = new Date(
+  //     time.seconds * 1000 + time.nanoseconds / 1000000
+  //   );
+
+  //   const atDate = fireBaseTime.toDateString();
+  //   const atTime = fireBaseTime.toLocaleTimeString();
+
+  //   setDate(atDate);
+  //   setTime(atTime);
+  // };
+
   return (
     <div>
       <br />
@@ -59,15 +85,20 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
         <>
           {fixtures
             .slice(0, 2)
-            .sort((a, b) => b.date - a.date)
+            .sort((a, b) => a.dateTime - b.dateTime)
             .map((fixture) => {
               return (
                 <>
                   <div className="match__details" key={fixture.id}>
                     <b className="match__date">
                       <b>
-                        {moment
-                          .utc(fixture.dateTime)
+                        {moment(
+                          new Date(
+                            fixture.dateTime.seconds * 1000 +
+                              fixture.dateTime.nanoseconds / 1000000
+                          )
+                        )
+                          .utc(+1)
                           .format("dddd MMM Do, YYYY hh:mm A")}
                       </b>
                     </b>
@@ -108,15 +139,20 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
       ) : (
         <>
           {fixtures
-            .sort((a, b) => b.date - a.date)
+            .sort((a, b) => a.dateTime - b.dateTime)
             .map((fixture) => {
               return (
                 <>
                   {/* {auth.currentUser && ( */}
                   <div className="match__details" key={fixture.id}>
                     <b className="match__date">
-                      {moment
-                        .utc(fixture.dateTime)
+                      {moment(
+                        new Date(
+                          fixture.dateTime.seconds * 1000 +
+                            fixture.dateTime.nanoseconds / 1000000
+                        )
+                      )
+                        .utc(+1)
                         .format("dddd MMM Do, YYYY hh:mm A")}
                     </b>
                     <p className="match__competition">

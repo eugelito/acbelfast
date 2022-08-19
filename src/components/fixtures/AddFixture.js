@@ -14,7 +14,7 @@ const AddFixture = () => {
   const [newHomeTeamImage, setNewHomeTeamImage] = useState("");
   const [newAwayTeamName, setNewAwayTeamName] = useState("");
   const [newAwayTeamImage, setNewAwayTeamImage] = useState("");
-  const [newDateTime, setNewDateTime] = useState("");
+  const [newDateTime, setNewDateTime] = useState(new Date());
   const [newCompetition, setNewCompetition] = useState("League");
   const [newVenue, setNewVenue] = useState("");
 
@@ -102,7 +102,7 @@ const AddFixture = () => {
             type="datetime-local"
             required
             onChange={(event) => {
-              setNewDateTime(event.target.value);
+              setNewDateTime(new Date(event.target.value));
             }}
           ></input>
           <label>Select competition</label>

@@ -84,8 +84,8 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
       {!showAllFixtures ? (
         <>
           {fixtures
-            .slice(0, 2)
             .sort((a, b) => a.dateTime - b.dateTime)
+            .slice(0, 2)
             .map((fixture) => {
               return (
                 <>

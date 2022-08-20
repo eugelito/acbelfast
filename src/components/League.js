@@ -8,16 +8,16 @@ const League = () => {
     setToggleState(index);
   };
 
-  // const [data, setData] = useState();
+  const [data, setData] = useState();
 
-  // // const errorMesssage =
-  // //   "You already used all of your plan's requests this month.";
-  // // var isPlanUsed = false;
+  // const errorMesssage =
+  //   "You already used all of your plan's requests this month.";
+  // var isPlanUsed = false;
 
   // const getData = async () => {
   //   try {
   //     const res = await fetch(
-  //       "https://sheet.best/api/sheets/5c9c879e-6085-4094-b40d-306cfb215fd8"
+  //       "https://api.apispreadsheets.com/data/DYeuGGxsdVTd6a37/"
   //     );
   //     //fetch from Sheets
   //     const data = await res.json();
@@ -29,29 +29,68 @@ const League = () => {
   //   }
   // };
 
-  // useEffect(() => {
-  //   getData();
-  // }, []);
-
-  // const [oversData, setOversData] = useState();
-
-  // const getOversData = async () => {
-  //   try {
-  //     const res = await fetch(
-  //       "https://sheet.best/api/sheets/b845bdaf-061c-48e1-bcc9-e607e494cfe9"
-  //     );
-  //     //fetch from Sheets
-  //     const oversData = await res.json();
-  //     setOversData(oversData);
-  //     console.log(oversData);
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
+  // const getData = async () => {
+  //   await fetch("https://api.apispreadsheets.com/data/DYeuGGxsdVTd6a37/").then(
+  //     (res) => {
+  //       if (res.status === 200) {
+  //         // SUCCESS
+  //         res
+  //           .json()
+  //           .then((data) => {
+  //             const leagueData = data;
+  //             setData(leagueData);
+  //           })
+  //           .catch((err) => console.log(err));
+  //       } else {
+  //         // ERROR
+  //       }
+  //     }
+  //   );
   // };
 
-  // useEffect(() => {
-  //   getOversData();
-  // }, []);
+  const getData = async () => {
+    fetch("https://api.apispreadsheets.com/data/DYeuGGxsdVTd6a37/").then(
+      (res) => {
+        if (res.status === 200) {
+          // SUCCESS
+          res
+            .json()
+            .then((data) => {
+              const leagueData = data;
+              setData(leagueData);
+            })
+            .catch((err) => console.log(err));
+        } else {
+          // ERROR
+        }
+      }
+    );
+  };
+
+  useEffect(() => {
+    getData();
+    console.log(data);
+  }, []);
+
+  const [oversData, setOversData] = useState();
+
+  const getOversData = async () => {
+    try {
+      const res = await fetch(
+        "https://api.apispreadsheets.com/data/03xwGOlYlTBJOlUX/"
+      );
+      //fetch from Sheets
+      const oversData = await res.json();
+      setOversData(oversData);
+      console.log(oversData);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  useEffect(() => {
+    getOversData();
+  }, []);
 
   return (
     <div>
@@ -106,9 +145,9 @@ const League = () => {
             <th>L</th>
             <th>Pts</th>
           </tr>
-          {/* <tr><td>{isPlanUsed ? 'plan used' : 'plan not used'}</td></tr> */}
+          {/* <tr><td>{isPlanUsed ? 'plan used' : 'plan not used'}</td></tr>  */}
           {/* Firsts league table, we want to display on click of first team buttom  */}
-          {/* {data?.map((item, i) => (
+          {data?.data.map((item, i) => (
             <tr key={i}>
               <td>{item.Position}</td>
               <td>{item.Club}</td>
@@ -118,7 +157,7 @@ const League = () => {
               <td>{item.Lost}</td>
               <td>{item.Points}</td>
             </tr>
-          ))} */}
+          ))}
         </table>
       </div>
       <div
@@ -139,7 +178,7 @@ const League = () => {
             <th>Pts</th>
           </tr>
           {/* Overs league table, we want to display on click of first team buttom*/}
-          {/* {oversData?.map((item, i) => (
+          {oversData?.data.map((item, i) => (
             <tr key={i}>
               <td>{item.Position}</td>
               <td>{item.Club}</td>
@@ -149,7 +188,7 @@ const League = () => {
               <td>{item.Lost}</td>
               <td>{item.Points}</td>
             </tr>
-          ))} */}
+          ))}
         </table>
       </div>
     </div>

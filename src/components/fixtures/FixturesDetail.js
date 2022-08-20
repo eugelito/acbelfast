@@ -131,7 +131,7 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
                     ></img>
                   </div>
 
-                  {fixtures.length > 1 && <hr />}
+                  {fixtures.length > 1 && <hr className="match__divider" />}
                 </>
               );
             })}{" "}
@@ -207,7 +207,7 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
                       Delete
                     </button>
                   )}
-                  {fixtures.length > 1 && <hr />}
+                  {fixtures.length > 1 && <hr className="match__divider" />}
                 </>
               );
             })}

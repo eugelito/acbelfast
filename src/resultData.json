@@ -9,16 +9,16 @@
     "awayTeamImageUrl": "../images/acbelfastlogo.png",
     "awayTeamScore": "7"
   },
-    {
-      "competition": "Friendly Match",
-      "date": "Sunday 10th April 2022",
-      "homeTeamName": "Ashfield (Over 35s)",
-      "homeTeamImageUrl": "../images/ashfieldlogo.jpeg",
-      "homeTeamScore": "5",
-      "awayTeamName": "AC Belfast (Over 35s)",
-      "awayTeamImageUrl": "../images/acbelfastlogo.png",
-      "awayTeamScore": "2"
-    },
+  {
+    "competition": "Friendly Match",
+    "date": "Sunday 10th April 2022",
+    "homeTeamName": "Ashfield (Over 35s)",
+    "homeTeamImageUrl": "../images/ashfieldlogo.jpeg",
+    "homeTeamScore": "5",
+    "awayTeamName": "AC Belfast (Over 35s)",
+    "awayTeamImageUrl": "../images/acbelfastlogo.png",
+    "awayTeamScore": "2"
+  },
   {
     "competition": "Friendly Match",
     "date": "Saturday 2nd April 2022",

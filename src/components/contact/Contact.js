@@ -65,7 +65,6 @@ const Contact = () => {
             </div>
             <iframe
               src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=hYDEBANK%20PLAYING%20FIELDS+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-              width="450"
               height="450"
               frameborder="0"
               style={{ border: 0 }}

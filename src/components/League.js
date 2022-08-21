@@ -8,7 +8,7 @@ const League = () => {
     setToggleState(index);
   };
 
-  const [data, setData] = useState();
+  const [data, setData] = useState(null);
 
   // const errorMesssage =
   //   "You already used all of your plan's requests this month.";
@@ -61,7 +61,6 @@ const League = () => {
             })
             .catch((error) => {
               console.log(error);
-              data = null;
               setData(data);
             });
         } else {
@@ -76,27 +75,43 @@ const League = () => {
     console.log(data);
   }, []);
 
-  const [oversData, setOversData] = useState();
+  const [oversData, setOversData] = useState(null);
 
   const getOversData = async () => {
-    try {
-      const res = await fetch(
-        "https://api.apispreadsheets.com/data/03xwGOlYlTBJOlUX/"
-      );
-      //fetch from Sheets
-      const oversData = await res.json();
-      setOversData(oversData);
-      console.log(oversData);
-    } catch (error) {
-      console.log(error);
-      oversData = null;
-      setOversData(oversData);
-    }
+    fetch("https://api.apispreadsheets.com/data/03xwGOlYlTBJOlUX/").then(
+      (res) => {
+        if (res.status === 200) {
+          // SUCCESS
+          res
+            .json()
+            .then((data) => {
+              const leagueData = data;
+              setOversData(leagueData);
+            })
+            .catch((error) => {
+              console.log(error);
+              setOversData(oversData);
+            });
+        } else {
+          // ERROR
+        }
+      }
+    );
   };
+
+  const [viewLeagueSpreadSheet, setViewLeagueSpreadSheet] = useState(false);
 
   useEffect(() => {
     getOversData();
   }, []);
+
+  useEffect(() => {
+    if (data && oversData == null) {
+      setViewLeagueSpreadSheet(true);
+    }
+
+    console.log(viewLeagueSpreadSheet);
+  }, [data]);
 
   return (
     <div>
@@ -107,7 +122,6 @@ const League = () => {
           : "Emerge Invitational League (Section D)"}
       </h2>
       <p style={{ color: "#fff", marginBottom: "3rem" }}>2022 - 2023 Season</p>
-
       <div className="league__select">
         <button
           id="firstTeamLeagueBtn"
@@ -133,7 +147,6 @@ const League = () => {
           Over 35s
         </button>
       </div>
-
       <div
         className={
           toggleState === 1
@@ -141,30 +154,43 @@ const League = () => {
             : "table__section content"
         }
       >
-        <table className="table">
-          <tr>
-            <th>Pos</th>
-            <th>Club</th>
-            <th>Played</th>
-            <th>W</th>
-            <th>D</th>
-            <th>L</th>
-            <th>Pts</th>
-          </tr>
-          {/* <tr><td>{isPlanUsed ? 'plan used' : 'plan not used'}</td></tr>  */}
-          {/* Firsts league table, we want to display on click of first team buttom  */}
-          {data?.data.map((item, i) => (
-            <tr key={i}>
-              <td>{item.Position}</td>
-              <td>{item.Club}</td>
-              <td>{item.Played}</td>
-              <td>{item.Won}</td>
-              <td>{item.Drawn}</td>
-              <td>{item.Lost}</td>
-              <td>{item.Points}</td>
+        {!viewLeagueSpreadSheet && toggleState === 1 ? (
+          <>
+            <a
+              style={{ color: "#fff" }}
+              href="https://docs.google.com/spreadsheets/d/18aFn_Z0BcnLVHmR1G-41k2XYNBfpuq2_cPHX_AhHhgA/edit?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Belfast and District League (Division 3) Table
+            </a>
+          </>
+        ) : (
+          <table className="table">
+            <tr>
+              <th>Pos</th>
+              <th>Club</th>
+              <th>Played</th>
+              <th>W</th>
+              <th>D</th>
+              <th>L</th>
+              <th>Pts</th>
             </tr>
-          ))}
-        </table>
+            {/* <tr><td>{isPlanUsed ? 'plan used' : 'plan not used'}</td></tr>  */}
+            {/* Firsts league table, we want to display on click of first team buttom  */}
+            {data?.data.map((item, i) => (
+              <tr key={i}>
+                <td>{item.Position}</td>
+                <td>{item.Club}</td>
+                <td>{item.Played}</td>
+                <td>{item.Won}</td>
+                <td>{item.Drawn}</td>
+                <td>{item.Lost}</td>
+                <td>{item.Points}</td>
+              </tr>
+            ))}
+          </table>
+        )}
       </div>
       <div
         className={
@@ -173,29 +199,40 @@ const League = () => {
             : "table__section content"
         }
       >
-        <table className="table">
-          <tr>
-            <th>Pos</th>
-            <th>Club</th>
-            <th>Played</th>
-            <th>W</th>
-            <th>D</th>
-            <th>L</th>
-            <th>Pts</th>
-          </tr>
-          {/* Overs league table, we want to display on click of first team buttom*/}
-          {oversData?.data.map((item, i) => (
-            <tr key={i}>
-              <td>{item.Position}</td>
-              <td>{item.Club}</td>
-              <td>{item.Played}</td>
-              <td>{item.Won}</td>
-              <td>{item.Drawn}</td>
-              <td>{item.Lost}</td>
-              <td>{item.Points}</td>
+        {!viewLeagueSpreadSheet && toggleState === 2 ? (
+          <a
+            style={{ color: "#fff" }}
+            href="https://docs.google.com/spreadsheets/d/1Np2Wv6qGlGHnHTh4jNKrSdRLRxEylAOJ4qjhADGuBl0/edit?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Emerge Invitational League (Section D) Table
+          </a>
+        ) : (
+          <table className="table">
+            <tr>
+              <th>Pos</th>
+              <th>Club</th>
+              <th>Played</th>
+              <th>W</th>
+              <th>D</th>
+              <th>L</th>
+              <th>Pts</th>
             </tr>
-          ))}
-        </table>
+            {/* Overs league table, we want to display on click of first team buttom*/}
+            {oversData?.data.map((item, i) => (
+              <tr key={i}>
+                <td>{item.Position}</td>
+                <td>{item.Club}</td>
+                <td>{item.Played}</td>
+                <td>{item.Won}</td>
+                <td>{item.Drawn}</td>
+                <td>{item.Lost}</td>
+                <td>{item.Points}</td>
+              </tr>
+            ))}
+          </table>
+        )}
       </div>
     </div>
   );

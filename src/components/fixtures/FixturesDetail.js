@@ -17,6 +17,7 @@ import { auth } from "../../firebase-config";
 import AddFixture from "./AddFixture";
 import moment from "moment";
 import placeHolderImage from "../../images/placeholderlogo.jpeg";
+import acbelfastlogo from "../../images/acbelfastlogo.png";
 
 // moment.format("MMM Do YY"))
 
@@ -110,7 +111,11 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
                   <div className="match__teams">
                     <img
                       // src={`${fixture.homeTeamImageUrl}`}
-                      src={placeHolderImage}
+                      src={
+                        fixture.homeTeamName.includes("AC Belfast")
+                          ? acbelfastlogo
+                          : placeHolderImage
+                      }
                       width="75px"
                       height="70px"
                     ></img>
@@ -125,7 +130,11 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
                     </h4>
                     <img
                       //src={`${fixture.awayTeamImageUrl}`}
-                      src={placeHolderImage}
+                      src={
+                        fixture.awayTeamName.includes("AC Belfast")
+                          ? acbelfastlogo
+                          : placeHolderImage
+                      }
                       width="75px"
                       height="70px"
                     ></img>
@@ -162,8 +171,11 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
                   </div>
                   <div className="match__teams">
                     <img
-                      //src={`${fixture.homeTeamImageUrl}`}
-                      src={placeHolderImage}
+                      src={
+                        fixture.homeTeamName.includes("AC")
+                          ? acbelfastlogo
+                          : placeHolderImage
+                      }
                       width="75px"
                       height="70px"
                     ></img>
@@ -177,8 +189,11 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
                       {fixture.homeTeamName} v {fixture.awayTeamName}
                     </h4>
                     <img
-                      //src={`${fixture.awayTeamImageUrl}`}
-                      src={placeHolderImage}
+                      src={
+                        fixture.awayTeamName.includes("AC")
+                          ? acbelfastlogo
+                          : placeHolderImage
+                      }
                       width="75px"
                       height="70px"
                     ></img>

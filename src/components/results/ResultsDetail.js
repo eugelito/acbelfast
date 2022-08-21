@@ -13,6 +13,7 @@ import {
 import { auth } from "../../firebase-config";
 import moment from "moment";
 import placeHolderImage from "../../images/placeholderlogo.jpeg";
+import acbelfastlogo from "../../images/acbelfastlogo.png";
 
 import "./Results.scss";
 
@@ -70,7 +71,11 @@ const ResultsDetail = ({ showAllResults }) => {
                     <div className="match__teamOne">
                       <img
                         // src={`${result.homeTeamImageUrl}`}
-                        src={placeHolderImage}
+                        src={
+                          result.homeTeamName.includes("AC")
+                            ? acbelfastlogo
+                            : placeHolderImage
+                        }
                         width="75px"
                         height="70px"
                       ></img>
@@ -79,7 +84,11 @@ const ResultsDetail = ({ showAllResults }) => {
                     <div className="match__teamTwo">
                       <img
                         // src={`${result.awayTeamImageUrl}`}
-                        src={placeHolderImage}
+                        src={
+                          result.awayTeamName.includes("AC")
+                            ? acbelfastlogo
+                            : placeHolderImage
+                        }
                         width="75px"
                         height="70px"
                       ></img>
@@ -123,7 +132,11 @@ const ResultsDetail = ({ showAllResults }) => {
                     <div className="match__teamOne">
                       <img
                         //src={`${result.homeTeamImageUrl}`}
-                        src={placeHolderImage}
+                        src={
+                          result.homeTeamName.includes("AC")
+                            ? acbelfastlogo
+                            : placeHolderImage
+                        }
                         width="75px"
                         height="70px"
                       ></img>
@@ -132,7 +145,11 @@ const ResultsDetail = ({ showAllResults }) => {
                     <div className="match__teamTwo">
                       <img
                         // src={`${result.awayTeamImageUrl}`}
-                        src={placeHolderImage}
+                        src={
+                          result.awayTeamName.includes("AC")
+                            ? acbelfastlogo
+                            : placeHolderImage
+                        }
                         width="75px"
                         height="70px"
                       ></img>

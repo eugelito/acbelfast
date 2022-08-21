@@ -1,4 +1,7 @@
 import { useEffect, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
+
 import "./League.scss";
 
 const League = () => {
@@ -157,12 +160,13 @@ const League = () => {
         {!viewLeagueSpreadSheet && toggleState === 1 ? (
           <>
             <a
-              style={{ color: "#fff" }}
+              className="externalLeagueLink"
               href="https://docs.google.com/spreadsheets/d/18aFn_Z0BcnLVHmR1G-41k2XYNBfpuq2_cPHX_AhHhgA/edit?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Belfast and District League (Division 3) Table
+              View BDFL Div 3 league table{" "}
+              <FontAwesomeIcon icon={faExternalLinkAlt} />
             </a>
           </>
         ) : (
@@ -201,12 +205,13 @@ const League = () => {
       >
         {!viewLeagueSpreadSheet && toggleState === 2 ? (
           <a
-            style={{ color: "#fff" }}
+            className="externalLeagueLink"
             href="https://docs.google.com/spreadsheets/d/1Np2Wv6qGlGHnHTh4jNKrSdRLRxEylAOJ4qjhADGuBl0/edit?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
-            View Emerge Invitational League (Section D) Table
+            View Emerge Invitational league table{" "}
+            <FontAwesomeIcon icon={faExternalLinkAlt} />
           </a>
         ) : (
           <table className="table">

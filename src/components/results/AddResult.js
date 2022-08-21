@@ -17,10 +17,10 @@ import { v4 } from "uuid";
 const AddResult = () => {
   const resultsCollectionRef = collection(db, "results");
 
-  const [competition, setCompetition] = useState("");
+  const [competition, setCompetition] = useState("League");
   const [dateTime, setDateTime] = useState(new Date());
   const [homeTeamName, setHomeTeamName] = useState();
-  const [homeTeamScore, setHomeTeamScore] = useState("League");
+  const [homeTeamScore, setHomeTeamScore] = useState("");
   const [awayTeamName, setAwayTeamName] = useState("");
   const [awayTeamScore, setAwayTeamScore] = useState("");
 

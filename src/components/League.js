@@ -59,7 +59,11 @@ const League = () => {
               const leagueData = data;
               setData(leagueData);
             })
-            .catch((err) => console.log(err));
+            .catch((error) => {
+              console.log(error);
+              data = null;
+              setData(data);
+            });
         } else {
           // ERROR
         }
@@ -85,6 +89,8 @@ const League = () => {
       console.log(oversData);
     } catch (error) {
       console.log(error);
+      oversData = null;
+      setOversData(oversData);
     }
   };
 

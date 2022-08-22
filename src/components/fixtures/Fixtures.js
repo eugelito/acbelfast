@@ -17,31 +17,36 @@ const Fixtures = () => {
     <div className="container__fixtures">
       <h1 className="page__heading">Fixtures</h1>
       <div className="container container__fixtures--column">
-        {auth.currentUser && (
-          <button
-            className={addFixture ? "secondaryBtn" : "primaryBtn"}
-            onClick={() => setShowAddFixture(!addFixture)}
-          >
-            {addFixture ? "Hide add fixture" : "Add a new fixture"}
-          </button>
-        )}
-        {addFixture && (
-          <div className="card__container card__threeQuarterWidth">
-            <div className="card add__fixture--card">
-              {" "}
-              <>
-                <AddFixture />{" "}
-              </>
+        <div className="card__container card__threeQuarterWidth">
+          {auth.currentUser && (
+            <button
+              className={addFixture ? "secondaryBtn" : "primaryBtn"}
+              onClick={() => setShowAddFixture(!addFixture)}
+            >
+              {addFixture ? "Hide add fixture" : "Add a new fixture"}
+            </button>
+          )}
+          {addFixture && (
+            <div className="card__container card__threeQuarterWidth">
+              <div className="card add__fixture--card">
+                {" "}
+                <>
+                  <AddFixture />{" "}
+                </>
+              </div>
             </div>
-          </div>
-        )}
-        {!addFixture && (
-          <div className="card__container card__threeQuarterWidth">
-            <div className="card">
-              <FixturesDetail isHomepageFixture={true} showAllFixtures={true} />
+          )}
+          {!addFixture && (
+            <div className="card__container card__threeQuarterWidth">
+              <div className="card">
+                <FixturesDetail
+                  isHomepageFixture={true}
+                  showAllFixtures={true}
+                />
+              </div>
             </div>
-          </div>
-        )}
+          )}
+        </div>
       </div>
     </div>
   );

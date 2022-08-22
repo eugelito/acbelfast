@@ -18,7 +18,7 @@ const Results = () => {
   return (
     <div className="results__container">
       <h1 className="page__heading">Results</h1>
-      <div className="container">
+      <div className="container container__fixtures--column">
         <div className="card__container card__threeQuarterWidth">
           {auth.currentUser && (
             <button

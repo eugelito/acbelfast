@@ -73,7 +73,6 @@ const AddResult = () => {
                 type="text"
                 min={0}
                 max={20}
-                maxlength={2}
                 placeholder="Enter home score"
                 required
                 onChange={(event) => {
@@ -106,7 +105,6 @@ const AddResult = () => {
                 type="text"
                 min={0}
                 max={20}
-                maxlength={2}
                 placeholder="Enter away score"
                 required
                 onChange={(event) => {

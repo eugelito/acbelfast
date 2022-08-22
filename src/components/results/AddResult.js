@@ -74,7 +74,6 @@ const AddResult = () => {
                 min={0}
                 max={20}
                 placeholder="Enter home score"
-                required
                 onChange={(event) => {
                   setHomeTeamScore(event.target.value);
                 }}
@@ -95,7 +94,6 @@ const AddResult = () => {
               <input
                 type="text"
                 placeholder="Enter Away Team Name"
-                required
                 onChange={(event) => {
                   setAwayTeamName(event.target.value);
                 }}
@@ -106,7 +104,6 @@ const AddResult = () => {
                 min={0}
                 max={20}
                 placeholder="Enter away score"
-                required
                 onChange={(event) => {
                   setAwayTeamScore(event.target.value);
                 }}

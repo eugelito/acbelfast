@@ -79,9 +79,10 @@ function Navbar() {
             )}
             {auth.currentUser && (
               <NavLink
-                to="/"
+                to=""
                 className="signOutDesktop"
                 activeClassName="active"
+                onClick={logoutAccount}
               >
                 <i className="nav-caret fas fa-caret-right"></i> SIGN OUT
               </NavLink>

@@ -13,7 +13,7 @@ const Contact = () => {
       <h1 className="page__heading">Contact</h1>
       <div className="container">
         <div className="column">
-          <div className="">
+          <div className="container__contact--map">
             {/* <div>
             <h3>
               <FontAwesomeIcon
@@ -64,13 +64,14 @@ const Contact = () => {
               </a>
             </div>
             <iframe
-              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=hYDEBANK%20PLAYING%20FIELDS+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-              height="450"
+              src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=hYDEBANK%20PLAYING%20FIELDS+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              height="400"
               frameborder="0"
               style={{ border: 0 }}
-              allowfullscreen=""
+              allowfullscreen="true"
               aria-hidden="false"
               tabindex="0"
+              id="mapIframe"
             ></iframe>
             <br />
           </div>

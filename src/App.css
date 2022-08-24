@@ -2,151 +2,149 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 
 html {
-    background-color: black;
-    font-size: 100%;
-    box-sizing: border-box;
+  background-color: black;
+  font-size: 100%;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 h2 {
-    color: #fff;
-    margin-bottom: 2rem;
+  color: #fff;
+  margin-bottom: 2rem;
 }
 
 label {
-    color: #fff;
+  color: #fff;
 }
 
 .container {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 .page__heading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--secondaryColor);
-    color: #fff;
-    padding: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondaryColor);
+  color: #fff;
+  padding: 60px;
 }
 
 .container__sponsors {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    margin-bottom: 2rem;
-    background-color: #fff;
-    width: 100%;
-    height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  background-color: #fff;
+  width: 100%;
+  height: 6rem;
 }
 
 .container--centered {
-    width: 1024px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  width: 1024px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.container__divider { 
-    border-right: 1px solid #e5e5e5b5;
-    line-height: 1.6rem;
-    padding-right: 1rem;
-    color: #ababab;
-    font-size: 14px;
+.container__divider {
+  border-right: 1px solid #e5e5e5b5;
+  line-height: 1.6rem;
+  padding-right: 1rem;
+  color: #ababab;
+  font-size: 14px;
 }
 
 #instafeed-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 3rem;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+  justify-content: center;
 }
 
 #instafeed-container img {
-    /* width: 300px; */
-    height: 300px;
-    margin: 0 1rem 1rem 0;
+  /* width: 300px; */
+  height: 300px;
+  margin: 0 1rem 1rem 0;
 }
 
 .column__half {
-    flex-basis: 50%;
+  flex-basis: 50%;
 }
 
 .viewMore__carot {
-    color: #86868b;
-  }
+  color: #86868b;
+}
 
 @media screen and (min-width: 768px) {
+  .page__heading {
+    padding: 100px;
+  }
 
-    .page__heading {
-        padding: 100px;
-    }
+  .column__one {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 60%;
+  }
 
-    .column__one {
-        display: flex;
-        flex-direction: column;
-        flex: 0 1 60%;
-    }
+  .card__container--news--columnTwo {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 25%;
+  }
 
-    .card__container--news--columnTwo {
-        display: flex;
-        flex-direction: column;
-        flex: 0 1 25%;
-    }
+  .column__two {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 30%;
+  }
 
-    .column__two {
-        display: flex;
-        flex-direction: column;
-        flex: 0 1 30%;
-    }
+  .column__results__fixtures {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
 
-    .column__results__fixtures {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-    }
-
-    .container--centered {
-        flex-wrap: nowrap;
-    }
+  .container--centered {
+    flex-wrap: nowrap;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-    
-    .container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 1024px;
-        margin: 0 auto;
-        }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1024px;
+    margin: 0 auto;
+  }
 
-        .column__one {
-            display: flex;
-            flex-direction: column;
-            flex: 0 1 60%;
-        }
+  .column__one {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 60%;
+  }
 
-        .column__two {
-            display: flex;
-            flex-direction: column;
-            flex: 0 1 40%;
-        }
+  .column__two {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 40%;
+  }
 
-        .heading{
-            text-align:center;
-        }
-    }
+  .heading {
+    text-align: center;
+  }
+}

@@ -112,7 +112,7 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
                     <img
                       // src={`${fixture.homeTeamImageUrl}`}
                       src={
-                        fixture.homeTeamName.includes("AC Belfast")
+                        fixture.homeTeamName.includes("AC")
                           ? acbelfastlogo
                           : placeHolderImage
                       }
@@ -131,7 +131,7 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
                     <img
                       //src={`${fixture.awayTeamImageUrl}`}
                       src={
-                        fixture.awayTeamName.includes("AC Belfast")
+                        fixture.awayTeamName.includes("AC")
                           ? acbelfastlogo
                           : placeHolderImage
                       }

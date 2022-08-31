@@ -122,7 +122,7 @@ const League = () => {
       <h2 className="leagueHeading">
         {toggleState === 1
           ? "Belfast and District League (Division 3)"
-          : "Emerge Invitational League (Division 1)"}
+          : "Emerge Invitational League (League 1)"}
       </h2>
       <p style={{ color: "#fff", marginBottom: "3rem" }}>2022 - 2023 Season</p>
       <div className="league__select">

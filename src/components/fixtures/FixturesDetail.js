@@ -18,6 +18,7 @@ import AddFixture from "./AddFixture";
 import moment from "moment";
 import placeHolderImage from "../../images/placeholderlogo.jpeg";
 import acbelfastlogo from "../../images/acbelfastlogo.png";
+import acbelfastlogo35 from "../../images/acbelfastlogo35.png";
 
 // moment.format("MMM Do YY"))
 
@@ -110,7 +111,11 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
                   </div>
                   <div className="match__teams">
                     <img
-                      // src={`${fixture.homeTeamImageUrl}`}
+                      // src={
+                      //   fixture.homeTeamName.includes("ACB 35")
+                      //     ? acbelfastlogo35
+                      //     : placeHolderImage ||
+                      //       fixture.homeTeamName.includes("AC Belfast")
                       src={
                         fixture.homeTeamName.includes("AC")
                           ? acbelfastlogo
@@ -129,7 +134,11 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
                       {fixture.homeTeamName} v {fixture.awayTeamName}
                     </h4>
                     <img
-                      //src={`${fixture.awayTeamImageUrl}`}
+                      // src={
+                      //   fixture.awayTeamName.includes("ACB 35")
+                      //     ? acbelfastlogo35
+                      //     : placeHolderImage ||
+                      //       fixture.awayTeamName.includes("AC Belfast")
                       src={
                         fixture.awayTeamName.includes("AC")
                           ? acbelfastlogo

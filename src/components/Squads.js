@@ -51,7 +51,7 @@ const Squads = () => {
           <h2 className="squads__heading--first">First Team</h2>
           <img
             src={firsts}
-            className="squads__image"
+            className="squads__image--firsts"
             height="300px"
             alt=""
           ></img>{" "}

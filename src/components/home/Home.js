@@ -29,7 +29,7 @@ const Home = () => {
               Senior Men's Amateur Football Club based in Belfast, Northern
               Ireland. The club have a firsts and an over 35s team playing in
               the Belfast and District Football League (Division 3) and Emerge
-              Invitational League (Division 1) respectively.
+              Invitational League (League 1) respectively.
             </p>{" "}
             <div className="training__schedule">
               <strong>Football Training Schedule</strong>

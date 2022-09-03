@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import "./Squads.scss";
 import over35s from "../images/over35s.jpeg";
+import firsts from "../images/firsts.jpeg";
 import playerPlaceholder from "../images/player.png";
 import firstSquadData from "../squadFirstList.json";
 import oversSquadData from "../squadOversList.json";
@@ -48,7 +49,12 @@ const Squads = () => {
       >
         <div className="container container--column">
           <h2 className="squads__heading--first">First Team</h2>
-          {/* <img className="squads__image" height="300px"></img> */}
+          <img
+            src={firsts}
+            className="squads__image"
+            height="300px"
+            alt=""
+          ></img>{" "}
           <br />
           <h3>Player / Manager</h3>
           <div className="squads__position squads__position--manager">
@@ -97,7 +103,6 @@ const Squads = () => {
                 );
               })}
           </div>
-
           <h3>Fowards</h3>
           <div className="squads__position">
             {firstSquadData

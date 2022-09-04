@@ -23,6 +23,7 @@ const AddResult = () => {
   const [homeTeamScore, setHomeTeamScore] = useState("");
   const [awayTeamName, setAwayTeamName] = useState("");
   const [awayTeamScore, setAwayTeamScore] = useState("");
+  const [goalscorer, setGoalscorer] = useState("");
 
   const handleAddResult = async (event) => {
     await addDoc(resultsCollectionRef, {
@@ -32,6 +33,7 @@ const AddResult = () => {
       homeTeamScore: homeTeamScore,
       awayTeamName: awayTeamName,
       awayTeamScore: awayTeamScore,
+      goalscorer: goalscorer,
     });
 
     alert("New result has been added!");
@@ -135,6 +137,15 @@ const AddResult = () => {
             <option value="Cup">Cup</option>
             <option value="Friendly">Friendly</option>
           </select>
+          <label>Enter goalscorers</label>
+          <input
+            type="text"
+            placeholder="Enter goalscorers"
+            required
+            onChange={(event) => {
+              setGoalscorer(event.target.value);
+            }}
+          ></input>
           <button
             className="BlueBtn"
             type="submit"

@@ -57,7 +57,7 @@ const ResultsDetail = ({ showAllResults }) => {
                           )
                         )
                           .utc(+1)
-                          .format("dddd MMM Do, YYYY hh:mm A")}
+                          .format("dddd MMM Do, YYYY")}
                       </span>
                       <b>{result.competition}</b>
                     </p>
@@ -95,6 +95,14 @@ const ResultsDetail = ({ showAllResults }) => {
                       <h4 className="match__result">{result.awayTeamName}</h4>
                     </div>
                   </div>{" "}
+                  <br />
+                  <div className="goalscorer">
+                    {" "}
+                    Goalscorers:{" "}
+                    <span className="goalscorer__names">
+                      {result.goalscorer}
+                    </span>
+                  </div>
                   {results.length > 1 && <hr className="match__divider" />}
                 </>
               );
@@ -118,7 +126,7 @@ const ResultsDetail = ({ showAllResults }) => {
                           )
                         )
                           .utc(+1)
-                          .format("dddd MMM Do, YYYY hh:mm A")}
+                          .format("dddd MMM Do, YYYY")}
                       </span>
                       <b>{result.competition}</b>
                     </p>
@@ -155,6 +163,14 @@ const ResultsDetail = ({ showAllResults }) => {
                       ></img>
                       <h4 className="match__result">{result.awayTeamName}</h4>
                     </div>
+                  </div>
+                  <br />
+                  <div className="goalscorer">
+                    {" "}
+                    Goalscorers:{" "}
+                    <span className="goalscorer__names">
+                      {result.goalscorer}
+                    </span>
                   </div>
                   {auth.currentUser && (
                     <button

@@ -49,13 +49,7 @@ const Squads = () => {
       >
         <div className="container container--column">
           <h2 className="squads__heading--first">First Team</h2>
-          <img
-            src={firsts}
-            className="squads__image"
-            height="300px"
-            alt=""
-          ></img>{" "}
-          <br />
+          <img src={firsts} className="squads__image" alt=""></img> <br />
           <h3>Player / Manager</h3>
           <div className="squads__position squads__position--manager">
             <div className="player__profile">
@@ -129,8 +123,7 @@ const Squads = () => {
           <h2 className="squads__heading--overs">Over 35s Team</h2>
           <img
             src={over35s}
-            className="squads__image"
-            height="300px"
+            className="squads__image squads__image--overs"
             alt=""
           ></img>
           <br />

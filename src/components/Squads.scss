@@ -60,8 +60,8 @@
     }
 
     .squads__image {
-        border: 12px solid var(--secondaryColor);
         width: 100%;
+        object-fit: contain;
     }
 
     .squads__image--firsts {
@@ -91,10 +91,6 @@
             // align-self: center;
             // max-width: 64%;
             grid-template-columns: repeat(4, 1fr);
-        }
-
-        .squads__image {
-            width: 50%;
         }
     }
 }

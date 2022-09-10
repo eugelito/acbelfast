@@ -43,7 +43,7 @@ const Login = () => {
 
   return (
     <div>
-      <div style={{ display: "block", margin: "0 1rem" }}>
+      <div className="login_container">
         <h1 className="loginHeading">Login</h1>
         <br />
         <label>{errorMessage}</label>

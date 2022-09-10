@@ -1,9 +1,10 @@
-.loginHeading {
-    color: #fff;
+.login_container {
+    width: 100%;
+    padding: 0 1rem;
 }
 
-.login-container {
-    flex-direction: column;
+.loginHeading {
+    color: #fff;
 }
 
 input {
@@ -67,7 +68,8 @@ select {
     //     width: 500px;
     // }
 
-    .loginContainer {
+    .login_container {
+        width: 30rem;
         margin: 0 auto;
     }
 }

@@ -37,13 +37,13 @@ const Home = () => {
               <ul>
                 <li>
                   {" "}
-                  <i className="fab fas fa-home" aria-hidden="true"></i>{" "}
-                  Hydebank Playing Fields | 4 Newtownbreda Rd BT8 6QB
+                  <i className="fab fas fa-home" aria-hidden="true"></i> Ozone
+                  Complex, Ormeau Embankment, Belfast BT6 8LT
                 </li>
                 <li>
                   {" "}
                   <i className="fab fas fa-clock" aria-hidden="true"></i>{" "}
-                  <span>Tuesdays and Thursdays | 7pm to 9pm</span>
+                  <span>Tuesdays 8pm to 9pm</span>
                 </li>
               </ul>
             </div>

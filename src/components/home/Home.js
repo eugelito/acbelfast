@@ -99,7 +99,9 @@ const Home = () => {
           <p className="appStoreHint">
             Download the Football NI app to stay up to date with the first team
             fixtures, results, team line-ups, match events and other statistics.
-            Football NI can be downloaded now by visiting the{" "}
+            <br />
+            <br />
+            The app can be downloaded now by visiting the{" "}
             <a href="https://apps.apple.com/gb/app/football-ni/id1636686499">
               App Store
             </a>{" "}

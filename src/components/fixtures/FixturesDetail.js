@@ -33,7 +33,7 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
   const [fixtures, setFixtures] = useState([]);
   const fixturesCollectionRef = collection(db, "fixtures");
 
-  // const currentDateTime = new Date();
+  const currentDateTime = new Date();
 
   // const deleteExpiredFixture = async (id) => {
   //   if (fixtures.dateTime >= currentDateTime) {
@@ -48,6 +48,9 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
         fixturesCollectionRef,
         orderBy("dateTime", "asc")
       );
+      // if (fixtures.dateTime >= currentDateTime) {
+      //   deleteFixture(doc.id);
+      // }
       setFixtures(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
       // let fireStoreTimestamp = data.doc.data().dateTime;
       // let javascriptDate = fireStoreTimestamp.toDate();

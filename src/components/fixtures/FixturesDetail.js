@@ -97,7 +97,7 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
 
   return (
     <div>
-      <br />
+      {fixtures.length > 0 && <br />}
       {!showAllFixtures ? (
         <>
           {fixtures
@@ -163,11 +163,11 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
                       height="70px"
                     ></img>
                   </div>
-                  {fixtures.length == 0 && <span>No upcoming fixtures</span>}
                   {fixtures.length > 1 && <hr className="match__divider" />}
                 </>
               );
-            })}{" "}
+            })}
+          {fixtures.length == 0 && <span>No upcoming fixtures</span>}
         </>
       ) : (
         <>
@@ -246,11 +246,11 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
                       Delete
                     </button>
                   )}
-                  {fixtures.length == 0 && <span>No upcoming fixtures</span>}
                   {fixtures.length > 1 && <hr className="match__divider" />}
                 </>
               );
             })}
+          {fixtures.length == 0 && <span>No upcoming fixtures</span>}
         </>
       )}
     </div>

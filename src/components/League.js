@@ -117,7 +117,7 @@ const League = () => {
   }, [data]);
 
   return (
-    <div>
+    <div className="league__section">
       {/** Display First Team if First Team is selected */}
       <h2 className="leagueHeading">
         {toggleState === 1

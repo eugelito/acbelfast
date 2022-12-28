@@ -22,9 +22,25 @@ import acbelfastlogo35 from "../../images/acbelfastlogo35.png";
 
 // moment.format("MMM Do YY"))
 
+// await db
+//     .collection(`users/${user}/messages`)
+//     .where('cDate', '>=', isoDate);  //<--- Its important to have an ISO formatted date string
+//     .orderBy("cDate", "desc")
+//     .limit(100)
+//     .get();
+
 const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
   const [fixtures, setFixtures] = useState([]);
   const fixturesCollectionRef = collection(db, "fixtures");
+
+  // const currentDateTime = new Date();
+
+  // const deleteExpiredFixture = async (id) => {
+  //   if (fixtures.dateTime >= currentDateTime) {
+  //     const fixturesDoc = doc(db, "fixtures", id);
+  //     deleteDoc(fixturesDoc);
+  //   }
+  // };
 
   useEffect(() => {
     const getFixtures = async () => {
@@ -33,12 +49,11 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
         orderBy("dateTime", "asc")
       );
       setFixtures(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
-
       // let fireStoreTimestamp = data.doc.data().dateTime;
       // let javascriptDate = fireStoreTimestamp.toDate();
       // console.log(javascriptDate);
     };
-
+    // deleteExpiredFixture();
     getFixtures();
   }, []);
 

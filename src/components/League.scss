@@ -40,7 +40,6 @@
 table {
   border-collapse: collapse;
   width: 100%;
-  margin-bottom: 3rem;
 }
 
 .table__section {
@@ -83,4 +82,8 @@ th {
 
 .active-contaent {
   display: block;
+}
+
+.league__section {
+  margin: 0 0 1rem;
 }

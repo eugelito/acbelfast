@@ -54,8 +54,7 @@ const Squads = () => {
           <div className="squads__position squads__position--manager">
             <div className="player__profile">
               <img src={playerPlaceholder} height="75px"></img>
-
-              <p>Gareth Tilley</p>
+              <p>Diarmuid Waide</p>
             </div>
           </div>
           <h3>Goalkeepers</h3>

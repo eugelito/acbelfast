@@ -8,6 +8,8 @@ import placeholderimage from "../../images/placeholderImage.png";
 import Header from "../Header";
 import "./Home.scss";
 import { useNavigate } from "react-router-dom";
+import appStoreLogo from "../../images/appStoreLogo.svg";
+import googlePlayLogo from "../../images/googleplayLogo.svg";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -43,7 +45,7 @@ const Home = () => {
                 <li>
                   {" "}
                   <i className="fab fas fa-clock" aria-hidden="true"></i>{" "}
-                  <span>Tuesdays 8pm to 9pm</span>
+                  <span>Tuesdays 8:45pm to 10pm</span>
                 </li>
               </ul>
             </div>
@@ -94,6 +96,35 @@ const Home = () => {
         <div className="column__one">
           {/** <News /> */}
           <League />
+          <p className="appStoreHint">
+            Download the Football NI app to stay up to date with the first team
+            fixtures, results, team line-ups, match events and other statistics.
+            Football NI can be downloaded now by visiting the{" "}
+            <a href="https://apps.apple.com/gb/app/football-ni/id1636686499">
+              App store
+            </a>{" "}
+            or{" "}
+            <a href="https://play.google.com/store/apps/details?id=de.analyticom.cometlive.ifa&hl=en&gl=US">
+              Google Play Store
+            </a>
+            .
+          </p>
+          <div className="row">
+            <a href="https://apps.apple.com/gb/app/football-ni/id1636686499">
+              <img
+                className="appStoreLogo"
+                src={appStoreLogo}
+                alt="Download app store logo"
+              />
+            </a>{" "}
+            <a href="https://play.google.com/store/apps/details?id=de.analyticom.cometlive.ifa&hl=en&gl=US">
+              <img
+                className="appStoreLogo"
+                src={googlePlayLogo}
+                alt="Download google play logo"
+              />
+            </a>
+          </div>
         </div>
         <div className="column__two">
           <FacebookNewsFeed />
@@ -106,6 +137,7 @@ const Home = () => {
               Instagram <br />
               @acbelfast
             </h2>
+            <br />
             <div id="instafeed-container"></div>
           </div>
         </div>

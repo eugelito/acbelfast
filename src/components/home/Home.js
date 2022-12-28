@@ -101,7 +101,7 @@ const Home = () => {
             fixtures, results, team line-ups, match events and other statistics.
             Football NI can be downloaded now by visiting the{" "}
             <a href="https://apps.apple.com/gb/app/football-ni/id1636686499">
-              App store
+              App Store
             </a>{" "}
             or{" "}
             <a href="https://play.google.com/store/apps/details?id=de.analyticom.cometlive.ifa&hl=en&gl=US">

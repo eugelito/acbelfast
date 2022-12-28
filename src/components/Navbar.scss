@@ -261,10 +261,10 @@ nav .nav__logo--links {
 }
 
 div.scrollmenu {
+  align-self: flex-end;
   overflow: auto;
   white-space: nowrap;
   background-color: var(--primaryColor);
-
 }
 
 div.scrollmenu a {

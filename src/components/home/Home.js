@@ -10,21 +10,12 @@ import "./Home.scss";
 import { useNavigate } from "react-router-dom";
 import appStoreLogo from "../../images/appStoreLogo.svg";
 import googlePlayLogo from "../../images/googleplayLogo.svg";
-import Instafeed from "instafeed.js";
+import { feed } from "../../components/instafeed-config";
 
 const Home = () => {
   const navigate = useNavigate();
 
   const navigateToContact = () => navigate("/Contact");
-
-  const feed = new Instafeed({
-    get: "user",
-    target: "instafeed-container",
-    resolution: "low_resolution",
-    accessToken: process.env.REACT_APP_INSTAGRAM,
-    sortBy: "most-recent",
-    limit: 6,
-  });
 
   useEffect(() => {
     feed.run();

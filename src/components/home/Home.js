@@ -11,6 +11,7 @@ import { useNavigate } from "react-router-dom";
 import appStoreLogo from "../../images/appStoreLogo.svg";
 import googlePlayLogo from "../../images/googleplayLogo.svg";
 import Instafeed from "instafeed.js";
+
 const Home = () => {
   const navigate = useNavigate();
 

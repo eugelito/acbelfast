@@ -33,7 +33,8 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
   const [fixtures, setFixtures] = useState([]);
   const fixturesCollectionRef = collection(db, "fixtures");
 
-  const currentDateTime = new Date();
+  const currentDate = new Date();
+  // deleteData(currentDate.toISOString());
 
   // const deleteExpiredFixture = async (id) => {
   //   if (fixtures.dateTime >= currentDateTime) {

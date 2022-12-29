@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://acbelfast.com/",
+  "type": "module",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
@@ -10,9 +11,11 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "cross-env": "^7.0.3",
     "dotenv": "^16.0.3",
     "firebase": "^9.9.0",
     "gh-pages": "^3.2.3",
+    "instafeed.js": "^2.0.0",
     "moment": "^2.29.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -21,11 +24,12 @@
     "react-router-dom": "^6.0.2",
     "react-scripts": "4.0.3",
     "sass": "^1.43.4",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.0.1",
+    "yarn": "^1.22.19"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "GENERATE_SOURCEMAP=false react-scripts build",
+    "build": "cross-env GENERATE_SOURCEMAP=false react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "yarn build",

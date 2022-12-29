@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.6817dbf4.chunk.css",
-    "main.js": "/static/js/main.43a15e5c.chunk.js",
+    "main.css": "/static/css/main.7c7b311e.chunk.css",
+    "main.js": "/static/js/main.1b594ac2.chunk.js",
     "runtime-main.js": "/static/js/runtime-main.58765025.js",
-    "static/js/2.ed5c78ab.chunk.js": "/static/js/2.ed5c78ab.chunk.js",
+    "static/js/2.3ff14bc3.chunk.js": "/static/js/2.3ff14bc3.chunk.js",
     "static/js/3.c5601750.chunk.js": "/static/js/3.c5601750.chunk.js",
     "index.html": "/index.html",
-    "static/js/2.ed5c78ab.chunk.js.LICENSE.txt": "/static/js/2.ed5c78ab.chunk.js.LICENSE.txt",
+    "static/js/2.3ff14bc3.chunk.js.LICENSE.txt": "/static/js/2.3ff14bc3.chunk.js.LICENSE.txt",
     "static/media/acbelfastlogo.2f8b8098.png": "/static/media/acbelfastlogo.2f8b8098.png",
     "static/media/acbelfastlogo35.4ea73ed0.png": "/static/media/acbelfastlogo35.4ea73ed0.png",
-    "static/media/appStoreLogo.8c4986ee.svg": "/static/media/appStoreLogo.8c4986ee.svg",
+    "static/media/appStoreLogo.e250c68b.svg": "/static/media/appStoreLogo.e250c68b.svg",
     "static/media/firsts.82656ea0.jpeg": "/static/media/firsts.82656ea0.jpeg",
     "static/media/Header.scss": "/static/media/footballhero.6d45f53d.jpg",
-    "static/media/googleplayLogo.9459d55d.svg": "/static/media/googleplayLogo.9459d55d.svg",
+    "static/media/googleplayLogo.ebe21265.svg": "/static/media/googleplayLogo.ebe21265.svg",
     "static/media/over35s.67eaa460.jpeg": "/static/media/over35s.67eaa460.jpeg",
     "static/media/placeholderlogo.a88a0470.jpeg": "/static/media/placeholderlogo.a88a0470.jpeg",
     "static/media/player.65f9347f.png": "/static/media/player.65f9347f.png"
   },
   "entrypoints": [
     "static/js/runtime-main.58765025.js",
-    "static/js/2.ed5c78ab.chunk.js",
-    "static/css/main.6817dbf4.chunk.css",
-    "static/js/main.43a15e5c.chunk.js"
+    "static/js/2.3ff14bc3.chunk.js",
+    "static/css/main.7c7b311e.chunk.css",
+    "static/js/main.1b594ac2.chunk.js"
   ]
 }

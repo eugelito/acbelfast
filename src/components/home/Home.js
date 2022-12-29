@@ -17,13 +17,11 @@ const Home = () => {
 
   const navigateToContact = () => navigate("/Contact");
 
-  const accessToken = process.env.REACT_APP_INSTAGRAM;
-
   const feed = new Instafeed({
     get: "user",
     target: "instafeed-container",
     resolution: "low_resolution",
-    accessToken: accessToken,
+    accessToken: process.env.REACT_APP_INSTAGRAM,
     sortBy: "most-recent",
     limit: 6,
   });

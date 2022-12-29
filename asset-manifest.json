@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.7c7b311e.chunk.css",
-    "main.js": "/static/js/main.fdc8f2d6.chunk.js",
+    "main.js": "/static/js/main.cd20407f.chunk.js",
     "runtime-main.js": "/static/js/runtime-main.177052b4.js",
-    "static/js/2.018d296d.chunk.js": "/static/js/2.018d296d.chunk.js",
+    "static/js/2.1d67e937.chunk.js": "/static/js/2.1d67e937.chunk.js",
     "static/js/3.329bf4bd.chunk.js": "/static/js/3.329bf4bd.chunk.js",
     "index.html": "/index.html",
-    "static/js/2.018d296d.chunk.js.LICENSE.txt": "/static/js/2.018d296d.chunk.js.LICENSE.txt",
+    "static/js/2.1d67e937.chunk.js.LICENSE.txt": "/static/js/2.1d67e937.chunk.js.LICENSE.txt",
     "static/media/acbelfastlogo.2f8b8098.png": "/static/media/acbelfastlogo.2f8b8098.png",
     "static/media/acbelfastlogo35.4ea73ed0.png": "/static/media/acbelfastlogo35.4ea73ed0.png",
     "static/media/appStoreLogo.e250c68b.svg": "/static/media/appStoreLogo.e250c68b.svg",
@@ -19,8 +19,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.177052b4.js",
-    "static/js/2.018d296d.chunk.js",
+    "static/js/2.1d67e937.chunk.js",
     "static/css/main.7c7b311e.chunk.css",
-    "static/js/main.fdc8f2d6.chunk.js"
+    "static/js/main.cd20407f.chunk.js"
   ]
 }

@@ -3,7 +3,7 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "@firebase/firestore";
 import { getStorage } from "@firebase/storage";
 
-const APIKey = process.env.REACT_APP_API_KEY;
+const APIKey = process.env.REACT_APP_KEY;
 
 const firebaseConfig = {
   apiKey: APIKey,

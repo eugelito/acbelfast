@@ -50,7 +50,20 @@ const Home = () => {
                 <li>
                   {" "}
                   <i className="fab fas fa-clock" aria-hidden="true"></i>{" "}
-                  <span>Tuesdays 8:45pm to 10pm</span>
+                  <span>Tuesdays 8:45 pm to 10:00 pm</span>
+                </li>
+              </ul>
+              <br />
+              <ul>
+                <li>
+                  {" "}
+                  <i className="fab fas fa-home" aria-hidden="true"></i> Falls
+                  Park, 78 Divis Dr, Belfast BT11 8AB
+                </li>
+                <li>
+                  {" "}
+                  <i className="fab fas fa-clock" aria-hidden="true"></i>{" "}
+                  <span>Thursdays 8:00 pm to 9:00 pm</span>
                 </li>
               </ul>
             </div>

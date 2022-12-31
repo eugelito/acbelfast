@@ -50,21 +50,22 @@ const Contact = () => {
                 Address
               </h3>
               <a
-                href="https://goo.gl/maps/rZkvzLqjxefUpkEK8"
+                href="https://goo.gl/maps/rfd12H9LtycFKuab6"
                 target="_blank"
                 rel="noopener"
               >
-                Hydebank Playing Fields
+                Mallusk Playing Fields
                 <br />
-                4 Newtownbreda Rd
+                Newtownabbey
                 <br />
-                Belfast
-                <br />
-                BT8 6QB
+                BT36 4RH
               </a>
             </div>
             <iframe
-              src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=hYDEBANK%20PLAYING%20FIELDS+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2306.4426891618277!2d-6.002241884150477!3d54.684237081357516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4861a881bf70bdd1%3A0x59fd6890f820403c!2sCity%20of%20Belfast%20Mallusk%20Playing%20Fields!5e0!3m2!1sen!2suk!4v1672503347316!5m2!1sen!2suk"
+              width="600"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
               height="400"
               frameborder="0"
               style={{ border: 0 }}

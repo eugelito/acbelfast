@@ -8,7 +8,7 @@
     "position": "Goalkeeper"
   },
   {
-    "fullName": "James Marley",
+    "fullName": "Nick Patterson",
     "position": "Goalkeeper"
   },
   {
@@ -17,10 +17,6 @@
   },
   {
     "fullName": "Stephen Rice",
-    "position": "Defender"
-  },
-  {
-    "fullName": "Nick Patterson",
     "position": "Defender"
   },
   {
@@ -36,7 +32,19 @@
     "position": "Defender"
   },
   {
+    "fullName": "Camilo Ernesto Maldonado Castiblanco",
+    "position": "Defender"
+  },
+  {
+    "fullName": "Dave Cordner",
+    "position": "Defender"
+  },
+  {
     "fullName": "Robert Smith",
+    "position": "Midfielder"
+  },
+  {
+    "fullName": "Scott Evanson-Rush",
     "position": "Midfielder"
   },
   {
@@ -72,11 +80,19 @@
     "position": "Forward"
   },
   {
-    "fullName": "Conor McFerran",
+    "fullName": "Farook Bhabha",
     "position": "Forward"
   },
   {
-    "fullName": "Farook Bhabha",
+    "fullName": "Jobin George",
+    "position": "Forward"
+  },
+  {
+    "fullName": "Salah Eddin Al-Ghadi",
+    "position": "Forward"
+  },
+  {
+    "fullName": "Martin Ferguson",
     "position": "Forward"
   }
 ]

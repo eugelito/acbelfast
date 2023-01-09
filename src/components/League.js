@@ -32,27 +32,8 @@ const League = () => {
   //   }
   // };
 
-  // const getData = async () => {
-  //   await fetch("https://api.apispreadsheets.com/data/DYeuGGxsdVTd6a37/").then(
-  //     (res) => {
-  //       if (res.status === 200) {
-  //         // SUCCESS
-  //         res
-  //           .json()
-  //           .then((data) => {
-  //             const leagueData = data;
-  //             setData(leagueData);
-  //           })
-  //           .catch((err) => console.log(err));
-  //       } else {
-  //         // ERROR
-  //       }
-  //     }
-  //   );
-  // };
-
   const getData = async () => {
-    fetch("https://api.apispreadsheets.com/data/DYeuGGxsdVTd6a37/").then(
+    await fetch("https://api.apispreadsheets.com/data/DYeuGGxsdVTd6a37/").then(
       (res) => {
         if (res.status === 200) {
           // SUCCESS
@@ -62,8 +43,8 @@ const League = () => {
               const leagueData = data;
               setData(leagueData);
             })
-            .catch((error) => {
-              console.log(error);
+            .catch((err) => {
+              console.log(err);
               setData(data);
             });
         } else {
@@ -78,43 +59,43 @@ const League = () => {
     console.log(data);
   }, []);
 
-  const [oversData, setOversData] = useState(null);
+  // const [oversData, setOversData] = useState(null);
 
-  const getOversData = async () => {
-    fetch("https://api.apispreadsheets.com/data/03xwGOlYlTBJOlUX/").then(
-      (res) => {
-        if (res.status === 200) {
-          // SUCCESS
-          res
-            .json()
-            .then((data) => {
-              const leagueData = data;
-              setOversData(leagueData);
-            })
-            .catch((error) => {
-              console.log(error);
-              setOversData(oversData);
-            });
-        } else {
-          // ERROR
-        }
-      }
-    );
-  };
+  // const getOversData = async () => {
+  //   fetch("https://api.apispreadsheets.com/data/03xwGOlYlTBJOlUX/").then(
+  //     (res) => {
+  //       if (res.status === 200) {
+  //         // SUCCESS
+  //         res
+  //           .json()
+  //           .then((data) => {
+  //             const leagueData = data;
+  //             setOversData(leagueData);
+  //           })
+  //           .catch((error) => {
+  //             console.log(error);
+  //             setOversData(oversData);
+  //           });
+  //       } else {
+  //         // ERROR
+  //       }
+  //     }
+  //   );
+  // };
 
   const [viewLeagueSpreadSheet, setViewLeagueSpreadSheet] = useState(false);
 
-  useEffect(() => {
-    getOversData();
-  }, []);
+  // useEffect(() => {
+  //   getOversData();
+  // }, []);
 
-  useEffect(() => {
-    if (data && oversData == null) {
-      setViewLeagueSpreadSheet(true);
-    }
+  // useEffect(() => {
+  //   if (data && oversData == null) {
+  //     setViewLeagueSpreadSheet(true);
+  //   }
 
-    console.log(viewLeagueSpreadSheet);
-  }, [data]);
+  //   console.log(viewLeagueSpreadSheet);
+  // }, [data]);
 
   return (
     <div className="league__section">
@@ -206,7 +187,7 @@ const League = () => {
         {!viewLeagueSpreadSheet && toggleState === 2 ? (
           <a
             className="externalLeagueLink"
-            href="https://docs.google.com/spreadsheets/d/1Np2Wv6qGlGHnHTh4jNKrSdRLRxEylAOJ4qjhADGuBl0/edit?usp=sharing"
+            href="https://docs.google.com/spreadsheets/d/1GLUmQVLkyLHGrX7xNgqZwy4vBGtM_wVwBTEUiWZSRMk/edit?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -225,7 +206,7 @@ const League = () => {
               <th>Pts</th>
             </tr>
             {/* Overs league table, we want to display on click of first team buttom*/}
-            {oversData?.data.map((item, i) => (
+            {/* {oversData?.data.map((item, i) => (
               <tr key={i}>
                 <td>{item.Position}</td>
                 <td>{item.Club}</td>
@@ -235,7 +216,7 @@ const League = () => {
                 <td>{item.Lost}</td>
                 <td>{item.Points}</td>
               </tr>
-            ))}
+            ))} */}
           </table>
         )}
       </div>

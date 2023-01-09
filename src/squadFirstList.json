@@ -40,8 +40,8 @@
     "position": "Defender"
   },
   {
-    "fullName": "Scott Evanson",
-    "position": "Midfielder"
+    "fullName": "Jonathan Jones",
+    "position": "Defender"
   },
   {
     "fullName": "Dylan Geraghty",
@@ -68,15 +68,23 @@
     "position": "Midfielder"
   },
   {
-    "fullName": "Jack Kerr",
-    "position": "Midfielder"
-  },
-  {
     "fullName": "Johnson Furusa",
     "position": "Midfielder"
   },
   {
-    "fullName": "Iñigo Rodriguez",
+    "fullName": "Charles Mathias",
+    "position": "Midfielder"
+  },
+  {
+    "fullName": "Tom McCluskey-Smith",
+    "position": "Midfielder"
+  },
+  {
+    "fullName": "Iñigo Rodriguez Garcia",
+    "position": "Forward"
+  },
+  {
+    "fullName": "Diarmuid Waide",
     "position": "Forward"
   },
   {
@@ -85,6 +93,14 @@
   },
   {
     "fullName": "Richard Winder",
+    "position": "Forward"
+  },
+  {
+    "fullName": "Aaron Crawford",
+    "position": "Forward"
+  },
+  {
+    "fullName": "Jordan Thompson",
     "position": "Forward"
   }
 ]

@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
+import appStoreLogo from "../images/appStoreLogo.svg";
+import googlePlayLogo from "../images/googleplayLogo.svg";
 
 import "./League.scss";
 
@@ -140,7 +142,7 @@ const League = () => {
       >
         {!viewLeagueSpreadSheet && toggleState === 1 ? (
           <>
-            <a
+            {/* <a
               className="externalLeagueLink"
               href="https://docs.google.com/spreadsheets/d/18aFn_Z0BcnLVHmR1G-41k2XYNBfpuq2_cPHX_AhHhgA/edit?usp=sharing"
               target="_blank"
@@ -148,7 +150,35 @@ const League = () => {
             >
               View BDFL Div 3 league table{" "}
               <FontAwesomeIcon icon={faExternalLinkAlt} />
-            </a>
+            </a> */}
+            <p className="appStoreHint">
+              Download the Football NI app on the{" "}
+              <a href="https://apps.apple.com/gb/app/football-ni/id1636686499">
+                App Store
+              </a>{" "}
+              or{" "}
+              <a href="https://play.google.com/store/apps/details?id=de.analyticom.cometlive.ifa&hl=en&gl=US">
+                Google Play
+              </a>{" "}
+              to stay up to date with the first team fixtures, results, team
+              line-ups, match events and other statistics.
+            </p>
+            <div className="row">
+              <a href="https://apps.apple.com/gb/app/football-ni/id1636686499">
+                <img
+                  className="appStoreLogo"
+                  src={appStoreLogo}
+                  alt="Download app store logo"
+                />
+              </a>{" "}
+              <a href="https://play.google.com/store/apps/details?id=de.analyticom.cometlive.ifa&hl=en&gl=US">
+                <img
+                  className="appStoreLogo"
+                  src={googlePlayLogo}
+                  alt="Download google play logo"
+                />
+              </a>
+            </div>
           </>
         ) : (
           <table className="table">

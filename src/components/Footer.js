@@ -15,13 +15,11 @@ const Footer = () => {
           ></img>
           <div className="footer__about--section">
             <h3 className="footer__heading">Athletic Club Belfast</h3>
-            Hydebank Playing Fields
+            Mallusk Playing Fields
             <br />
-            4 Newtownbreda Rd
+            Newtownabbey
             <br />
-            Belfast
-            <br />
-            BT8 6QB
+            BT36 4RH
           </div>
         </div>
         <div className="footer__socials--section">

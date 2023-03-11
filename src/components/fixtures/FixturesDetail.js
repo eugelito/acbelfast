@@ -1,7 +1,6 @@
 import React from "react";
 // import FixtureData from "../../fixtureData.json";
 import "./Fixtures.scss";
-// import from firestore fixtures
 import { useState, useEffect } from "react";
 import { db } from "../../firebase-config";
 import {
@@ -11,6 +10,11 @@ import {
   doc,
   deleteDoc,
   orderBy,
+  where,
+  query,
+  Timestamp,
+  admin,
+  firebase,
 } from "firebase/firestore";
 
 import { auth } from "../../firebase-config";
@@ -20,44 +24,36 @@ import placeHolderImage from "../../images/placeholderlogo.jpeg";
 import acbelfastlogo from "../../images/acbelfastlogo.png";
 import acbelfastlogo35 from "../../images/acbelfastlogo35.png";
 
-// moment.format("MMM Do YY"))
-
-// await db
-//     .collection(`users/${user}/messages`)
-//     .where('cDate', '>=', isoDate);  //<--- Its important to have an ISO formatted date string
-//     .orderBy("cDate", "desc")
-//     .limit(100)
-//     .get();
-
 const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
   const [fixtures, setFixtures] = useState([]);
   const fixturesCollectionRef = collection(db, "fixtures");
 
-  const currentDate = new Date();
-  // deleteData(currentDate.toISOString());
+  const currentDateTime = Timestamp.fromDate(new Date());
 
-  // const deleteExpiredFixture = async (id) => {
-  //   if (fixtures.dateTime >= currentDateTime) {
-  //     const fixturesDoc = doc(db, "fixtures", id);
-  //     deleteDoc(fixturesDoc);
-  //   }
-  // };
+  const deleteOldRecords = async () => {
+    const now = new Date();
+    const oldRecordsQuery = query(
+      fixturesCollectionRef,
+      where("dateTime", "<", now)
+    );
+    const oldRecordsSnapshot = await getDocs(oldRecordsQuery);
+
+    oldRecordsSnapshot.forEach(async (doc) => {
+      await deleteDoc(doc.ref);
+    });
+  };
 
   useEffect(() => {
+    deleteOldRecords();
+
     const getFixtures = async () => {
       const data = await getDocs(
         fixturesCollectionRef,
-        orderBy("dateTime", "asc")
+        orderBy("dateTime", "asc"),
+        where("dateTime", ">=", currentDateTime)
       );
-      // if (fixtures.dateTime >= currentDateTime) {
-      //   deleteFixture(doc.id);
-      // }
       setFixtures(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
-      // let fireStoreTimestamp = data.doc.data().dateTime;
-      // let javascriptDate = fireStoreTimestamp.toDate();
-      // console.log(javascriptDate);
     };
-    // deleteExpiredFixture();
     getFixtures();
   }, []);
 

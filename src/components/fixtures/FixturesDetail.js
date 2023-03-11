@@ -30,13 +30,13 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
 
   const deletePastFixtures = async () => {
     const now = new Date();
-    const oldFixturesQuery = query(
+    const pastFixturesQuery = query(
       fixturesCollectionRef,
       where("dateTime", "<", now)
     );
-    const oldFixturesnapshot = await getDocs(oldFixturesQuery);
+    const pastFixtureSnapshot = await getDocs(pastFixturesQuery);
 
-    oldFixturesnapshot.forEach(async (doc) => {
+    pastFixtureSnapshot.forEach(async (doc) => {
       await deleteDoc(doc.ref);
     });
   };

@@ -31,10 +31,10 @@ const Home = () => {
           </div>
           <div>
             <p className="about__description">
-              Senior Men's Amateur Football Club based in Belfast, Northern
-              Ireland. The club have a firsts and an over 35s team playing in
-              the Belfast and District Football League (Division 3) and Emerge
-              Invitational League (League 1) respectively.
+              Senior Men's Amateur Football Club in Belfast has two teams
+              playing in different leagues: firsts in the Belfast and District
+              Football League (Division 3) and over 35s in the Emerge
+              Invitational League (League 1).
             </p>{" "}
             <div className="training__schedule">
               <strong>Football Training Schedule</strong>
@@ -42,26 +42,26 @@ const Home = () => {
               <ul>
                 <li>
                   {" "}
-                  <i className="fab fas fa-home" aria-hidden="true"></i> Ozone
-                  Complex, Ormeau Embankment, Belfast BT6 8LT
+                  <i className="fab fas fa-clock" aria-hidden="true"></i>{" "}
+                  <span>Tuesdays 8:45pm to 10:00pm</span>
                 </li>
                 <li>
                   {" "}
-                  <i className="fab fas fa-clock" aria-hidden="true"></i>{" "}
-                  <span>Tuesdays 8:45pm to 10:00pm</span>
+                  <i className="fab fas fa-home" aria-hidden="true"></i> at
+                  Ozone Complex, Ormeau Embankment, Belfast BT6 8LT
                 </li>
               </ul>
               <br />
               <ul>
                 <li>
                   {" "}
-                  <i className="fab fas fa-home" aria-hidden="true"></i> Falls
-                  Park, 78 Divis Dr, Belfast BT11 8AB
+                  <i className="fab fas fa-clock" aria-hidden="true"></i>{" "}
+                  <span>Thursdays 8:00pm to 9:00pm</span>
                 </li>
                 <li>
                   {" "}
-                  <i className="fab fas fa-clock" aria-hidden="true"></i>{" "}
-                  <span>Thursdays 8:00pm to 9:00pm</span>
+                  <i className="fab fas fa-home" aria-hidden="true"></i> at
+                  Falls Park, 78 Divis Dr, Belfast BT11 8AB
                 </li>
               </ul>
             </div>

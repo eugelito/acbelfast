@@ -28,29 +28,28 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
   const [fixtures, setFixtures] = useState([]);
   const fixturesCollectionRef = collection(db, "fixtures");
 
-  const currentDateTime = Timestamp.fromDate(new Date());
-
-  const deleteOldRecords = async () => {
+  const deletePastFixtures = async () => {
     const now = new Date();
-    const oldRecordsQuery = query(
+    const oldFixturesQuery = query(
       fixturesCollectionRef,
       where("dateTime", "<", now)
     );
-    const oldRecordsSnapshot = await getDocs(oldRecordsQuery);
+    const oldFixturesnapshot = await getDocs(oldFixturesQuery);
 
-    oldRecordsSnapshot.forEach(async (doc) => {
+    oldFixturesnapshot.forEach(async (doc) => {
       await deleteDoc(doc.ref);
     });
   };
 
   useEffect(() => {
-    deleteOldRecords();
+    deletePastFixtures();
+  });
 
+  useEffect(() => {
     const getFixtures = async () => {
       const data = await getDocs(
         fixturesCollectionRef,
-        orderBy("dateTime", "asc"),
-        where("dateTime", ">=", currentDateTime)
+        orderBy("dateTime", "asc")
       );
       setFixtures(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
     };

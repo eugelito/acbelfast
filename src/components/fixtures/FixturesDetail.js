@@ -41,20 +41,20 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
     });
   };
 
-  useEffect(() => {
-    deletePastFixtures();
-  });
+  const getFixtures = async () => {
+    const data = await getDocs(
+      fixturesCollectionRef,
+      orderBy("dateTime", "asc")
+    );
+    setFixtures(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+  };
 
   useEffect(() => {
-    const getFixtures = async () => {
-      const data = await getDocs(
-        fixturesCollectionRef,
-        orderBy("dateTime", "asc")
-      );
-      setFixtures(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
-    };
+    deletePastFixtures();
     getFixtures();
   }, []);
+
+  useEffect(() => {}, []);
 
   // const editFixture = async (
   //   id,

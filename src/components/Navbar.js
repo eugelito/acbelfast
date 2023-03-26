@@ -32,13 +32,13 @@ function Navbar() {
                 <img src={acbelfastlogo} width="60px" height="60px"></img>
               </span>
             </NavLink>
-            {!auth.currentUser && (
+            {/* {!auth.currentUser && (
               <li className="loginList">
                 <NavLink to="/login" activeClassName="active">
                   <i className="nav-caret fas fa-user"></i> LOG IN
                 </NavLink>
               </li>
-            )}
+            )} */}
             {auth.currentUser && (
               <li className="signOutList" onClick={logoutAccount}>
                 <NavLink to="" activeClassName="active">
@@ -68,7 +68,7 @@ function Navbar() {
             >
               SHOP
             </a>
-            {!auth.currentUser && (
+            {/* {!auth.currentUser && (
               <NavLink
                 to="/login"
                 className="loginDesktop"
@@ -76,7 +76,7 @@ function Navbar() {
               >
                 <i className="nav-caret fas fa-user"></i> LOG IN
               </NavLink>
-            )}
+            )} */}
             {auth.currentUser && (
               <NavLink
                 to=""

@@ -31,22 +31,20 @@ const Home = () => {
           </div>
           <div>
             <p className="about__description">
-              Senior Men's Amateur Football Club in Belfast has two teams
-              playing in different leagues: firsts in the Belfast and District
-              Football League (Division 3) and over 35s in the Emerge
-              Invitational League (League 1).
-            </p>{" "}
+              Athletic Club Belfast is a senior men's amateur football club that
+              includes a first team competing in the Belfast & District Football
+              League (Division 3) and an over 35s team in the Emerge
+              Invitational League 1.
+            </p>
             <div className="training__schedule">
               <strong>Football Training Schedule</strong>
               <br />
               <ul>
                 <li>
-                  {" "}
                   <i className="fab fas fa-clock" aria-hidden="true"></i>{" "}
                   <span>Tuesdays 8:45pm to 10:00pm</span>
                 </li>
                 <li>
-                  {" "}
                   <i className="fab fas fa-home" aria-hidden="true"></i> at
                   Ozone Complex, Ormeau Embankment, Belfast BT6 8LT
                 </li>
@@ -54,14 +52,12 @@ const Home = () => {
               <br />
               <ul>
                 <li>
-                  {" "}
                   <i className="fab fas fa-clock" aria-hidden="true"></i>{" "}
                   <span>Thursdays 8:00pm to 9:00pm</span>
                 </li>
                 <li>
-                  {" "}
                   <i className="fab fas fa-home" aria-hidden="true"></i> at
-                  Falls Park, 78 Divis Dr, Belfast BT11 8AB
+                  Falls Park 3G, 78 Divis Dr, Belfast BT11 8AB
                 </li>
               </ul>
             </div>
@@ -76,8 +72,8 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="container__sponsors">
-        <div className="container--centered sponsors__centered">
+      {/*  <div className="container__sponsors">
+      <div className="container--centered sponsors__centered">
           <b className="container__divider">OUR SPONSORS</b>
           <ul className="footer__sponsors">
             <li>
@@ -102,8 +98,8 @@ const Home = () => {
               />
             </li>
           </ul>
-        </div>
-      </div>
+        </div> 
+      </div>*/}
       <div className="container">
         <div className="column__results__fixtures">
           <Fixture />

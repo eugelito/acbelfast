@@ -102,7 +102,7 @@ const Home = () => {
         <div className="column__two">
           <FacebookNewsFeed />
         </div>
-        {/* <div>
+        <div>
           <div className="row__social">
             <h2 className="instafeed__heading">
               Follow us on{" "}
@@ -113,7 +113,7 @@ const Home = () => {
             <br />
             <div id="instafeed-container"></div>
           </div>
-        </div> */}
+        </div>
       </div>
       {/** END OF HOMEPAGE */}
     </>

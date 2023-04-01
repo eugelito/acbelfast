@@ -23,7 +23,7 @@ yarn-debug.log*
 yarn-error.log*
 
 #Ignore component when deploying
-.env
+.env.local
 .config.js
 instafeed-config.js
 firebase.config.js

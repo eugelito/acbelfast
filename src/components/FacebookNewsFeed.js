@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FacebookProvider, Page } from "react-facebook";
 
 const FacebookNewsFeed = () => {

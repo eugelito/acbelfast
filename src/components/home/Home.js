@@ -9,7 +9,6 @@ import Header from "../Header";
 import "./Home.scss";
 import { useNavigate } from "react-router-dom";
 import { feed } from "../../components/instafeed-config";
-import { FacebookProviderWrapper } from "../FacebookProvider";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -101,9 +100,7 @@ const Home = () => {
           <League />
         </div>
         <div className="column__two">
-          <FacebookProviderWrapper appId="1234518782840956753076789">
-            <FacebookNewsFeed />
-          </FacebookProviderWrapper>
+          <FacebookNewsFeed appId="1234518782840956753076789" />
         </div>
         <div>
           <div className="row__social">

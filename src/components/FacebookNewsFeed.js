@@ -1,9 +1,7 @@
 import React from "react";
-import { FacebookProvider, useFacebook, Page } from "react-facebook";
+import { FacebookProvider, Page } from "react-facebook";
 
-const FacebookNewsFeed = () => {
-  const { appId } = useFacebook();
-
+const FacebookNewsFeed = ({ appId }) => {
   return (
     <>
       <div className="facebook-newsfeed">

@@ -100,7 +100,7 @@ const Home = () => {
           <League />
         </div>
         <div className="column__two">
-          <FacebookNewsFeed appId="1234518782840956753076789" />
+          <FacebookNewsFeed />
         </div>
         <div>
           <div className="row__social">

@@ -1,7 +1,8 @@
-import "./FacebookNewsFeed.scss";
-import { FacebookProvider, Page } from 'react-facebook';
+import React from "react";
+import { FacebookProvider, useFacebook, Page } from "react-facebook";
 
 const FacebookNewsFeed = () => {
+  const { appId } = useFacebook();
 
   return (
     <>
@@ -10,7 +11,7 @@ const FacebookNewsFeed = () => {
           Like us on <i className="fab fa-facebook fax" aria-hidden="true"></i>{" "}
           Facebook
         </h2>
-        <FacebookProvider appId="1234518782840956753076789">
+        <FacebookProvider appId={appId}>
           <Page href="https://www.facebook.com/acbelfast" tabs="timeline" />
         </FacebookProvider>
       </div>

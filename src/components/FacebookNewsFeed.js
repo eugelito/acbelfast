@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FacebookProvider, Page } from "react-facebook";
+import "./FacebookNewsFeed.scss";
 
 const FacebookNewsFeed = () => {
   const [key, setKey] = useState(0);

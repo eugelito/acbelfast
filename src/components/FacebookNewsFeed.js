@@ -9,7 +9,7 @@ const FacebookNewsFeed = () => {
           Like us on <i className="fab fa-facebook fax" aria-hidden="true"></i>{" "}
           Facebook
         </h2>
-        <FacebookProvider appId="196175799810100">
+        <FacebookProvider appId="196175799810100" xfbml={true}>
           <Page href="https://www.facebook.com/acbelfast" tabs="timeline" />
         </FacebookProvider>
       </div>

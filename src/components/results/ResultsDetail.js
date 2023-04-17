@@ -165,13 +165,14 @@ const ResultsDetail = ({ showAllResults }) => {
                     </div>
                   </div>
                   <br />
-                  <div className="goalscorer">
-                    {" "}
-                    Goalscorers:{" "}
-                    <span className="goalscorer__names">
-                      {result.goalscorer}
-                    </span>
-                  </div>
+                  {result.goalscorer && (
+                    <div className="goalscorer">
+                      Goalscorers:{" "}
+                      <span className="goalscorer__names">
+                        {result.goalscorer}
+                      </span>
+                    </div>
+                  )}
                   {auth.currentUser && (
                     <button
                       className="deleteBtn"

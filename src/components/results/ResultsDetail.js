@@ -95,14 +95,17 @@ const ResultsDetail = ({ showAllResults }) => {
                       <h4 className="match__result">{result.awayTeamName}</h4>
                     </div>
                   </div>{" "}
-                  <br />
-                  <div className="goalscorer">
-                    {" "}
-                    Goalscorers:{" "}
-                    <span className="goalscorer__names">
-                      {result.goalscorer}
-                    </span>
-                  </div>
+                  {result.goalscorer && (
+                    <>
+                      <br />
+                      <div className="goalscorer">
+                        Goalscorers:{" "}
+                        <span className="goalscorer__names">
+                          {result.goalscorer}
+                        </span>
+                      </div>
+                    </>
+                  )}
                   {results.length > 1 && <hr className="match__divider" />}
                 </>
               );
@@ -164,14 +167,16 @@ const ResultsDetail = ({ showAllResults }) => {
                       <h4 className="match__result">{result.awayTeamName}</h4>
                     </div>
                   </div>
-                  <br />
                   {result.goalscorer && (
-                    <div className="goalscorer">
-                      Goalscorers:{" "}
-                      <span className="goalscorer__names">
-                        {result.goalscorer}
-                      </span>
-                    </div>
+                    <>
+                      <br />
+                      <div className="goalscorer">
+                        Goalscorers:{" "}
+                        <span className="goalscorer__names">
+                          {result.goalscorer}
+                        </span>
+                      </div>
+                    </>
                   )}
                   {auth.currentUser && (
                     <button

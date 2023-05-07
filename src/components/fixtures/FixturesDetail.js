@@ -38,7 +38,7 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
       fixturesCollectionRef,
       where("dateTime", "<", TimeDateNowAfterNintenty)
     );
-    console.log(now);
+
     const pastFixtureSnapshot = await getDocs(pastFixturesQuery);
 
     pastFixtureSnapshot.forEach(async (doc) => {

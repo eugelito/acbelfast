@@ -31,13 +31,14 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
   const deletePastFixtures = async () => {
     const TimeDateNow = new Date();
     const TimeDateNowAfterNintenty = TimeDateNow.setMinutes(
-      now.getMinutes() + 90
+      TimeDateNow.getMinutes() + 90
     );
 
     const pastFixturesQuery = query(
       fixturesCollectionRef,
       where("dateTime", "<", TimeDateNowAfterNintenty)
     );
+    console.log(now);
     const pastFixtureSnapshot = await getDocs(pastFixturesQuery);
 
     pastFixtureSnapshot.forEach(async (doc) => {

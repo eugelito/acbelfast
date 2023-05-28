@@ -30,7 +30,7 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
 
   const deletePastFixtures = async () => {
     const TimeDateNow = new Date();
-    TimeDateNow.setMinutes(TimeDateNow.getMinutes() + 90);
+    TimeDateNow.setMinutes(TimeDateNow.getMinutes());
 
     const pastFixturesQuery = query(
       fixturesCollectionRef,

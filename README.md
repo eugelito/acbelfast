@@ -1,2 +1,2 @@
 # acbelfast
-ac belfast football club website
+Website developed for a local football club, Atheltic Club Belfast.

@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.78f45e66.chunk.css",
+    "main.js": "/static/js/main.f6a5702a.chunk.js",
+    "runtime-main.js": "/static/js/runtime-main.d142868a.js",
+    "static/js/2.c01e7058.chunk.js": "/static/js/2.c01e7058.chunk.js",
+    "static/js/3.7bbeeb4e.chunk.js": "/static/js/3.7bbeeb4e.chunk.js",
+    "index.html": "/index.html",
+    "static/js/2.c01e7058.chunk.js.LICENSE.txt": "/static/js/2.c01e7058.chunk.js.LICENSE.txt",
+    "static/media/acbelfastlogo.2f8b8098.png": "/static/media/acbelfastlogo.2f8b8098.png",
+    "static/media/acbelfastlogo35.4ea73ed0.png": "/static/media/acbelfastlogo35.4ea73ed0.png",
+    "static/media/appStoreLogo.8c4986ee.svg": "/static/media/appStoreLogo.8c4986ee.svg",
+    "static/media/firsts.82656ea0.jpeg": "/static/media/firsts.82656ea0.jpeg",
+    "static/media/Header.scss": "/static/media/footballhero.6d45f53d.jpg",
+    "static/media/googleplayLogo.9459d55d.svg": "/static/media/googleplayLogo.9459d55d.svg",
+    "static/media/over35s.67eaa460.jpeg": "/static/media/over35s.67eaa460.jpeg",
+    "static/media/placeholderlogo.a88a0470.jpeg": "/static/media/placeholderlogo.a88a0470.jpeg",
+    "static/media/player.65f9347f.png": "/static/media/player.65f9347f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d142868a.js",
+    "static/js/2.c01e7058.chunk.js",
+    "static/css/main.78f45e66.chunk.css",
+    "static/js/main.f6a5702a.chunk.js"
+  ]
+}

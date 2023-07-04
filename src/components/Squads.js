@@ -53,7 +53,7 @@ const Squads = () => {
           <h3>Player / Manager</h3>
           <div className="squads__position squads__position--manager">
             <div className="player__profile">
-              <img src={playerPlaceholder} height="75px"></img>
+              <img src={"/images/players/diarmuid.jpeg"} />
               <p>Diarmuid Waide</p>
             </div>
           </div>
@@ -64,7 +64,7 @@ const Squads = () => {
               .map((player) => {
                 return (
                   <div className="player__profile">
-                    <img src={playerPlaceholder} height="75px"></img>
+                    <img src={player.imageUrl} height="150px"></img>
                     <p className="marginBottom-2">{player.fullName}</p>
                   </div>
                 );
@@ -77,7 +77,7 @@ const Squads = () => {
               .map((player) => {
                 return (
                   <div className="player__profile">
-                    <img src={playerPlaceholder} height="75px" alt=""></img>
+                    <img src={player.imageUrl} alt=""></img>
                     <p className="marginBottom-2">{player.fullName}</p>
                   </div>
                 );
@@ -90,7 +90,7 @@ const Squads = () => {
               .map((player) => {
                 return (
                   <div className="player__profile">
-                    <img src={playerPlaceholder} height="75px" alt=""></img>
+                    <img src={player.imageUrl} alt=""></img>
                     <p className="marginBottom-2">{player.fullName}</p>
                   </div>
                 );
@@ -103,7 +103,7 @@ const Squads = () => {
               .map((player) => {
                 return (
                   <div className="player__profile">
-                    <img src={playerPlaceholder} height="75px" alt=""></img>
+                    <img src={player.imageUrl} alt=""></img>
                     <p className="marginBottom-2">{player.fullName}</p>
                   </div>
                 );
@@ -129,11 +129,11 @@ const Squads = () => {
           <h3>Player / Manager</h3>
           <div className="squads__position squads__position--manager">
             <div className="player__profile">
-              <img src={playerPlaceholder} height="75px" alt=""></img>
+              <img src={playerPlaceholder} alt=""></img>
               <p>Colin 'Colly' Walker</p>
             </div>
             <div className="player__profile">
-              <img src={playerPlaceholder} height="75px" alt=""></img>
+              <img src={playerPlaceholder} alt=""></img>
               <p>Graham Parkinson</p>
             </div>
           </div>
@@ -144,7 +144,7 @@ const Squads = () => {
               .map((player) => {
                 return (
                   <div className="player__profile">
-                    <img src={playerPlaceholder} height="75px" alt=""></img>
+                    <img src={playerPlaceholder} alt=""></img>
                     <p className="marginBottom-2">{player.fullName}</p>
                   </div>
                 );
@@ -157,7 +157,7 @@ const Squads = () => {
               .map((player) => {
                 return (
                   <div className="player__profile">
-                    <img src={playerPlaceholder} height="75px" alt=""></img>
+                    <img src={playerPlaceholder} alt=""></img>
                     <p className="marginBottom-2">{player.fullName}</p>
                   </div>
                 );
@@ -170,7 +170,7 @@ const Squads = () => {
               .map((player) => {
                 return (
                   <div className="player__profile">
-                    <img src={playerPlaceholder} height="75px" alt=""></img>
+                    <img src={playerPlaceholder} alt=""></img>
                     <p className="marginBottom-2">{player.fullName}</p>
                   </div>
                 );
@@ -184,7 +184,7 @@ const Squads = () => {
               .map((player) => {
                 return (
                   <div className="player__profile">
-                    <img src={playerPlaceholder} height="75px" alt=""></img>
+                    <img src={playerPlaceholder} alt=""></img>
                     <p className="marginBottom-2">{player.fullName}</p>
                   </div>
                 );

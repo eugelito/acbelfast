@@ -1,106 +1,132 @@
 [
   {
     "fullName": "Jamie King (C)",
-    "position": "Goalkeeper"
+    "position": "Goalkeeper",
+    "imageUrl": "/images/players/jamie.jpeg"
   },
   {
     "fullName": "Aaron Crawford",
-    "position": "Defender"
+    "position": "Defender",
+    "imageUrl": "/images/players/placeholderplayer.png"
   },
   {
     "fullName": "Marty McDonnell",
-    "position": "Defender"
+    "position": "Defender",
+    "imageUrl": "/images/players/placeholderplayer.png"
   },
   {
     "fullName": "Ryan Wharry",
-    "position": "Defender"
+    "position": "Defender",
+    "imageUrl": "/images/players/placeholderplayer.png"
   },
   {
     "fullName": "Daniel Oluwasanmi Ajayi",
-    "position": "Defender"
+    "position": "Defender",
+    "imageUrl": "/images/players/placeholderplayer.png"
   },
   {
     "fullName": "Aaron McKee",
-    "position": "Defender"
+    "position": "Defender",
+    "imageUrl": "/images/players/placeholderplayer.png"
   },
   {
     "fullName": "Niall McInerney",
-    "position": "Defender"
+    "position": "Defender",
+    "imageUrl": "/images/players/placeholderplayer.png"
   },
   {
     "fullName": "Steve O'Hara",
-    "position": "Defender"
+    "position": "Defender",
+    "imageUrl": "/images/players/placeholderplayer.png"
   },
   {
     "fullName": "James Bainbridge",
-    "position": "Defender"
+    "position": "Defender",
+    "imageUrl": "/images/players/jamesb.jpeg"
   },
   {
     "fullName": "Tinashe Masoka",
-    "position": "Defender"
+    "position": "Defender",
+    "imageUrl": "/images/players/placeholderplayer.png"
   },
   {
     "fullName": "Jonathan Jones",
-    "position": "Defender"
+    "position": "Defender",
+    "imageUrl": "/images/players/placeholderplayer.png"
   },
   {
     "fullName": "Dylan Geraghty",
-    "position": "Midfielder"
+    "position": "Midfielder",
+    "imageUrl": "/images/players/placeholderplayer.png"
   },
   {
     "fullName": "Mark Kavanagh",
-    "position": "Midfielder"
+    "position": "Midfielder",
+    "imageUrl": "/images/players/placeholderplayer.png"
   },
   {
     "fullName": "Eugelito Troyo",
-    "position": "Midfielder"
+    "position": "Midfielder",
+    "imageUrl": "/images/players/eugelito.jpeg"
   },
   {
     "fullName": "Guillermo Álvarez Narciandi",
-    "position": "Midfielder"
+    "position": "Midfielder",
+    "imageUrl": "/images/players/guillermo.jpeg"
   },
   {
     "fullName": "Steven Derby",
-    "position": "Midfielder"
+    "position": "Midfielder",
+    "imageUrl": "/images/players/steven.jpeg"
   },
   {
     "fullName": "James Hewitt",
-    "position": "Midfielder"
+    "position": "Midfielder",
+    "imageUrl": "/images/players/jamesh.jpeg"
   },
   {
     "fullName": "Johnson Furusa",
-    "position": "Midfielder"
+    "position": "Midfielder",
+    "imageUrl": "/images/players/placeholderplayer.png"
   },
   {
     "fullName": "Charles Mathias",
-    "position": "Midfielder"
+    "position": "Midfielder",
+    "imageUrl": "/images/players/placeholderplayer.png"
   },
   {
     "fullName": "Tom McCluskey-Smith",
-    "position": "Midfielder"
+    "position": "Midfielder",
+    "imageUrl": "/images/players/placeholderplayer.png"
   },
   {
     "fullName": "Iñigo Rodriguez Garcia",
-    "position": "Forward"
+    "position": "Forward",
+    "imageUrl": "/images/players/placeholderplayer.png"
   },
   {
     "fullName": "Diarmuid Waide",
-    "position": "Forward"
+    "position": "Forward",
+    "imageUrl": "/images/players/diarmuid.jpeg"
   },
   {
     "fullName": "Eoin Devenny",
-    "position": "Forward"
+    "position": "Forward",
+    "imageUrl": "/images/players/placeholderplayer.png"
   },
   {
     "fullName": "Richard Winder",
-    "position": "Forward"
+    "position": "Forward",
+    "imageUrl": "/images/players/placeholderplayer.png"
   },
   {
     "fullName": "Aaron Crawford",
-    "position": "Forward"
+    "position": "Forward",
+    "imageUrl": "/images/players/placeholderplayer.png"
   },
   {
     "fullName": "Jordan Thompson",
-    "position": "Forward"
+    "position": "Forward",
+    "imageUrl": "/images/players/jordan.jpeg"
   }
 ]

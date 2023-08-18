@@ -96,7 +96,7 @@ const Squads = () => {
                 );
               })}
           </div>
-          <h3>Fowards</h3>
+          <h3>Forwards</h3>
           <div className="squads__position">
             {firstSquadData
               .filter((position) => position.position.includes("Forward"))
@@ -177,7 +177,7 @@ const Squads = () => {
               })}
           </div>
 
-          <h3>Fowards</h3>
+          <h3>Forwards</h3>
           <div className="squads__position">
             {oversSquadData
               .filter((position) => position.position.includes("Forward"))

@@ -33,8 +33,8 @@ const Home = () => {
             <p className="about__description">
               Athletic Club Belfast is a senior men's amateur football club that
               includes a first team competing in the Belfast & District Football
-              League (Division 3) and an over 35s team in the Emerge
-              Invitational League 1.
+              League (Division 2) and an over 35s team in the Emerge
+              Invitational League Championship.
             </p>
             <div className="training__schedule">
               <strong>Football Training Schedule</strong>

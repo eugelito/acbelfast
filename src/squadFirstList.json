@@ -40,6 +40,11 @@
     "imageUrl": "/images/players/jack.jpeg"
   },
   {
+    "fullName": "Chris Moore",
+    "position": "Defender",
+    "imageUrl": "/images/players/chris.jpeg"
+  },
+  {
     "fullName": "Ryan Wharry",
     "position": "Defender",
     "imageUrl": "/images/players/placeholderplayer.png"

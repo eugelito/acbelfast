@@ -42,12 +42,11 @@ const Home = () => {
               <ul>
                 <li>
                   <i className="fab fas fa-clock" aria-hidden="true"></i>{" "}
-                  <span>7pm to 9pm on Tuesdays & Thursdays</span>
+                  <span>8:30pm to 10pm on Tuesdays</span>
                 </li>
                 <li>
                   <i className="fab fas fa-home" aria-hidden="true"></i> at
-                  Hydebank Park Playing Fields, 4 Newtownbreda Rd, Belfast BT8
-                  6QB
+                  Ozone Complex, Ormeau Embankment, Belfast BT6 8LT
                 </li>
               </ul>
               <br />

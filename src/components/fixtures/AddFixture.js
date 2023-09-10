@@ -6,6 +6,7 @@ import { db, storage } from "../../firebase-config";
 import { ref, uploadBytes } from "firebase/storage";
 import { v4 } from "uuid";
 import "./Fixtures.scss";
+import clubData from "../../clubsData.json";
 
 const AddFixture = () => {
   const fixturesCollectionRef = collection(db, "fixtures");
@@ -17,6 +18,8 @@ const AddFixture = () => {
   const [newDateTime, setNewDateTime] = useState(new Date());
   const [newCompetition, setNewCompetition] = useState("League");
   const [newVenue, setNewVenue] = useState("");
+  const [selectedOptionHome, setSelectedOptionHome] = useState("");
+  const [selectedOptionAway, setSelectedOptionAway] = useState("");
 
   const handleAddFixture = async (event) => {
     await addDoc(fixturesCollectionRef, {
@@ -47,6 +50,28 @@ const AddFixture = () => {
   //   });
   // };
 
+  const handleSelectChangeHome = (event) => {
+    const selectedOptionHome = event.target.value;
+    setSelectedOptionHome(selectedOptionHome);
+    setNewHomeTeamName(selectedOptionHome);
+
+    if (selectedOptionHome === "Other") {
+      // If "Other" is selected, set the input value to an empty string
+      setNewHomeTeamName("");
+    }
+  };
+
+  const handleSelectChangeAway = (event) => {
+    const selectedOptionAway = event.target.value;
+    setSelectedOptionAway(selectedOptionAway);
+    setNewAwayTeamName(selectedOptionAway);
+
+    if (selectedOptionAway === "Other") {
+      // If "Other" is selected, set the input value to an empty string
+      setNewAwayTeamName("");
+    }
+  };
+
   return (
     <div>
       {auth.currentUser && (
@@ -55,14 +80,30 @@ const AddFixture = () => {
             <div className="column--half">
               {" "}
               <label>Home team name</label>
-              <input
-                type="text"
-                placeholder="Enter Home Team Name"
+              <select
                 required
-                onChange={(event) => {
-                  setNewHomeTeamName(event.target.value);
-                }}
-              ></input>
+                onChange={handleSelectChangeHome}
+                value={selectedOptionHome}
+              >
+                <option value="" disabled selected>
+                  Select Home Team
+                </option>
+                {clubData.map((club, index) => (
+                  <option key={index} value={club.clubName}>
+                    {club.clubName}
+                  </option>
+                ))}
+              </select>
+              {selectedOptionHome === "Other" && (
+                <input
+                  type="text"
+                  placeholder="Enter Home Team Name"
+                  required
+                  onChange={(event) => {
+                    setNewHomeTeamName(event.target.value);
+                  }}
+                ></input>
+              )}
               {/* <label>Upload Home Team Image</label>
             <input
               type="file"
@@ -76,14 +117,30 @@ const AddFixture = () => {
             <span className="versus">v</span>
             <div className="column--half">
               <label>Away team name</label>
-              <input
-                type="text"
-                placeholder="Enter Away Team Name"
+              <select
                 required
-                onChange={(event) => {
-                  setNewAwayTeamName(event.target.value);
-                }}
-              ></input>
+                onChange={handleSelectChangeAway}
+                value={selectedOptionAway}
+              >
+                <option value="" disabled selected>
+                  Select Away Team
+                </option>
+                {clubData.map((club, index) => (
+                  <option key={index} value={club.clubName}>
+                    {club.clubName}
+                  </option>
+                ))}
+              </select>
+              {selectedOptionAway === "Other" && (
+                <input
+                  type="text"
+                  placeholder="Enter Away Team Name"
+                  required
+                  onChange={(event) => {
+                    setNewAwayTeamName(event.target.value);
+                  }}
+                ></input>
+              )}
               {/* <label>Enter Away Team Image</label>
             <input
               type="file"

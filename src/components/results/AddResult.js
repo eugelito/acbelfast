@@ -25,6 +25,8 @@ const AddResult = () => {
   const [awayTeamName, setAwayTeamName] = useState("");
   const [awayTeamScore, setAwayTeamScore] = useState("");
   const [goalscorer, setGoalscorer] = useState("");
+  const [selectedOptionHome, setSelectedOptionHome] = useState("");
+  const [selectedOptionAway, setSelectedOptionAway] = useState("");
 
   const handleAddResult = async (event) => {
     await addDoc(resultsCollectionRef, {
@@ -47,6 +49,28 @@ const AddResult = () => {
     setCompetition(event.target.value);
   };
 
+  const handleSelectChangeHome = (event) => {
+    const selectedOptionHome = event.target.value;
+    setSelectedOptionHome(selectedOptionHome);
+    setHomeTeamName(selectedOptionHome);
+
+    if (selectedOptionHome === "Other") {
+      // If "Other" is selected, set the input value to an empty string
+      setHomeTeamName("");
+    }
+  };
+
+  const handleSelectChangeAway = (event) => {
+    const selectedOptionAway = event.target.value;
+    setSelectedOptionAway(selectedOptionAway);
+    setAwayTeamName(selectedOptionAway);
+
+    if (selectedOptionAway === "Other") {
+      // If "Other" is selected, set the input value to an empty string
+      setAwayTeamName("");
+    }
+  };
+
   // const homeImageUpload = () => {
   //   if (newHomeTeamImage == null) return;
   //   const imageRef = ref(storage, `images/${newHomeTeamImage.name + v4()}`);
@@ -64,9 +88,8 @@ const AddResult = () => {
               <label>Home team name</label>
               <select
                 required
-                onChange={(event) => {
-                  setHomeTeamName(event.target.value);
-                }}
+                onChange={handleSelectChangeHome}
+                value={selectedOptionHome}
               >
                 <option value="" disabled selected>
                   Select Home Team
@@ -78,7 +101,7 @@ const AddResult = () => {
                 ))}
               </select>
               {/** render input if other selected from dropdown */}
-              {homeTeamName === "Other" && (
+              {selectedOptionHome === "Other" && (
                 <input
                   type="text"
                   placeholder="Enter Home Team Name"
@@ -113,9 +136,8 @@ const AddResult = () => {
               <label>Away team name</label>
               <select
                 required
-                onChange={(event) => {
-                  setAwayTeamName(event.target.value);
-                }}
+                onChange={handleSelectChangeAway}
+                value={selectedOptionAway}
               >
                 <option value="" disabled selected>
                   Select Away Team
@@ -127,7 +149,7 @@ const AddResult = () => {
                 ))}
               </select>
               {/** render input if other selected from dropdown */}
-              {awayTeamName === "Other" && (
+              {selectedOptionAway === "Other" && (
                 <input
                   type="text"
                   placeholder="Enter Away Team Name"

@@ -23,6 +23,7 @@ import moment from "moment";
 import placeHolderImage from "../../images/placeholderlogo.jpeg";
 import acbelfastlogo from "../../images/acbelfastlogo.png";
 import acbelfastlogo35 from "../../images/acbelfastlogo35.png";
+import ClubLogoSwitch from "../ClubLogoSwitch";
 
 const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
   const [fixtures, setFixtures] = useState([]);
@@ -133,11 +134,7 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
                       //     ? acbelfastlogo35
                       //     : placeHolderImage ||
                       //       fixture.homeTeamName.includes("AC Belfast")
-                      src={
-                        fixture.homeTeamName.includes("AC")
-                          ? acbelfastlogo
-                          : placeHolderImage
-                      }
+                      src={ClubLogoSwitch(fixture.homeTeamName)}
                       width="75px"
                       height="70px"
                     ></img>
@@ -156,11 +153,7 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
                       //     ? acbelfastlogo35
                       //     : placeHolderImage ||
                       //       fixture.awayTeamName.includes("AC Belfast")
-                      src={
-                        fixture.awayTeamName.includes("AC")
-                          ? acbelfastlogo
-                          : placeHolderImage
-                      }
+                      src={ClubLogoSwitch(fixture.awayTeamName)}
                       width="75px"
                       height="70px"
                     ></img>
@@ -197,11 +190,7 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
                   </div>
                   <div className="match__teams">
                     <img
-                      src={
-                        fixture.homeTeamName.includes("AC")
-                          ? acbelfastlogo
-                          : placeHolderImage
-                      }
+                      src={ClubLogoSwitch(fixture.homeTeamName)}
                       width="75px"
                       height="70px"
                     ></img>
@@ -215,11 +204,7 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
                       {fixture.homeTeamName} v {fixture.awayTeamName}
                     </h4>
                     <img
-                      src={
-                        fixture.awayTeamName.includes("AC")
-                          ? acbelfastlogo
-                          : placeHolderImage
-                      }
+                      src={ClubLogoSwitch(fixture.awayTeamName)}
                       width="75px"
                       height="70px"
                     ></img>

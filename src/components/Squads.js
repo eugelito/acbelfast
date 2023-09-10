@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import "./Squads.scss";
-import over35s from "../images/over35s.jpeg";
+import over35s from "../images/overs.jpeg";
 import firsts from "../images/firsts.jpeg";
 import playerPlaceholder from "../images/player.png";
 import firstSquadData from "../squadFirstList.json";
@@ -53,61 +53,53 @@ const Squads = () => {
           <h3>Player / Manager</h3>
           <div className="squads__position squads__position--manager">
             <div className="player__profile">
-              <img src={"/images/players/diarmuid.jpeg"} />
+              <img src={"/images/players/firsts/diarmuid.jpeg"} />
               <p>Diarmuid Waide</p>
             </div>
           </div>
           <h3>Goalkeepers</h3>
           <div className="squads__position">
-            {firstSquadData
-              .filter((position) => position.position.includes("Goalkeeper"))
-              .map((player) => {
-                return (
-                  <div className="player__profile">
-                    <img src={player.imageUrl} height="150px"></img>
-                    <p className="marginBottom-2">{player.fullName}</p>
-                  </div>
-                );
-              })}
+            {firstSquadData.Goalkeeper.map((player) => {
+              return (
+                <div className="player__profile">
+                  <img src={player.imageUrl} height="150px" alt="" />
+                  <p className="marginBottom-2">{player.fullName}</p>
+                </div>
+              );
+            })}
           </div>
           <h3>Defenders</h3>
           <div className="squads__position">
-            {firstSquadData
-              .filter((position) => position.position.includes("Defender"))
-              .map((player) => {
-                return (
-                  <div className="player__profile">
-                    <img src={player.imageUrl} alt=""></img>
-                    <p className="marginBottom-2">{player.fullName}</p>
-                  </div>
-                );
-              })}
+            {firstSquadData.Defender.map((player) => {
+              return (
+                <div className="player__profile">
+                  <img src={player.imageUrl} alt="" />
+                  <p className="marginBottom-2">{player.fullName}</p>
+                </div>
+              );
+            })}
           </div>
           <h3>Midfielders</h3>
           <div className="squads__position">
-            {firstSquadData
-              .filter((position) => position.position.includes("Midfielder"))
-              .map((player) => {
-                return (
-                  <div className="player__profile">
-                    <img src={player.imageUrl} alt=""></img>
-                    <p className="marginBottom-2">{player.fullName}</p>
-                  </div>
-                );
-              })}
+            {firstSquadData.Midfielder.map((player) => {
+              return (
+                <div className="player__profile">
+                  <img src={player.imageUrl} alt="" />
+                  <p className="marginBottom-2">{player.fullName}</p>
+                </div>
+              );
+            })}
           </div>
           <h3>Forwards</h3>
           <div className="squads__position">
-            {firstSquadData
-              .filter((position) => position.position.includes("Forward"))
-              .map((player) => {
-                return (
-                  <div className="player__profile">
-                    <img src={player.imageUrl} alt=""></img>
-                    <p className="marginBottom-2">{player.fullName}</p>
-                  </div>
-                );
-              })}
+            {firstSquadData.Forward.map((player) => {
+              return (
+                <div className="player__profile">
+                  <img src={player.imageUrl} alt="" />
+                  <p className="marginBottom-2">{player.fullName}</p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
@@ -130,65 +122,53 @@ const Squads = () => {
           <div className="squads__position squads__position--manager">
             <div className="player__profile">
               <img src={playerPlaceholder} alt=""></img>
-              <p>Colin 'Colly' Walker</p>
-            </div>
-            <div className="player__profile">
-              <img src={playerPlaceholder} alt=""></img>
               <p>Graham Parkinson</p>
             </div>
           </div>
           <h3>Goalkeepers</h3>
           <div className="squads__position">
-            {oversSquadData
-              .filter((position) => position.position.includes("Goalkeeper"))
-              .map((player) => {
-                return (
-                  <div className="player__profile">
-                    <img src={playerPlaceholder} alt=""></img>
-                    <p className="marginBottom-2">{player.fullName}</p>
-                  </div>
-                );
-              })}
+            {oversSquadData.Goalkeeper.map((player) => {
+              return (
+                <div className="player__profile">
+                  <img src={player.imageUrl} alt="" />
+                  <p className="marginBottom-2">{player.fullName}</p>
+                </div>
+              );
+            })}
           </div>
           <h3>Defenders</h3>
           <div className="squads__position">
-            {oversSquadData
-              .filter((position) => position.position.includes("Defender"))
-              .map((player) => {
-                return (
-                  <div className="player__profile">
-                    <img src={playerPlaceholder} alt=""></img>
-                    <p className="marginBottom-2">{player.fullName}</p>
-                  </div>
-                );
-              })}
+            {oversSquadData.Defender.map((player) => {
+              return (
+                <div className="player__profile">
+                  <img src={player.imageUrl} alt="" />
+                  <p className="marginBottom-2">{player.fullName}</p>
+                </div>
+              );
+            })}
           </div>
           <h3>Midfielders</h3>
           <div className="squads__position">
-            {oversSquadData
-              .filter((position) => position.position.includes("Midfielder"))
-              .map((player) => {
-                return (
-                  <div className="player__profile">
-                    <img src={playerPlaceholder} alt=""></img>
-                    <p className="marginBottom-2">{player.fullName}</p>
-                  </div>
-                );
-              })}
+            {oversSquadData.Midfielder.map((player) => {
+              return (
+                <div className="player__profile">
+                  <img src={player.imageUrl} alt="" />
+                  <p className="marginBottom-2">{player.fullName}</p>
+                </div>
+              );
+            })}
           </div>
 
           <h3>Forwards</h3>
           <div className="squads__position">
-            {oversSquadData
-              .filter((position) => position.position.includes("Forward"))
-              .map((player) => {
-                return (
-                  <div className="player__profile">
-                    <img src={playerPlaceholder} alt=""></img>
-                    <p className="marginBottom-2">{player.fullName}</p>
-                  </div>
-                );
-              })}
+            {oversSquadData.Forward.map((player) => {
+              return (
+                <div className="player__profile">
+                  <img src={player.imageUrl} alt="" />
+                  <p className="marginBottom-2">{player.fullName}</p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

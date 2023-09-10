@@ -1,98 +1,110 @@
-[
-  {
-    "fullName": "Chris White",
-    "position": "Goalkeeper"
-  },
-  {
-    "fullName": "James Magee",
-    "position": "Goalkeeper"
-  },
-  {
-    "fullName": "Nick Patterson",
-    "position": "Goalkeeper"
-  },
-  {
-    "fullName": "Chris Plunkett",
-    "position": "Defender"
-  },
-  {
-    "fullName": "Stephen Rice",
-    "position": "Defender"
-  },
-  {
-    "fullName": "Phil Leckenby",
-    "position": "Defender"
-  },
-  {
-    "fullName": "Sean Bowers (C)",
-    "position": "Defender"
-  },
-  {
-    "fullName": "David Gibson",
-    "position": "Defender"
-  },
-  {
-    "fullName": "Camilo Ernesto Maldonado Castiblanco",
-    "position": "Defender"
-  },
-  {
-    "fullName": "Dave Cordner",
-    "position": "Defender"
-  },
-  {
-    "fullName": "Robert Smith",
-    "position": "Midfielder"
-  },
-  {
-    "fullName": "Scott Evanson-Rush",
-    "position": "Midfielder"
-  },
-  {
-    "fullName": "Jamie Everden",
-    "position": "Midfielder"
-  },
-  {
-    "fullName": "Edward Ridgwell",
-    "position": "Midfielder"
-  },
-  {
-    "fullName": "Joe Rice",
-    "position": "Midfielder"
-  },
-  {
-    "fullName": "Adrian Murphy (VC)",
-    "position": "Midfielder"
-  },
-  {
-    "fullName": "Ken Golden",
-    "position": "Midfielder"
-  },
-  {
-    "fullName": "Stephen Tinsley",
-    "position": "Forward"
-  },
-  {
-    "fullName": "Gerard Houston",
-    "position": "Forward"
-  },
-  {
-    "fullName": "Milad Darrat",
-    "position": "Forward"
-  },
-  {
-    "fullName": "Farook Bhabha",
-    "position": "Forward"
-  },
-  {
-    "fullName": "Jobin George",
-    "position": "Forward"
-  },
-  {
-    "fullName": "Salah Eddin Al-Ghadi",
-    "position": "Forward"
-  },
-  {
-    "fullName": "Martin Ferguson",
-    "position": "Forward"
-  }
-]
+{
+  "Goalkeeper": [
+    {
+      "fullName": "David Williams",
+      "imageUrl": "/images/players/overs/placeholderplayer.png"
+    },
+    {
+      "fullName": "Declan McDaid",
+      "imageUrl": "/images/players/overs/placeholderplayer.png"
+    }
+  ],
+  "Defender": [
+    {
+      "fullName": "Dave Cordner",
+      "imageUrl": "/images/players/overs/dave.jpeg"
+    },
+    {
+      "fullName": "Stephen Rice",
+      "imageUrl": "/images/players/overs/stephenr.jpeg"
+    },
+    {
+      "fullName": "Phil Leckenby",
+      "imageUrl": "/images/players/overs/phil.jpeg"
+    },
+    {
+      "fullName": "Sean Bowers (c)",
+      "imageUrl": "/images/players/overs/sean.jpeg"
+    },
+    {
+      "fullName": "Aaron Crawford",
+      "imageUrl": "/images/players/overs/aaron.jpeg"
+    },
+    {
+      "fullName": "Stephen Tinsley",
+      "imageUrl": "/images/players/overs/stephen.jpeg"
+    },
+    {
+      "fullName": "Camilo Maldonado",
+      "imageUrl": "/images/players/overs/placeholderplayer.png"
+    },
+    {
+      "fullName": "Thomas Jinga",
+      "imageUrl": "/images/players/overs/thomas.jpeg"
+    }
+  ],
+  "Midfielder": [
+    {
+      "fullName": "Jamie Everden",
+      "imageUrl": "/images/players/overs/jamie.jpeg"
+    },
+    {
+      "fullName": "Robert Smith",
+      "imageUrl": "/images/players/overs/placeholderplayer.png"
+    },
+    {
+      "fullName": "Chris Plunkett",
+      "imageUrl": "/images/players/overs/chris.jpeg"
+    },
+    {
+      "fullName": "Joe Rice",
+      "imageUrl": "/images/players/overs/joe.jpeg"
+    },
+    {
+      "fullName": "Sean Donnelly",
+      "imageUrl": "/images/players/overs/seand.jpeg"
+    },
+    {
+      "fullName": "Ken Golden",
+      "imageUrl": "/images/players/overs/ken.jpeg"
+    },
+    {
+      "fullName": "Milad Darrat",
+      "imageUrl": "/images/players/overs/milad.jpeg"
+    },
+    {
+      "fullName": "Jake Ryan",
+      "imageUrl": "/images/players/overs/jake.jpeg"
+    },
+    {
+      "fullName": "Paul Christian",
+      "imageUrl": "/images/players/overs/placeholderplayer.png"
+    }
+  ],
+  "Forward": [
+    {
+      "fullName": "Martin Ferguson",
+      "imageUrl": "/images/players/overs/martin.jpeg"
+    },
+    {
+      "fullName": "Adrian Murphy (VC)",
+      "imageUrl": "/images/players/overs/adrian.jpeg"
+    },
+    {
+      "fullName": "Gerard Houston",
+      "imageUrl": "/images/players/overs/gerard.jpeg"
+    },
+    {
+      "fullName": "Gary McQuillan",
+      "imageUrl": "/images/players/overs/placeholderplayer.png"
+    },
+    {
+      "fullName": "Conor McDaid",
+      "imageUrl": "/images/players/overs/conor.jpeg"
+    },
+    {
+      "fullName": "Emanuele Armaforte",
+      "imageUrl": "/images/players/overs/emanuele.jpeg"
+    }
+  ]
+}

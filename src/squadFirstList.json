@@ -7,12 +7,32 @@
   ],
   "Defender": [
     {
+      "fullName": "Chris Moore",
+      "imageUrl": "/images/players/firsts/chris.jpeg"
+    },
+    {
+      "fullName": "Jack Caine",
+      "imageUrl": "/images/players/firsts/jack.jpeg"
+    },
+    {
+      "fullName": "Jonathan Jones",
+      "imageUrl": "/images/players/firsts/jj.jpeg"
+    },
+    {
       "fullName": "Martyn McDonnell",
       "imageUrl": "/images/players/firsts/martyn.jpeg"
     },
     {
+      "fullName": "Nicholas Boyd",
+      "imageUrl": "/images/players/firsts/nick.jpeg"
+    },
+    {
       "fullName": "Niall McInerney",
       "imageUrl": "/images/players/firsts/niall.jpeg"
+    },
+    {
+      "fullName": "Ryan Wharry",
+      "imageUrl": "/images/players/firsts/placeholderplayer.png"
     },
     {
       "fullName": "Steve O'Hara",
@@ -21,32 +41,16 @@
     {
       "fullName": "Steven Derby",
       "imageUrl": "/images/players/firsts/steven.jpeg"
-    },
-    {
-      "fullName": "Nicholas Boyd",
-      "imageUrl": "/images/players/firsts/nick.jpeg"
-    },
-    {
-      "fullName": "Jonathan Jones",
-      "imageUrl": "/images/players/firsts/jj.jpeg"
-    },
-    {
-      "fullName": "Jack Caine",
-      "imageUrl": "/images/players/firsts/jack.jpeg"
-    },
-    {
-      "fullName": "Chris Moore",
-      "imageUrl": "/images/players/firsts/chris.jpeg"
-    },
-    {
-      "fullName": "Ryan Wharry",
-      "imageUrl": "/images/players/firsts/placeholderplayer.png"
     }
   ],
   "Midfielder": [
     {
-      "fullName": "James Bainbridge",
-      "imageUrl": "/images/players/firsts/jamesb.jpeg"
+      "fullName": "Aaron O'Donovan",
+      "imageUrl": "/images/players/firsts/aaron.jpeg"
+    },
+    {
+      "fullName": "Edgar Texeira",
+      "imageUrl": "/images/players/firsts/edgar.jpeg"
     },
     {
       "fullName": "Eugelito Troyo (VC)",
@@ -57,20 +61,16 @@
       "imageUrl": "/images/players/firsts/guillermo.jpeg"
     },
     {
+      "fullName": "James Bainbridge",
+      "imageUrl": "/images/players/firsts/jamesb.jpeg"
+    },
+    {
       "fullName": "James Hewitt",
       "imageUrl": "/images/players/firsts/jamesh.jpeg"
     },
     {
       "fullName": "Jordan Thompson",
       "imageUrl": "/images/players/firsts/jordan.jpeg"
-    },
-    {
-      "fullName": "Aaron O'Donovan",
-      "imageUrl": "/images/players/firsts/aaron.jpeg"
-    },
-    {
-      "fullName": "Edgar Texeira",
-      "imageUrl": "/images/players/firsts/edgar.jpeg"
     },
     {
       "fullName": "Juan Jesus Texeira",
@@ -83,16 +83,16 @@
   ],
   "Forward": [
     {
+      "fullName": "Diarmuid Waide",
+      "imageUrl": "/images/players/firsts/diarmuid.jpeg"
+    },
+    {
       "fullName": "Eoin Devenny",
       "imageUrl": "/images/players/firsts/eoin.jpeg"
     },
     {
       "fullName": "Iñigo Rodriguez Garcia",
       "imageUrl": "/images/players/firsts/inigo.jpeg"
-    },
-    {
-      "fullName": "Diarmuid Waide",
-      "imageUrl": "/images/players/firsts/diarmuid.jpeg"
     },
     {
       "fullName": "Mark Kavanagh",

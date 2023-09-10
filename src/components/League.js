@@ -104,10 +104,10 @@ const League = () => {
       {/** Display First Team if First Team is selected */}
       <h2 className="leagueHeading">
         {toggleState === 1
-          ? "Belfast and District League (Division 3)"
-          : "Emerge Invitational League (League 1)"}
+          ? "Belfast and District League (Division 2)"
+          : "Emerge Invitational League (Championship)"}
       </h2>
-      <p style={{ color: "#fff", marginBottom: "3rem" }}>2022 - 2023 Season</p>
+      <p style={{ color: "#fff", marginBottom: "3rem" }}>2023 - 2024 Season</p>
       <div className="league__select">
         <button
           id="firstTeamLeagueBtn"
@@ -217,11 +217,11 @@ const League = () => {
         {!viewLeagueSpreadSheet && toggleState === 2 ? (
           <a
             className="externalLeagueLink"
-            href="https://docs.google.com/spreadsheets/d/1GLUmQVLkyLHGrX7xNgqZwy4vBGtM_wVwBTEUiWZSRMk/edit?usp=sharing"
+            href="https://www.facebook.com/groups/1234137986977584/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            View Emerge Invitational league table{" "}
+            Emerge Invitational League Facebook Group{" "}
             <FontAwesomeIcon icon={faExternalLinkAlt} />
           </a>
         ) : (

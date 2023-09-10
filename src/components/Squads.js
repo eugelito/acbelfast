@@ -17,29 +17,33 @@ const Squads = () => {
   return (
     <div className="container__squads">
       <h1 className="page__heading">Squads</h1>
-      <button
-        id="firstTeamLeagueBtn"
-        className={
-          toggleState === 1
-            ? "active btn btn__league btn__navy"
-            : "btn btn__league btn__league--overs"
-        }
-        onClick={() => toggleTab(1)}
-      >
-        First Team
-      </button>
-      <button
-        id="oversTeamLeagueBtn"
-        className={
-          toggleState === 2
-            ? "active btn btn__league btn__league--overs btn__navy"
-            : "btn btn__league btn__league--overs"
-        }
-        onClick={() => toggleTab(2)}
-      >
-        {" "}
-        Over 35s
-      </button>
+      <div className="league--tabs">
+        <div className="league--tabs__center">
+          <button
+            id="firstTeamLeagueBtn"
+            className={
+              toggleState === 1
+                ? "active btn btn__league btn__navy"
+                : "btn btn__league btn__league--overs"
+            }
+            onClick={() => toggleTab(1)}
+          >
+            First Team
+          </button>
+          <button
+            id="oversTeamLeagueBtn"
+            className={
+              toggleState === 2
+                ? "active btn btn__league btn__league--overs btn__navy"
+                : "btn btn__league btn__league--overs"
+            }
+            onClick={() => toggleTab(2)}
+          >
+            {" "}
+            Over 35s
+          </button>
+        </div>
+      </div>
       <div
         className={
           toggleState === 2

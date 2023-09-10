@@ -2,6 +2,17 @@
     flex-direction: column;
 }
 
+.league--tabs {
+    background-color: var(--secondaryColor);
+
+
+}
+
+.league--tabs__center {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
 .container__squads--first {}
 
 .container__squads--overs {

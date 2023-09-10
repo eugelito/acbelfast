@@ -1,0 +1,70 @@
+[
+  {
+    "clubName": "AC Belfast",
+    "imageUrl": "/images/firstsLeagueLogos/acbelfast.jpeg"
+  },
+  {
+    "clubName": "AC Belfast Overs",
+    "imageUrl": "/images/firstsLeagueLogos/acbelfast.jpeg"
+  },
+  {
+    "clubName": "Albion Star II",
+    "imageUrl": "/images/firstsLeagueLogos/albionstarii.jpeg"
+  },
+  {
+    "clubName": "Glanville Rec",
+    "imageUrl": "/images/firstsLeagueLogos/glanvillerec.jpeg"
+  },
+  {
+    "clubName": "New Santos II",
+    "imageUrl": "/images/firstsLeagueLogos/newsantosii.jpeg"
+  },
+  {
+    "clubName": "Ormeau Bakery",
+    "imageUrl": "/images/firstsLeagueLogos/ormeaubakery.jpeg"
+  },
+  {
+    "clubName": "Realta naCromoige II",
+    "imageUrl": "/images/firstsLeagueLogos/realtanacromoigeii.jpeg"
+  },
+  {
+    "clubName": "Stran Cats",
+    "imageUrl": "/images/firstsLeagueLogos/strancats.jpeg"
+  },
+  {
+    "clubName": "Suffolk Swifts II",
+    "imageUrl": "/images/firstsLeagueLogos/suffolkswiftsii.jpeg"
+  },
+  {
+    "clubName": "Ballymacash Rangers",
+    "imageUrl": "/images/oversLeagueLogos/ballymacashrangers.jpeg"
+  },
+
+  {
+    "clubName": "Crumlin United",
+    "imageUrl": "/images/oversLeagueLogos/crumlinunited.jpeg"
+  },
+  {
+    "clubName": "FC United Lisburn",
+    "imageUrl": "/images/oversLeagueLogos/fcunitedlisburn.jpeg"
+  },
+  {
+    "clubName": "Mallusk FC",
+    "imageUrl": "/images/oversLeagueLogos/malluskfc.jpeg"
+  },
+  {
+    "clubName": "Oxyford Sunnyside",
+    "imageUrl": "/images/oversLeagueLogos/oxfordsunnyside.jpeg"
+  },
+  {
+    "clubName": "St. Oliver Plunkett FC",
+    "imageUrl": "/images/oversLeagueLogos/sopfc.jpeg"
+  },
+  {
+    "clubName": "St. Teresa FC",
+    "imageUrl": "/images/oversLeagueLogos/stteresa.jpeg"
+  },
+  {
+    "clubName": "Other"
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "clubName": "Ballymacash Rangers",
+    "imageUrl": "/images/oversLeagueLogos/ballymacashrangers.jpeg"
+  },
+
+  {
+    "clubName": "Crumlin United",
+    "imageUrl": "/images/oversLeagueLogos/crumlinunited.jpeg"
+  },
+  {
+    "clubName": "FC United Lisburn",
+    "imageUrl": "/images/oversLeagueLogos/fcunitedlisburn.jpeg"
+  },
+  {
+    "clubName": "Mallusk FC",
+    "imageUrl": "/images/oversLeagueLogos/malluskfc.jpeg"
+  },
+  {
+    "clubName": "Oxyford Sunnyside",
+    "imageUrl": "/images/oversLeagueLogos/oxfordsunnyside.jpeg"
+  },
+  {
+    "clubName": "St. Oliver Plunkett FC",
+    "imageUrl": "/images/oversLeagueLogos/sopfc.jpeg"
+  },
+  {
+    "clubName": "St. Teresa FC",
+    "imageUrl": "/images/oversLeagueLogos/stteresa.jpeg"
+  }
+]

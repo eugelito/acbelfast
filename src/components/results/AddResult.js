@@ -13,6 +13,7 @@ import { collection, getDocs, addDoc } from "firebase/firestore";
 import { db, storage } from "../../firebase-config";
 import { ref, uploadBytes } from "firebase/storage";
 import { v4 } from "uuid";
+import clubData from "../../clubsData.json";
 
 const AddResult = () => {
   const resultsCollectionRef = collection(db, "results");
@@ -53,7 +54,6 @@ const AddResult = () => {
   //     alert("image uploaded");
   //   });
   // };
-
   return (
     <div>
       {auth.currentUser && (
@@ -62,14 +62,32 @@ const AddResult = () => {
             <div className="column--half">
               {" "}
               <label>Home team name</label>
-              <input
-                type="text"
-                placeholder="Enter Home Team Name"
+              <select
                 required
                 onChange={(event) => {
                   setHomeTeamName(event.target.value);
                 }}
-              ></input>
+              >
+                <option value="" disabled selected>
+                  Select Home Team
+                </option>
+                {clubData.map((club, index) => (
+                  <option key={index} value={club.clubName}>
+                    {club.clubName}
+                  </option>
+                ))}
+              </select>
+              {/** render input if other selected from dropdown */}
+              {homeTeamName === "Other" && (
+                <input
+                  type="text"
+                  placeholder="Enter Home Team Name"
+                  required
+                  onChange={(event) => {
+                    setHomeTeamName(event.target.value);
+                  }}
+                ></input>
+              )}
               <label>Home Score</label>
               <input
                 type="text"
@@ -93,13 +111,32 @@ const AddResult = () => {
             <span className="versus">v</span>
             <div className="column--half">
               <label>Away team name</label>
-              <input
-                type="text"
-                placeholder="Enter Away Team Name"
+              <select
+                required
                 onChange={(event) => {
                   setAwayTeamName(event.target.value);
                 }}
-              ></input>
+              >
+                <option value="" disabled selected>
+                  Select Away Team
+                </option>
+                {clubData.map((club, index) => (
+                  <option key={index} value={club.clubName}>
+                    {club.clubName}
+                  </option>
+                ))}
+              </select>
+              {/** render input if other selected from dropdown */}
+              {awayTeamName === "Other" && (
+                <input
+                  type="text"
+                  placeholder="Enter Away Team Name"
+                  required
+                  onChange={(event) => {
+                    setAwayTeamName(event.target.value);
+                  }}
+                ></input>
+              )}
               <label>Away Score</label>
               <input
                 type="text"

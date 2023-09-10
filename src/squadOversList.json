@@ -11,12 +11,16 @@
   ],
   "Defender": [
     {
-      "fullName": "Dave Cordner",
-      "imageUrl": "/images/players/overs/dave.jpeg"
+      "fullName": "Aaron Crawford",
+      "imageUrl": "/images/players/overs/aaron.jpeg"
     },
     {
-      "fullName": "Stephen Rice",
-      "imageUrl": "/images/players/overs/stephenr.jpeg"
+      "fullName": "Camilo Maldonado",
+      "imageUrl": "/images/players/overs/placeholderplayer.png"
+    },
+    {
+      "fullName": "Dave Cordner",
+      "imageUrl": "/images/players/overs/dave.jpeg"
     },
     {
       "fullName": "Phil Leckenby",
@@ -27,16 +31,12 @@
       "imageUrl": "/images/players/overs/sean.jpeg"
     },
     {
-      "fullName": "Aaron Crawford",
-      "imageUrl": "/images/players/overs/aaron.jpeg"
+      "fullName": "Stephen Rice",
+      "imageUrl": "/images/players/overs/stephenr.jpeg"
     },
     {
       "fullName": "Stephen Tinsley",
       "imageUrl": "/images/players/overs/stephen.jpeg"
-    },
-    {
-      "fullName": "Camilo Maldonado",
-      "imageUrl": "/images/players/overs/placeholderplayer.png"
     },
     {
       "fullName": "Thomas Jinga",
@@ -45,24 +45,20 @@
   ],
   "Midfielder": [
     {
-      "fullName": "Jamie Everden",
-      "imageUrl": "/images/players/overs/jamie.jpeg"
-    },
-    {
-      "fullName": "Robert Smith",
-      "imageUrl": "/images/players/overs/placeholderplayer.png"
-    },
-    {
       "fullName": "Chris Plunkett",
       "imageUrl": "/images/players/overs/chris.jpeg"
     },
     {
-      "fullName": "Joe Rice",
-      "imageUrl": "/images/players/overs/joe.jpeg"
+      "fullName": "Jake Ryan",
+      "imageUrl": "/images/players/overs/jake.jpeg"
     },
     {
-      "fullName": "Sean Donnelly",
-      "imageUrl": "/images/players/overs/seand.jpeg"
+      "fullName": "Jamie Everden",
+      "imageUrl": "/images/players/overs/jamie.jpeg"
+    },
+    {
+      "fullName": "Joe Rice",
+      "imageUrl": "/images/players/overs/joe.jpeg"
     },
     {
       "fullName": "Ken Golden",
@@ -73,30 +69,18 @@
       "imageUrl": "/images/players/overs/milad.jpeg"
     },
     {
-      "fullName": "Jake Ryan",
-      "imageUrl": "/images/players/overs/jake.jpeg"
+      "fullName": "Paul Christian",
+      "imageUrl": "/images/players/overs/placeholderplayer.png"
     },
     {
-      "fullName": "Paul Christian",
+      "fullName": "Robert Smith",
       "imageUrl": "/images/players/overs/placeholderplayer.png"
     }
   ],
   "Forward": [
     {
-      "fullName": "Martin Ferguson",
-      "imageUrl": "/images/players/overs/martin.jpeg"
-    },
-    {
       "fullName": "Adrian Murphy (VC)",
       "imageUrl": "/images/players/overs/adrian.jpeg"
-    },
-    {
-      "fullName": "Gerard Houston",
-      "imageUrl": "/images/players/overs/gerard.jpeg"
-    },
-    {
-      "fullName": "Gary McQuillan",
-      "imageUrl": "/images/players/overs/placeholderplayer.png"
     },
     {
       "fullName": "Conor McDaid",
@@ -105,6 +89,18 @@
     {
       "fullName": "Emanuele Armaforte",
       "imageUrl": "/images/players/overs/emanuele.jpeg"
+    },
+    {
+      "fullName": "Gary McQuillan",
+      "imageUrl": "/images/players/overs/placeholderplayer.png"
+    },
+    {
+      "fullName": "Gerard Houston",
+      "imageUrl": "/images/players/overs/gerard.jpeg"
+    },
+    {
+      "fullName": "Martin Ferguson",
+      "imageUrl": "/images/players/overs/martin.jpeg"
     }
   ]
 }

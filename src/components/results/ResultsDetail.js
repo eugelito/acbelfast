@@ -90,10 +90,7 @@ const ResultsDetail = ({ showAllResults }) => {
                     <>
                       <br />
                       <div className="goalscorer">
-                        Goalscorers:{" "}
-                        <span className="goalscorer__names">
-                          {result.goalscorer}
-                        </span>
+                        Goalscorers: <b>{result.goalscorer}</b>
                       </div>
                     </>
                   )}
@@ -154,10 +151,7 @@ const ResultsDetail = ({ showAllResults }) => {
                     <>
                       <br />
                       <div className="goalscorer">
-                        Goalscorers:{" "}
-                        <span className="goalscorer__names">
-                          {result.goalscorer}
-                        </span>
+                        Goalscorers: <b>{result.goalscorer}</b>
                       </div>
                     </>
                   )}

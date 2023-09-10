@@ -1,26 +1,36 @@
 {
   "files": {
-    "main.css": "/static/css/main.78f45e66.chunk.css",
-    "main.js": "/static/js/main.24b784a6.chunk.js",
-    "runtime-main.js": "/static/js/runtime-main.d142868a.js",
-    "static/js/2.c01e7058.chunk.js": "/static/js/2.c01e7058.chunk.js",
-    "static/js/3.7bbeeb4e.chunk.js": "/static/js/3.7bbeeb4e.chunk.js",
+    "main.css": "/static/css/main.0099a683.chunk.css",
+    "main.js": "/static/js/main.dd7141ed.chunk.js",
+    "runtime-main.js": "/static/js/runtime-main.ead95d63.js",
+    "static/js/2.1ef7e900.chunk.js": "/static/js/2.1ef7e900.chunk.js",
+    "static/js/3.7fbb914b.chunk.js": "/static/js/3.7fbb914b.chunk.js",
     "index.html": "/index.html",
-    "static/js/2.c01e7058.chunk.js.LICENSE.txt": "/static/js/2.c01e7058.chunk.js.LICENSE.txt",
+    "static/js/2.1ef7e900.chunk.js.LICENSE.txt": "/static/js/2.1ef7e900.chunk.js.LICENSE.txt",
     "static/media/acbelfastlogo.2f8b8098.png": "/static/media/acbelfastlogo.2f8b8098.png",
     "static/media/acbelfastlogo35.4ea73ed0.png": "/static/media/acbelfastlogo35.4ea73ed0.png",
     "static/media/appStoreLogo.8c4986ee.svg": "/static/media/appStoreLogo.8c4986ee.svg",
+    "static/media/ballymacashrangers.be39206b.jpeg": "/static/media/ballymacashrangers.be39206b.jpeg",
     "static/media/firsts.82656ea0.jpeg": "/static/media/firsts.82656ea0.jpeg",
     "static/media/Header.scss": "/static/media/footballhero.6d45f53d.jpg",
+    "static/media/glanvillerec.0a2e4b80.jpeg": "/static/media/glanvillerec.0a2e4b80.jpeg",
     "static/media/googleplayLogo.9459d55d.svg": "/static/media/googleplayLogo.9459d55d.svg",
+    "static/media/malluskfc.f7a7ee4d.jpeg": "/static/media/malluskfc.f7a7ee4d.jpeg",
+    "static/media/newsantosii.10f91059.jpeg": "/static/media/newsantosii.10f91059.jpeg",
+    "static/media/ormeaubakery.e5485c8c.jpeg": "/static/media/ormeaubakery.e5485c8c.jpeg",
     "static/media/overs.b7d826d3.jpeg": "/static/media/overs.b7d826d3.jpeg",
+    "static/media/oxfordsunnyside.2aa6bbd4.jpeg": "/static/media/oxfordsunnyside.2aa6bbd4.jpeg",
     "static/media/placeholderlogo.a88a0470.jpeg": "/static/media/placeholderlogo.a88a0470.jpeg",
-    "static/media/player.65f9347f.png": "/static/media/player.65f9347f.png"
+    "static/media/player.65f9347f.png": "/static/media/player.65f9347f.png",
+    "static/media/realtanacromoigeii.49aad012.jpeg": "/static/media/realtanacromoigeii.49aad012.jpeg",
+    "static/media/sopfc.b0a34e9c.jpeg": "/static/media/sopfc.b0a34e9c.jpeg",
+    "static/media/strancats.97257339.jpeg": "/static/media/strancats.97257339.jpeg",
+    "static/media/stteresa.4094dff2.jpeg": "/static/media/stteresa.4094dff2.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.d142868a.js",
-    "static/js/2.c01e7058.chunk.js",
-    "static/css/main.78f45e66.chunk.css",
-    "static/js/main.24b784a6.chunk.js"
+    "static/js/runtime-main.ead95d63.js",
+    "static/js/2.1ef7e900.chunk.js",
+    "static/css/main.0099a683.chunk.css",
+    "static/js/main.dd7141ed.chunk.js"
   ]
 }

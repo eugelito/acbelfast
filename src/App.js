@@ -11,6 +11,7 @@ import Login from "./components/login/Login";
 import ScrollToTop from "./ScrollToTop";
 import FixtureEdit from "./components/login/secured/FixtureEdit";
 import MessengerCustomerChat from "react-messenger-customer-chat";
+import PrivacyPolicy from "./components/contact/PrivacyPolicy";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
               <Route path="/contact" element={<Contact />}></Route>
               <Route path="/login" element={<Login />}></Route>
               <Route path="/fixtureedit" element={<FixtureEdit />}></Route>
+              <Route path="/privacypolicy" element={<PrivacyPolicy />}></Route>
             </Routes>
           </main>
         </ScrollToTop>

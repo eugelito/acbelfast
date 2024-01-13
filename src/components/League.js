@@ -34,32 +34,32 @@ const League = () => {
   //   }
   // };
 
-  const getData = async () => {
-    await fetch("https://api.apispreadsheets.com/data/DYeuGGxsdVTd6a37/").then(
-      (res) => {
-        if (res.status === 200) {
-          // SUCCESS
-          res
-            .json()
-            .then((data) => {
-              const leagueData = data;
-              setData(leagueData);
-            })
-            .catch((err) => {
-              console.log(err);
-              setData(data);
-            });
-        } else {
-          // ERROR
-        }
-      }
-    );
-  };
+  // const getData = async () => {
+  //   await fetch("https://api.apispreadsheets.com/data/DYeuGGxsdVTd6a37/").then(
+  //     (res) => {
+  //       if (res.status === 200) {
+  //         // SUCCESS
+  //         res
+  //           .json()
+  //           .then((data) => {
+  //             const leagueData = data;
+  //             setData(leagueData);
+  //           })
+  //           .catch((err) => {
+  //             console.log(err);
+  //             setData(data);
+  //           });
+  //       } else {
+  //         // ERROR
+  //       }
+  //     }
+  //   );
+  // };
 
-  useEffect(() => {
-    getData();
-    console.log(data);
-  }, []);
+  // useEffect(() => {
+  //   getData();
+  //   console.log(data);
+  // }, []);
 
   // const [oversData, setOversData] = useState(null);
 

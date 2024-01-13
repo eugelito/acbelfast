@@ -34,11 +34,11 @@ function App() {
         </ScrollToTop>
       </div>
       <Footer />
-      <MessengerCustomerChat
+      {/* <MessengerCustomerChat
         pageId="101276042354044"
         appId="1878284095675307"
         htmlRef=""
-      />
+      /> */}
     </Router>
   );
 }

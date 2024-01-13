@@ -4,22 +4,16 @@ import "./FacebookNewsFeed.scss";
 
 const FacebookNewsFeed = () => {
   const [forceRerender, setForceRerender] = useState(false);
-  const [initialMount, setInitialMount] = useState(true);
 
   useEffect(() => {
-    if (initialMount) {
-      // Function to reload the Facebook timeline script
-      const reloadTimeline = () => {
-        setForceRerender((prev) => !prev);
-      };
+    // Function to reload the Facebook timeline script
+    const reloadTimeline = () => {
+      setForceRerender((prev) => !prev);
+    };
 
-      // Call the function only on the initial mount
-      reloadTimeline();
-
-      // Update initialMount to false to prevent further calls
-      setInitialMount(false);
-    }
-  }, [initialMount]); // Watch for changes in initialMount
+    // Call the function on mount and when forceRerender changes
+    reloadTimeline();
+  }, []); // Watch for changes in forceRerender
 
   return (
     <div className="facebook-newsfeed">
@@ -28,7 +22,7 @@ const FacebookNewsFeed = () => {
         Facebook
       </h2>
       <FacebookProvider appId="196175799810100">
-        <FacebookPage key={`reload-${forceRerender}`} />
+        {forceRerender && <FacebookPage />}
       </FacebookProvider>
     </div>
   );

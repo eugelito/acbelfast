@@ -273,7 +273,7 @@ div.scrollmenu a {
   text-align: center;
   padding: 14px;
   border-bottom: 4px solid var(--primaryColor);
-
+  backdrop-filter: blur(4px);
 
   &.loginDesktop,
   &.signOutDesktop {
@@ -283,6 +283,7 @@ div.scrollmenu a {
       background-color: var(--primaryColor);
       border-bottom: 0;
       color: var(--secondaryColor);
+      backdrop-filter: blur(4px);
     }
   }
 

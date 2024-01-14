@@ -5,13 +5,16 @@
 .league--tabs {
     background-color: var(--secondaryColor);
 
+    .league--tabs__center {
+        display: flex;
 
+        .btn__league {
+            width: 100%;
+        }
+    }
 }
 
-.league--tabs__center {
-    max-width: 1024px;
-    margin: 0 auto;
-}
+
 
 .container__squads--first {}
 
@@ -36,14 +39,13 @@
     }
 
     .squads__heading--first {
-        background-color: var(--tertiaryColor);
-        color: var(--secondaryColor);
+        background-color: var(--secondaryColor);
+        color: var(--white);
     }
 
     .squads__heading--overs {
         background-color: var(--secondaryColor);
-        ;
-        color: #fff;
+        color: var(--white);
     }
 
     .squads__position {
@@ -125,6 +127,16 @@
             // align-self: center;
             // max-width: 64%;
             grid-template-columns: repeat(4, 1fr);
+        }
+
+        .league--tabs__center {
+            display: block;
+            max-width: 1024px;
+            margin: 0 auto;
+
+            .btn__league {
+                width: 10rem;
+            }
         }
     }
 }

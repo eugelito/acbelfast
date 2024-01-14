@@ -42,7 +42,7 @@ const ResultsDetail = ({ showAllResults }) => {
           {results
             .sort((a, b) => b.dateTime - a.dateTime)
             .slice(0, 2)
-            .map((result) => {
+            .map((result, index) => {
               return (
                 <>
                   <div className="match__details" key={result.id}>
@@ -94,7 +94,7 @@ const ResultsDetail = ({ showAllResults }) => {
                       </div>
                     </>
                   )}
-                  {results.length > 1 && <hr className="match__divider" />}
+                  {index == 0 && <hr className="match__divider" />}
                 </>
               );
             })}
@@ -104,10 +104,10 @@ const ResultsDetail = ({ showAllResults }) => {
           {" "}
           {results
             .sort((a, b) => b.dateTime - a.dateTime)
-            .map((result) => {
+            .map((result, index) => {
               return (
                 <>
-                  <div className="match__details">
+                  <div className="match__details" key={results.id}>
                     <p className="match__competition">
                       <span className="match__date">
                         {moment(
@@ -163,7 +163,9 @@ const ResultsDetail = ({ showAllResults }) => {
                       Delete
                     </button>
                   )}
-                  {results.length > 1 && <hr className="match__divider" />}
+                  {index !== results.length - 1 && (
+                    <hr className="match__divider" />
+                  )}
                 </>
               );
             })}{" "}

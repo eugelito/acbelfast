@@ -106,7 +106,7 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
           {fixtures
             .sort((a, b) => a.dateTime - b.dateTime)
             .slice(0, 2)
-            .map((fixture) => {
+            .map((fixture, index) => {
               return (
                 <>
                   <div className="match__details" key={fixture.id}>
@@ -158,7 +158,7 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
                       height="70px"
                     ></img>
                   </div>
-                  {fixtures.length > 1 && <hr className="match__divider" />}
+                  {index == 0 && <hr className="match__divider" />}
                 </>
               );
             })}
@@ -168,7 +168,7 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
         <>
           {fixtures
             .sort((a, b) => a.dateTime - b.dateTime)
-            .map((fixture) => {
+            .map((fixture, index) => {
               return (
                 <>
                   {/* {auth.currentUser && ( */}
@@ -233,7 +233,9 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
                       Delete
                     </button>
                   )}
-                  {fixtures.length > 1 && <hr className="match__divider" />}
+                  {index !== fixtures.length - 1 && (
+                    <hr className="match__divider" />
+                  )}{" "}
                 </>
               );
             })}

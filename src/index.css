@@ -87,6 +87,10 @@ footer {
   margin-bottom: 3rem;
   display: block;
   align-items: center;
+
+  a {
+    color: var(--secondaryColor);
+  }
 }
 
 .footer__logo {

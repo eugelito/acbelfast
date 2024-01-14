@@ -31,25 +31,29 @@ const Home = () => {
           </div>
           <div>
             <p className="about__description">
-              Athletic Club Belfast is a senior men's amateur football club that
-              includes a first team competing in the Belfast & District Football
-              League (Division 2) and an over 35s team in the Emerge
-              Invitational League Championship.
+              Senior men's amateur football with a first team in the Belfast &
+              District Football League (Division 2) and an over 35s team in the
+              Emerge Invitational League Championship."
             </p>
             <div className="training__schedule">
-              <strong>Football Training Schedule</strong>
+              <strong>Train with Us</strong>
               <br />
               <ul>
                 <li>
                   <i className="fab fas fa-clock" aria-hidden="true"></i>{" "}
-                  <span>8:30pm to 10pm on Tuesdays</span>
+                  <span> Tuesdays, 8:30 pm - 10:00 pm</span>
                 </li>
                 <li>
-                  <i className="fab fas fa-home" aria-hidden="true"></i> at
-                  Ozone Complex, Ormeau Embankment, Belfast BT6 8LT
+                  <i className="fab fas fa-home" aria-hidden="true"></i> at{" "}
+                  <a
+                    href="https://maps.app.goo.gl/FcVVov7sN7AkJQZ28"
+                    target="_blank"
+                    style={{ color: "#fff" }}
+                  >
+                    Ozone Complex 3G, Ormeau Embankment, Belfast BT6 8LT
+                  </a>
                 </li>
               </ul>
-              <br />
             </div>
             <br />
             <button

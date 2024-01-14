@@ -6,6 +6,11 @@
     flex-basis: 100%
   }
 
+  .card {
+    max-height: 50rem;
+    overflow-y: scroll;
+  }
+
 }
 
 .match__score {

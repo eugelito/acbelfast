@@ -15,9 +15,9 @@ const Home = () => {
 
   const navigateToContact = () => navigate("/Contact");
 
-  useEffect(() => {
-    feed.run();
-  }, []);
+  // useEffect(() => {
+  //   feed.run();
+  // }, []);
 
   return (
     <>
@@ -44,11 +44,12 @@ const Home = () => {
                   <span> Tuesdays, 8:30 pm - 10:00 pm</span>
                 </li>
                 <li>
-                  <i className="fab fas fa-home" aria-hidden="true"></i> at{" "}
+                  <i className="fab fas fa-home" aria-hidden="true"></i>{" "}
+                  <span style={{ fontSize: "0.9 rem" }}>at</span>{" "}
                   <a
                     href="https://maps.app.goo.gl/FcVVov7sN7AkJQZ28"
                     target="_blank"
-                    style={{ color: "#fff" }}
+                    style={{ color: "#fff", textUnderlineOffset: "0.25rem" }}
                   >
                     Ozone Complex 3G, Ormeau Embankment, Belfast BT6 8LT
                   </a>

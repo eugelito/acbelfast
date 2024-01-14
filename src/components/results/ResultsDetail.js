@@ -44,8 +44,8 @@ const ResultsDetail = ({ showAllResults }) => {
             .slice(0, 2)
             .map((result, index) => {
               return (
-                <>
-                  <div className="match__details" key={result.id}>
+                <React.Fragment key={result.id}>
+                  <div className="match__details">
                     <p className="match__competition">
                       <span className="match__date">
                         {" "}
@@ -95,7 +95,7 @@ const ResultsDetail = ({ showAllResults }) => {
                     </>
                   )}
                   {index == 0 && <hr className="match__divider" />}
-                </>
+                </React.Fragment>
               );
             })}
         </>
@@ -106,8 +106,8 @@ const ResultsDetail = ({ showAllResults }) => {
             .sort((a, b) => b.dateTime - a.dateTime)
             .map((result, index) => {
               return (
-                <>
-                  <div className="match__details" key={results.id}>
+                <React.Fragment key={result.id}>
+                  <div className="match__details">
                     <p className="match__competition">
                       <span className="match__date">
                         {moment(
@@ -166,7 +166,7 @@ const ResultsDetail = ({ showAllResults }) => {
                   {index !== results.length - 1 && (
                     <hr className="match__divider" />
                   )}
-                </>
+                </React.Fragment>
               );
             })}{" "}
         </>

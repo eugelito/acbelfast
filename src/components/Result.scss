@@ -4,34 +4,40 @@
     padding-bottom: 1rem;
     margin-bottom: 1rem;
     justify-content: end;
-    > a {
-        text-decoration: none;
-        margin-right: 0.5rem;
-    }
-    .results__title--link {
-     display: flex;
-     justify-content: end;
-     color: #86868b;
 
-    &:hover {
-        text-decoration: underline;
+    >a {
+        margin-right: 0.5rem;
+        text-decoration-color: var(--primaryColor);
+        text-underline-offset: 0.25rem;
     }
-    // &::after {
-    //     color: #a7d8fc;
-    //     margin-left: 0.5rem;
-    //     content: ">";
-    //     display: inline-block;
-    //     text-decoration: none;
-    //     &:hover {
-    //         text-decoration: none;
-    //         display: inline-block;
-    //     }
-    // }
+
+    .results__title--link {
+        display: flex;
+        justify-content: end;
+        color: var(--primaryColor);
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        // &::after {
+        //     color: #a7d8fc;
+        //     margin-left: 0.5rem;
+        //     content: ">";
+        //     display: inline-block;
+        //     text-decoration: none;
+        //     &:hover {
+        //         text-decoration: none;
+        //         display: inline-block;
+        //     }
+        // }
     }
 }
+
 .match__details {
     display: block;
     text-align: center;
+
     &.match__details--divider {
         border-bottom: 1px solid #fff;
         margin: 0 0 1rem;
@@ -40,7 +46,7 @@
 
 .match__date {
     font-size: 14px;
-    display:block;
+    display: block;
 }
 
 .match__fullTime {
@@ -57,9 +63,10 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    > img
-        &:first-child {
+
+    >img &:first-child {
         margin-right: 0.5rem;
+
         &:last-child {
             margin-left: 0.5rem;
         }
@@ -81,18 +88,20 @@
     flex-basis: 50%;
 }
 
-.match__teamOne, .match__teamTwo {
+.match__teamOne,
+.match__teamTwo {
     width: 50%;
 }
 
-.match__teamOne img, .match__teamTwo img {
+.match__teamOne img,
+.match__teamTwo img {
     display: block;
     margin: 0 auto 1rem;
     border-radius: 48px;
 }
 
 @media screen and (min-width: 768px) {
-.column__half--gap {
-    margin-right: 1rem;
- }
+    .column__half--gap {
+        margin-right: 1rem;
+    }
 }

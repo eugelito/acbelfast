@@ -108,8 +108,8 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
             .slice(0, 2)
             .map((fixture, index) => {
               return (
-                <>
-                  <div className="match__details" key={fixture.id}>
+                <React.Fragment key={fixture.id}>
+                  <div className="match__details">
                     <b className="match__date">
                       <b>
                         {moment(
@@ -161,7 +161,7 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
                     ></img>
                   </div>
                   {fixtures.length > 1 && <hr className="match__divider" />}
-                </>
+                </React.Fragment>
               );
             })}
           {fixtures.length == 0 && <span>No upcoming fixtures</span>}
@@ -172,9 +172,9 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
             .sort((a, b) => a.dateTime - b.dateTime)
             .map((fixture, index) => {
               return (
-                <>
+                <React.Fragment key={fixture.id}>
                   {/* {auth.currentUser && ( */}
-                  <div className="match__details" key={fixture.id}>
+                  <div className="match__details">
                     <b className="match__date">
                       {moment(
                         new Date(
@@ -240,7 +240,7 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
                   {index !== fixtures.length - 1 && (
                     <hr className="match__divider" />
                   )}{" "}
-                </>
+                </React.Fragment>
               );
             })}
           {fixtures.length == 0 && <span>No upcoming fixtures</span>}

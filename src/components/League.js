@@ -182,27 +182,31 @@ const League = () => {
           </>
         ) : (
           <table className="table">
-            <tr>
-              <th>Pos</th>
-              <th>Club</th>
-              <th>Played</th>
-              <th>W</th>
-              <th>D</th>
-              <th>L</th>
-              <th>Pts</th>
-            </tr>
+            <th>
+              <tr>
+                <th>Pos</th>
+                <th>Club</th>
+                <th>Played</th>
+                <th>W</th>
+                <th>D</th>
+                <th>L</th>
+                <th>Pts</th>
+              </tr>
+            </th>
             {/* <tr><td>{isPlanUsed ? 'plan used' : 'plan not used'}</td></tr>  */}
             {/* Firsts league table, we want to display on click of first team buttom  */}
             {data?.data.map((item, i) => (
-              <tr key={i}>
-                <td>{item.Position}</td>
-                <td>{item.Club}</td>
-                <td>{item.Played}</td>
-                <td>{item.Won}</td>
-                <td>{item.Drawn}</td>
-                <td>{item.Lost}</td>
-                <td>{item.Points}</td>
-              </tr>
+              <tbody>
+                <tr key={i}>
+                  <td>{item.Position}</td>
+                  <td>{item.Club}</td>
+                  <td>{item.Played}</td>
+                  <td>{item.Won}</td>
+                  <td>{item.Drawn}</td>
+                  <td>{item.Lost}</td>
+                  <td>{item.Points}</td>
+                </tr>
+              </tbody>
             ))}
           </table>
         )}
@@ -226,15 +230,17 @@ const League = () => {
           </a>
         ) : (
           <table className="table">
-            <tr>
-              <th>Pos</th>
-              <th>Club</th>
-              <th>Played</th>
-              <th>W</th>
-              <th>D</th>
-              <th>L</th>
-              <th>Pts</th>
-            </tr>
+            <thead>
+              <tr>
+                <th>Pos</th>
+                <th>Club</th>
+                <th>Played</th>
+                <th>W</th>
+                <th>D</th>
+                <th>L</th>
+                <th>Pts</th>
+              </tr>
+            </thead>
             {/* Overs league table, we want to display on click of first team buttom*/}
             {/* {oversData?.data.map((item, i) => (
               <tr key={i}>

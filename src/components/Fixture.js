@@ -7,6 +7,7 @@ import FixturesDetail from "./fixtures/FixturesDetail";
 import { useState, useEffect } from "react";
 import { db } from "../firebase-config";
 import { collection } from "firebase/firestore";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Fixture = () => {
   //let isFixturesPage = false;
@@ -28,7 +29,9 @@ const Fixture = () => {
           <Link to="/fixtures">
             <b className="results__title--link">View more fixtures</b>
           </Link>
-          <b className="viewMore__carot">{">"}</b>
+          <b className="viewMore__carot">
+            <i class="fas fa-caret-right"></i>
+          </b>
         </div>
         <FixturesDetail showAllFixtures={false} />
       </div>

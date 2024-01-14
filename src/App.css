@@ -86,7 +86,7 @@ label {
 }
 
 .viewMore__carot {
-  color: #86868b;
+  color: var(--primaryColor);
 }
 
 @media screen and (min-width: 768px) {

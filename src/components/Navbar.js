@@ -24,9 +24,9 @@ function Navbar() {
 
   return (
     <nav className="new-nav">
-      <div class="nav__container">
-        <div class="nav__logo--links">
-          <div class="nav__logo--link--login">
+      <div className="nav__container">
+        <div className="nav__logo--links">
+          <div className="nav__logo--link--login">
             <NavLink to="/" className="nav-title">
               <span className="nav-logo">
                 <img src={acbelfastlogo} width="60px" height="60px"></img>
@@ -34,31 +34,31 @@ function Navbar() {
             </NavLink>
             {/* {!auth.currentUser && (
               <li className="loginList">
-                <NavLink to="/login" activeClassName="active">
+                <NavLink to="/login" activeclassname="active">
                   <i className="nav-caret fas fa-user"></i> LOG IN
                 </NavLink>
               </li>
             )} */}
             {auth.currentUser && (
               <li className="signOutList" onClick={logoutAccount}>
-                <NavLink to="" activeClassName="active">
+                <NavLink to="" activeclassname="active">
                   <i className="nav-caret fas fa-caret-right"></i> SIGN OUT
                 </NavLink>
               </li>
             )}
           </div>
-          <div class="scrollmenu">
-            <NavLink to="/" activeClassName="active">
+          <div className="scrollmenu">
+            <NavLink to="/" activeclassname="active">
               HOME
             </NavLink>
-            <NavLink to="/squads" activeClassName="active">
+            <NavLink to="/squads" activeclassname="active">
               SQUADS
             </NavLink>
-            <NavLink to="/fixtures" activeClassName="active">
+            <NavLink to="/fixtures" activeclassname="active">
               FIXTURES
             </NavLink>
             <NavLink to="/results">RESULTS</NavLink>
-            <NavLink to="/contact" activeClassName="active">
+            <NavLink to="/contact" activeclassname="active">
               CONTACT
             </NavLink>
             <a
@@ -72,7 +72,7 @@ function Navbar() {
               <NavLink
                 to="/login"
                 className="loginDesktop"
-                activeClassName="active"
+                activeclassname="active"
               >
                 <i className="nav-caret fas fa-user"></i> LOG IN
               </NavLink>
@@ -81,7 +81,7 @@ function Navbar() {
               <NavLink
                 to=""
                 className="signOutDesktop"
-                activeClassName="active"
+                activeclassname="active"
                 onClick={logoutAccount}
               >
                 <i className="nav-caret fas fa-caret-right"></i> SIGN OUT

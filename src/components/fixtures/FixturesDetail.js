@@ -100,7 +100,6 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
 
   return (
     <div>
-      {fixtures.length > 0 && <br />}
       {!showAllFixtures ? (
         <>
           {fixtures

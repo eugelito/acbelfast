@@ -33,7 +33,7 @@ const Home = () => {
             <p className="about__description">
               Senior men's amateur football with a first team in the Belfast &
               District Football League (Division 2) and an over 35s team in the
-              Emerge Invitational League Championship."
+              Emerge Invitational League Championship.
             </p>
             <div className="training__schedule">
               <strong>Train with Us</strong>

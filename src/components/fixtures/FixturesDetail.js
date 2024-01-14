@@ -123,7 +123,8 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
                       </b>
                     </b>
                     <p className="match__competition">
-                      <b>{fixture.competition}</b> at <b>{fixture.venue}</b>
+                      <b>{fixture.competition} match</b> at{" "}
+                      <b>{fixture.venue}</b>
                     </p>{" "}
                     <br />
                   </div>
@@ -145,7 +146,8 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
                           : "match__result"
                       }
                     >
-                      {fixture.homeTeamName} v {fixture.awayTeamName}
+                      {fixture.homeTeamName} <br />v<br />{" "}
+                      {fixture.awayTeamName}
                     </h4>
                     <img
                       // src={
@@ -158,7 +160,7 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
                       height="70px"
                     ></img>
                   </div>
-                  {index == 0 && <hr className="match__divider" />}
+                  {fixtures.length > 1 && <hr className="match__divider" />}
                 </>
               );
             })}
@@ -184,7 +186,8 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
                         .format("dddd MMM Do, YYYY hh:mm A")}
                     </b>
                     <p className="match__competition">
-                      <b>{fixture.competition}</b> at <b>{fixture.venue}</b>
+                      <b>{fixture.competition} match</b> <br />
+                      at <b>{fixture.venue}</b>
                     </p>{" "}
                     <br />
                   </div>
@@ -201,7 +204,8 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
                           : "match__result"
                       }
                     >
-                      {fixture.homeTeamName} v {fixture.awayTeamName}
+                      {fixture.homeTeamName} <br />v<br />{" "}
+                      {fixture.awayTeamName}
                     </h4>
                     <img
                       src={ClubLogoSwitch(fixture.awayTeamName)}

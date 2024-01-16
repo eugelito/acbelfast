@@ -34,6 +34,7 @@ nav {
   text-decoration: none;
   font-weight: bold;
   font-size: 1rem;
+  margin: 0 0.5rem;
 }
 
 .results__expand {
@@ -76,7 +77,7 @@ nav .nav__container {
 
 
   .nav__logo--links {
-    display: inline;
+    background-color: #a7d8fc;
   }
 
   .nav-links {
@@ -186,8 +187,6 @@ link:active {
 
 @media screen and (min-width: 500px) {
   nav .nav__container {
-    display: flex;
-
     .nav-links {
       border-top: 0;
     }

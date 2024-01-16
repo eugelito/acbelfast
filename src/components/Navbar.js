@@ -42,31 +42,31 @@ function Navbar() {
             {auth.currentUser && (
               <li className="signOutList" onClick={logoutAccount}>
                 <NavLink to="" activeclassname="active">
-                  <i className="nav-caret fas fa-caret-right"></i> SIGN OUT
+                  <i className="nav-caret fas fa-caret-right"></i> sign out
                 </NavLink>
               </li>
             )}
           </div>
           <div className="scrollmenu">
             <NavLink to="/" activeclassname="active">
-              HOME
+              home
             </NavLink>
             <NavLink to="/squads" activeclassname="active">
-              SQUADS
+              squads
             </NavLink>
             <NavLink to="/fixtures" activeclassname="active">
-              FIXTURES
+              fixtures
             </NavLink>
-            <NavLink to="/results">RESULTS</NavLink>
+            <NavLink to="/results">results</NavLink>
             <NavLink to="/contact" activeclassname="active">
-              CONTACT
+              contact
             </NavLink>
             <a
               href="https://www.kitlocker.com/yourclub/club/ac-belfast"
               target="_blank"
               rel="noopener noreferrer"
             >
-              SHOP
+              shop
             </a>
             {/* {!auth.currentUser && (
               <NavLink
@@ -84,7 +84,7 @@ function Navbar() {
                 activeclassname="active"
                 onClick={logoutAccount}
               >
-                <i className="nav-caret fas fa-caret-right"></i> SIGN OUT
+                <i className="nav-caret fas fa-caret-right"></i> sign out
               </NavLink>
             )}
           </div>

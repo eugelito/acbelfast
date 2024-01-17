@@ -159,11 +159,11 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
                       height="70px"
                     ></img>
                   </div>
-                  {fixtures.length > 1 && <hr className="match__divider" />}
+                  {index === 0 && <hr className="match__divider" />}
                 </React.Fragment>
               );
             })}
-          {fixtures.length == 0 && <span>No upcoming fixtures</span>}
+          {fixtures.length === 0 && <span>No upcoming fixtures</span>}
         </>
       ) : (
         <>
@@ -242,7 +242,7 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
                 </React.Fragment>
               );
             })}
-          {fixtures.length == 0 && <span>No upcoming fixtures</span>}
+          {fixtures.length === 0 && <span>No upcoming fixtures</span>}
         </>
       )}
     </div>

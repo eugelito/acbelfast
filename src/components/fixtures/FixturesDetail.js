@@ -118,7 +118,7 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
                           )
                         )
                           .utc(+1)
-                          .format("dddd MMM Do, YYYY hh:mm A")}
+                          .format("dddd MMM Do, H:mm A")}
                       </b>
                     </b>
                     <p className="match__competition">
@@ -184,7 +184,7 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
                         )
                       )
                         .utc(+1)
-                        .format("dddd MMM Do, YYYY hh:mm A")}
+                        .format("dddd MMM Do, H:mm A")}
                     </b>
                     <p className="match__competition">
                       <b>{fixture.competition} match</b> <br />

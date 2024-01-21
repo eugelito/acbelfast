@@ -94,7 +94,9 @@ const ResultsDetail = ({ showAllResults }) => {
                       </div>
                     </>
                   )}
-                  {index === 0 && <hr className="match__divider" />}
+                  {index === 0 && results.length > 1 && (
+                    <hr className="match__divider" />
+                  )}
                 </React.Fragment>
               );
             })}

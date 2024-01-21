@@ -159,7 +159,9 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
                       height="70px"
                     ></img>
                   </div>
-                  {index === 0 && <hr className="match__divider" />}
+                  {index === 0 && fixtures.length > 1 && (
+                    <hr className="match__divider" />
+                  )}
                 </React.Fragment>
               );
             })}

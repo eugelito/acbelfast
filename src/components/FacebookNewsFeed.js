@@ -18,7 +18,7 @@ const FacebookNewsFeed = () => {
   return (
     <div className="facebook-newsfeed">
       <h2>
-        Like us on <i className="fab fa-facebook fax" aria-hidden="true"></i>{" "}
+        Follow us on <i className="fab fa-facebook fax" aria-hidden="true"></i>{" "}
         Facebook
       </h2>
       <FacebookProvider appId="196175799810100">

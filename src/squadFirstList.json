@@ -57,6 +57,10 @@
       "imageUrl": "/images/players/firsts/eugelito.jpeg"
     },
     {
+      "fullName": "Gerard Playford",
+      "imageUrl": "/images/players/firsts/placeholderplayer.png"
+    },
+    {
       "fullName": "Guillermo Álvarez Narciandi",
       "imageUrl": "/images/players/firsts/guillermo.jpeg"
     },
@@ -79,10 +83,6 @@
     {
       "fullName": "Nicky Joe Sibanda",
       "imageUrl": "/images/players/firsts/joe.jpeg"
-    },
-    {
-      "fullName": "Gerard Playford",
-      "imageUrl": "/images/players/firsts/placeholderplayer.png"
     }
   ],
   "Forward": [

@@ -221,7 +221,7 @@ const League = () => {
         {!viewLeagueSpreadSheet && toggleState === 2 ? (
           <a
             className="externalLeagueLink"
-            href="https://www.facebook.com/groups/1234137986977584/"
+            href="https://www.facebook.com/groups/1234137986977584/?mibextid=oMANbw"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -16,8 +16,11 @@ const AddFixture = () => {
   const [newAwayTeamName, setNewAwayTeamName] = useState("");
   const [newAwayTeamImage, setNewAwayTeamImage] = useState("");
   const [newDateTime, setNewDateTime] = useState(new Date());
-  const [newCompetition, setNewCompetition] = useState("League");
-  const [newVenue, setNewVenue] = useState("");
+  const [newCompetition, setNewCompetition] = useState(
+    "Belfast & District League Divison 2"
+  );
+  const [selectedVenue, setSelectedVenue] = useState("Mallusk Playing Fields");
+  const [newVenue, setNewVenue] = useState("Mallusk Playing Fields");
   const [selectedOptionHome, setSelectedOptionHome] = useState("");
   const [selectedOptionAway, setSelectedOptionAway] = useState("");
 
@@ -42,6 +45,10 @@ const AddFixture = () => {
     setNewCompetition(event.target.value);
   };
 
+  const handleVenueSelect = (event) => {
+    const selectedOption = event.target.value;
+    setSelectedVenue(selectedOption);
+  };
   // const homeImageUpload = () => {
   //   if (newHomeTeamImage == null) return;
   //   const imageRef = ref(storage, `images/${newHomeTeamImage.name + v4()}`);
@@ -164,19 +171,36 @@ const AddFixture = () => {
           ></input>
           <label>Select competition</label>
           <select onChange={handleCompetitionSelect} value={newCompetition}>
-            <option value="League">League</option>
+            <option value="Belfast & District League Divison 2">
+              Belfast & District League Divison 2
+            </option>
+            <option value="Emerge Invitational League Championship">
+              Emerge Invitational League Championship
+            </option>
             <option value="Cup">Cup</option>
             <option value="Friendly">Friendly</option>
           </select>
           <label>Venue</label>
-          <input
-            type="text"
-            placeholder="Enter venue"
-            required
-            onChange={(event) => {
-              setNewVenue(event.target.value);
-            }}
-          ></input>
+          <select onChange={handleVenueSelect} value={selectedVenue}>
+            <option value="Mallusk Playing Fields">
+              Mallusk Playing Fields
+            </option>
+            <option value="Strangford Avenue Playing Fields">
+              Strangford Avenue Playing Fields
+            </option>
+            <option value="Other">Other</option>
+          </select>
+          {/* Show an additional input field if "Other" is selected */}
+          {selectedVenue === "Other" && (
+            <input
+              type="text"
+              placeholder="Enter venue"
+              required
+              value={newVenue}
+              onChange={(event) => setNewVenue(event.target.value)}
+            ></input>
+          )}
+
           <button
             className="BlueBtn"
             type="submit"

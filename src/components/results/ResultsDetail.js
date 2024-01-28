@@ -56,7 +56,7 @@ const ResultsDetail = ({ showAllResults }) => {
                           )
                         )
                           .utc(+1)
-                          .format("dddd MMM Do, YYYY")}
+                          .format("ddd Do MMM")}
                       </span>
                       <b>{result.competition}</b>
                     </p>
@@ -119,7 +119,7 @@ const ResultsDetail = ({ showAllResults }) => {
                           )
                         )
                           .utc(+1)
-                          .format("dddd MMM Do, YYYY")}
+                          .format("ddd Do MMM")}
                       </span>
                       <b>{result.competition}</b>
                     </p>

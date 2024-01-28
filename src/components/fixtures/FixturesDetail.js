@@ -109,6 +109,10 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
               return (
                 <React.Fragment key={fixture.id}>
                   <div className="match__details">
+                    <p className="match__competition">
+                      <b>{fixture.competition}</b> <br />
+                      <br />
+                    </p>
                     <b className="match__date">
                       <b>
                         {moment(
@@ -117,14 +121,11 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
                               fixture.dateTime.nanoseconds / 1000000
                           )
                         )
-                          .utc(+1)
-                          .format("dddd MMM Do, H:mm A")}
+                          .utcOffset(+1)
+                          .format("ddd Do MMM, HH:mm")}
                       </b>
                     </b>
-                    <p className="match__competition">
-                      <b>{fixture.competition} match</b> at{" "}
-                      <b>{fixture.venue}</b>
-                    </p>{" "}
+                    <p>{fixture.venue}</p>
                     <br />
                   </div>
                   <div className="match__teams">
@@ -184,11 +185,11 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
                         )
                       )
                         .utc(+1)
-                        .format("dddd MMM Do, H:mm A")}
+                        .format("ddd Do MMM, HH:mm")}
                     </b>
                     <p className="match__competition">
-                      <b>{fixture.competition} match</b> <br />
-                      at <b>{fixture.venue}</b>
+                      <b>{fixture.competition}</b> <br />
+                      <b>{fixture.venue}</b>
                     </p>{" "}
                     <br />
                   </div>

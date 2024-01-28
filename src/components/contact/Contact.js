@@ -68,7 +68,7 @@ const Contact = () => {
               referrerpolicy="no-referrer-when-downgrade"
               height="400"
               frameborder="0"
-              style={{ border: 0 }}
+              style={{ border: 0, marginBottom: "1rem" }}
               allowfullscreen="true"
               aria-hidden="false"
               tabindex="0"

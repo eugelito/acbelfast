@@ -207,6 +207,7 @@ const AddFixture = () => {
             <option value="Strangford Avenue Playing Fields">
               Strangford Avenue Playing Fields
             </option>
+            <option value="Grove Playing Fields">Grove Playing Fields</option>
             <option value="Other">Other</option>
           </select>
           {/* Show an additional input field if "Other" is selected */}

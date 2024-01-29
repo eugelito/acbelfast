@@ -250,11 +250,11 @@ nav .nav__logo--links {
     align-self: center;
     list-style: none;
 
-    &.loginList,
-    &.signOutList {
+    &.loginList {
       padding: 8px;
       border: 1px solid var(--secondaryColor);
       border-radius: 6px;
+      list-style: none;
     }
   }
 }
@@ -273,8 +273,7 @@ div.scrollmenu a {
   padding: 14px;
   border-bottom: 4px solid var(--primaryColor);
 
-  &.loginDesktop,
-  &.signOutDesktop {
+  &.loginDesktop {
     display: none;
 
     &.active {
@@ -313,8 +312,7 @@ div.scrollmenu a:hover {
     justify-content: space-between;
 
 
-    .loginList,
-    .signOutList {
+    .loginList {
       display: none;
     }
 

@@ -16,11 +16,12 @@ const AddFixture = () => {
   const [newAwayTeamName, setNewAwayTeamName] = useState("");
   const [newAwayTeamImage, setNewAwayTeamImage] = useState("");
   const [newDateTime, setNewDateTime] = useState(new Date());
+  const [selectedCompetition, setSelectedCompetition] = useState("");
   const [newCompetition, setNewCompetition] = useState(
     "Belfast & District League Divison 2"
   );
   const [selectedVenue, setSelectedVenue] = useState("Mallusk Playing Fields");
-  const [newVenue, setNewVenue] = useState("Mallusk Playing Fields");
+  const [newVenue, setNewVenue] = useState("");
   const [selectedOptionHome, setSelectedOptionHome] = useState("");
   const [selectedOptionAway, setSelectedOptionAway] = useState("");
 
@@ -42,7 +43,13 @@ const AddFixture = () => {
   };
 
   const handleCompetitionSelect = (event) => {
-    setNewCompetition(event.target.value);
+    const selectedCompetitionOption = event.target.value;
+    setSelectedCompetition(selectedCompetitionOption);
+    setNewCompetition(selectedCompetitionOption);
+
+    if (selectedCompetitionOption === "Other") {
+      setNewCompetition("");
+    }
   };
 
   const handleVenueSelect = (event) => {
@@ -85,14 +92,13 @@ const AddFixture = () => {
         <div>
           <div className="inline--flex">
             <div className="column--half">
-              {" "}
               <label>Home team name</label>
               <select
                 required
                 onChange={handleSelectChangeHome}
                 value={selectedOptionHome}
               >
-                <option value="" disabled selected>
+                <option value="" disabled>
                   Select Home Team
                 </option>
                 {clubData.map((club, index) => (
@@ -129,7 +135,7 @@ const AddFixture = () => {
                 onChange={handleSelectChangeAway}
                 value={selectedOptionAway}
               >
-                <option value="" disabled selected>
+                <option value="" disabled>
                   Select Away Team
                 </option>
                 {clubData.map((club, index) => (
@@ -170,7 +176,10 @@ const AddFixture = () => {
             }}
           ></input>
           <label>Select competition</label>
-          <select onChange={handleCompetitionSelect} value={newCompetition}>
+          <select
+            onChange={handleCompetitionSelect}
+            value={selectedCompetition}
+          >
             <option value="Belfast & District League Divison 2">
               Belfast & District League Divison 2
             </option>
@@ -179,7 +188,17 @@ const AddFixture = () => {
             </option>
             <option value="Cup">Cup</option>
             <option value="Friendly">Friendly</option>
+            <option value="Other">Other</option>
           </select>
+          {selectedCompetition === "Other" && (
+            <input
+              type="text"
+              placeholder="Enter Competition"
+              required
+              value={newCompetition}
+              onChange={(event) => setNewCompetition(event.target.value)}
+            ></input>
+          )}
           <label>Venue</label>
           <select onChange={handleVenueSelect} value={selectedVenue}>
             <option value="Mallusk Playing Fields">

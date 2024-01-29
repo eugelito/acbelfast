@@ -29,9 +29,8 @@ const Fixtures = () => {
           {addFixture && (
             <div className="card__container card__threeQuarterWidth">
               <div className="card add__fixture--card">
-                {" "}
                 <>
-                  <AddFixture />{" "}
+                  <AddFixture />
                 </>
               </div>
             </div>

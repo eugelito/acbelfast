@@ -1,29 +1,16 @@
-import React from "react";
-// import FixtureData from "../../fixtureData.json";
-import "./Fixtures.scss";
-import { useState, useEffect } from "react";
-import { db } from "../../firebase-config";
+import React, { useState, useEffect } from "react";
 import {
   collection,
   getDocs,
-  updateDoc,
-  doc,
   deleteDoc,
-  orderBy,
-  where,
+  doc,
   query,
-  Timestamp,
-  admin,
-  firebase,
+  where,
+  orderBy,
 } from "firebase/firestore";
-
+import FixtureItem from "./FixtureItem";
+import { db } from "../../firebase-config";
 import { auth } from "../../firebase-config";
-import AddFixture from "./AddFixture";
-import moment from "moment";
-import placeHolderImage from "../../images/placeholderlogo.jpeg";
-import acbelfastlogo from "../../images/acbelfastlogo.png";
-import acbelfastlogo35 from "../../images/acbelfastlogo35.png";
-import ClubLogoSwitch from "../ClubLogoSwitch";
 
 const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
   const [fixtures, setFixtures] = useState([]);
@@ -105,145 +92,31 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
           {fixtures
             .sort((a, b) => a.dateTime - b.dateTime)
             .slice(0, 2)
-            .map((fixture, index) => {
-              return (
-                <React.Fragment key={fixture.id}>
-                  <div className="match__details">
-                    <p className="match__competition">
-                      <b>{fixture.competition}</b> <br />
-                      <br />
-                    </p>
-                    <b className="match__date">
-                      <b>
-                        {moment(
-                          new Date(
-                            fixture.dateTime.seconds * 1000 +
-                              fixture.dateTime.nanoseconds / 1000000
-                          )
-                        ).format("ddd Do MMM, HH:mm")}
-                      </b>
-                    </b>
-                    <p>{fixture.venue}</p>
-                    <br />
-                  </div>
-                  <div className="match__teams">
-                    <img
-                      // src={
-                      //   fixture.homeTeamName.includes("ACB 35")
-                      //     ? acbelfastlogo35
-                      //     : placeHolderImage ||
-                      //       fixture.homeTeamName.includes("AC Belfast")
-                      src={ClubLogoSwitch(fixture.homeTeamName)}
-                      width="75px"
-                      height="70px"
-                    ></img>
-                    <h4
-                      className={
-                        isHomePageFixture
-                          ? "match__teams--name"
-                          : "match__result"
-                      }
-                    >
-                      {fixture.homeTeamName} <br />v<br />{" "}
-                      {fixture.awayTeamName}
-                    </h4>
-                    <img
-                      // src={
-                      //   fixture.awayTeamName.includes("ACB 35")
-                      //     ? acbelfastlogo35
-                      //     : placeHolderImage ||
-                      //       fixture.awayTeamName.includes("AC Belfast")
-                      src={ClubLogoSwitch(fixture.awayTeamName)}
-                      width="75px"
-                      height="70px"
-                    ></img>
-                  </div>
-                  {index === 0 && fixtures.length > 1 && (
-                    <hr className="match__divider" />
-                  )}
-                </React.Fragment>
-              );
-            })}
-          {fixtures.length === 0 && <span>No upcoming fixtures</span>}
+            .map((fixture, index, array) => (
+              <FixtureItem
+                key={fixture.id}
+                fixture={fixture}
+                isHomePageFixture={isHomePageFixture}
+                isLastItem={index === array.length - 1}
+              />
+            ))}
         </>
       ) : (
         <>
           {fixtures
             .sort((a, b) => a.dateTime - b.dateTime)
-            .map((fixture, index) => {
-              return (
-                <React.Fragment key={fixture.id}>
-                  {/* {auth.currentUser && ( */}
-                  <div className="match__details">
-                    <b className="match__date">
-                      {moment(
-                        new Date(
-                          fixture.dateTime.seconds * 1000 +
-                            fixture.dateTime.nanoseconds / 1000000
-                        )
-                      ).format("ddd Do MMM, HH:mm")}
-                    </b>
-                    <p className="match__competition">
-                      <b>{fixture.competition}</b> <br />
-                      <b>{fixture.venue}</b>
-                    </p>{" "}
-                    <br />
-                  </div>
-                  <div className="match__teams">
-                    <img
-                      src={ClubLogoSwitch(fixture.homeTeamName)}
-                      width="75px"
-                      height="70px"
-                    ></img>
-                    <h4
-                      className={
-                        isHomePageFixture
-                          ? "match__teams--name"
-                          : "match__result"
-                      }
-                    >
-                      {fixture.homeTeamName} <br />v<br />{" "}
-                      {fixture.awayTeamName}
-                    </h4>
-                    <img
-                      src={ClubLogoSwitch(fixture.awayTeamName)}
-                      width="75px"
-                      height="70px"
-                    ></img>
-                  </div>
-                  {/* <button
-                  type="button"
-                  className="editBtn"
-                  // onClick={editFixture(
-                  //   fixture.id,
-                  //   fixture.homeTeamName,
-                  //   fixture.homeTeamImageUrl,
-                  //   fixture.awayTeamName,
-                  //   fixture.awayTeamImageUrl,
-                  //   fixture.date,
-                  //   fixture.competition,
-                  //   fixture.venue
-                  // )}
-                >
-                  Edit
-                </button> */}
-                  {auth.currentUser && (
-                    <button
-                      className="deleteBtn"
-                      onClick={() => deleteFixture(fixture.id)}
-                    >
-                      Delete
-                    </button>
-                  )}
-                  {index !== fixtures.length - 1 && (
-                    <hr className="match__divider" />
-                  )}{" "}
-                </React.Fragment>
-              );
-            })}
-          {fixtures.length === 0 && <span>No upcoming fixtures</span>}
+            .map((fixture, index, array) => (
+              <FixtureItem
+                key={fixture.id}
+                fixture={fixture}
+                isHomePageFixture={isHomePageFixture}
+                onDelete={auth.currentUser ? (id) => deleteFixture(id) : null}
+                isLastItem={index === array.length - 1}
+              />
+            ))}
         </>
       )}
+      {fixtures.length === 0 && <span>No upcoming fixtures</span>}
     </div>
   );
 };

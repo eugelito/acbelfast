@@ -18,9 +18,12 @@ import clubData from "../../clubsData.json";
 const AddResult = () => {
   const resultsCollectionRef = collection(db, "results");
 
-  const [competition, setCompetition] = useState("League");
+  const [competition, setCompetition] = useState(
+    "Belfast & District League Division 2"
+  );
+  const [selectedCompetition, setSelectedCompetition] = useState("");
   const [dateTime, setDateTime] = useState(new Date());
-  const [homeTeamName, setHomeTeamName] = useState();
+  const [homeTeamName, setHomeTeamName] = useState("");
   const [homeTeamScore, setHomeTeamScore] = useState("");
   const [awayTeamName, setAwayTeamName] = useState("");
   const [awayTeamScore, setAwayTeamScore] = useState("");
@@ -46,7 +49,13 @@ const AddResult = () => {
   };
 
   const handleCompetitionSelect = (event) => {
-    setCompetition(event.target.value);
+    const selectedCompetitionOption = event.target.value;
+    setSelectedCompetition(selectedCompetitionOption);
+    setCompetition(selectedCompetitionOption);
+
+    if (selectedCompetitionOption === "Other") {
+      setCompetition("");
+    }
   };
 
   const handleSelectChangeHome = (event) => {
@@ -87,11 +96,10 @@ const AddResult = () => {
               {" "}
               <label>Home team name</label>
               <select
-                required
                 onChange={handleSelectChangeHome}
                 value={selectedOptionHome}
               >
-                <option value="" disabled selected>
+                <option value="" disabled>
                   Select Home Team
                 </option>
                 {clubData.map((club, index) => (
@@ -139,7 +147,7 @@ const AddResult = () => {
                 onChange={handleSelectChangeAway}
                 value={selectedOptionAway}
               >
-                <option value="" disabled selected>
+                <option value="" disabled>
                   Select Away Team
                 </option>
                 {clubData.map((club, index) => (
@@ -191,11 +199,29 @@ const AddResult = () => {
             }}
           ></input>
           <label>Select competition</label>
-          <select onChange={handleCompetitionSelect} value={competition}>
-            <option value="League">League</option>
+          <select
+            onChange={handleCompetitionSelect}
+            value={selectedCompetition}
+          >
+            <option value="Belfast & District League Division 2">
+              Belfast & District League Division 2
+            </option>
+            <option value="Emerge Invitational League Championship">
+              Emerge Invitational League Championship
+            </option>
             <option value="Cup">Cup</option>
             <option value="Friendly">Friendly</option>
+            <option value="Other">Other</option>
           </select>
+          {selectedCompetition === "Other" && (
+            <input
+              type="text"
+              placeholder="Enter Competition"
+              required
+              value={competition}
+              onChange={(event) => setCompetition(event.target.value)}
+            ></input>
+          )}
           <label>Enter goalscorers</label>
           <input
             type="text"

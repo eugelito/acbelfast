@@ -14,7 +14,7 @@ const Results = () => {
             <b className="results__title--link">View more results</b>
           </Link>
           <b className="viewMore__carot">
-            <i class="fas fa-caret-right"></i>
+            <i className="fas fa-caret-right"></i>
           </b>
         </div>
         <ResultsDetail showAllResults={false} />

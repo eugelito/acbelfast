@@ -39,13 +39,6 @@ function Navbar() {
                 </NavLink>
               </li>
             )} */}
-            {auth.currentUser && (
-              <li className="signOutList" onClick={logoutAccount}>
-                <NavLink to="" activeclassname="active">
-                  <i className="nav-caret fas fa-caret-right"></i> sign out
-                </NavLink>
-              </li>
-            )}
           </div>
           <div className="scrollmenu">
             <NavLink to="/" activeclassname="active">
@@ -79,9 +72,8 @@ function Navbar() {
             )} */}
             {auth.currentUser && (
               <NavLink
-                to=""
+                to="/signout"
                 className="signOutDesktop"
-                activeclassname="active"
                 onClick={logoutAccount}
               >
                 <i className="nav-caret fas fa-caret-right"></i> sign out

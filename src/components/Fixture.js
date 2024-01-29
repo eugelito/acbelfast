@@ -1,4 +1,3 @@
-import "./Fixture.scss";
 import "./Card.scss";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import FixturesDetail from "./fixtures/FixturesDetail";
@@ -30,7 +29,7 @@ const Fixture = () => {
             <b className="results__title--link">View more fixtures</b>
           </Link>
           <b className="viewMore__carot">
-            <i class="fas fa-caret-right"></i>
+            <i className="fas fa-caret-right"></i>
           </b>
         </div>
         <FixturesDetail showAllFixtures={false} />

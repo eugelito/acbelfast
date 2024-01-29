@@ -54,9 +54,7 @@ const ResultsDetail = ({ showAllResults }) => {
                             result.dateTime.seconds * 1000 +
                               result.dateTime.nanoseconds / 1000000
                           )
-                        )
-                          .utc(+1)
-                          .format("ddd Do MMM")}
+                        ).format("ddd Do MMM")}
                       </span>
                       <b>{result.competition}</b>
                     </p>
@@ -117,9 +115,7 @@ const ResultsDetail = ({ showAllResults }) => {
                             result.dateTime.seconds * 1000 +
                               result.dateTime.nanoseconds / 1000000
                           )
-                        )
-                          .utc(+1)
-                          .format("ddd Do MMM")}
+                        ).format("ddd Do MMM")}
                       </span>
                       <b>{result.competition}</b>
                     </p>

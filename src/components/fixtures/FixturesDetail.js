@@ -120,9 +120,7 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
                             fixture.dateTime.seconds * 1000 +
                               fixture.dateTime.nanoseconds / 1000000
                           )
-                        )
-                          .utcOffset(+1)
-                          .format("ddd Do MMM, HH:mm")}
+                        ).format("ddd Do MMM, HH:mm")}
                       </b>
                     </b>
                     <p>{fixture.venue}</p>
@@ -183,9 +181,7 @@ const FixturesDetail = ({ showAllFixtures, isHomePageFixture }) => {
                           fixture.dateTime.seconds * 1000 +
                             fixture.dateTime.nanoseconds / 1000000
                         )
-                      )
-                        .utc(+1)
-                        .format("ddd Do MMM, HH:mm")}
+                      ).format("ddd Do MMM, HH:mm")}
                     </b>
                     <p className="match__competition">
                       <b>{fixture.competition}</b> <br />

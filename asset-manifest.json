@@ -1,14 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.dc51640c.chunk.css",
-    "main.js": "/static/js/main.aee6a0a0.chunk.js",
-    "runtime-main.js": "/static/js/runtime-main.ead95d63.js",
-    "static/js/2.0638423d.chunk.js": "/static/js/2.0638423d.chunk.js",
-    "static/js/3.7fbb914b.chunk.js": "/static/js/3.7fbb914b.chunk.js",
+    "main.css": "/static/css/main.09fceb33.chunk.css",
+    "main.js": "/static/js/main.0d0c6366.chunk.js",
+    "runtime-main.js": "/static/js/runtime-main.d142868a.js",
+    "static/js/2.172ab0ff.chunk.js": "/static/js/2.172ab0ff.chunk.js",
+    "static/js/3.7bbeeb4e.chunk.js": "/static/js/3.7bbeeb4e.chunk.js",
     "index.html": "/index.html",
-    "static/js/2.0638423d.chunk.js.LICENSE.txt": "/static/js/2.0638423d.chunk.js.LICENSE.txt",
+    "static/js/2.172ab0ff.chunk.js.LICENSE.txt": "/static/js/2.172ab0ff.chunk.js.LICENSE.txt",
     "static/media/acbelfastlogo.2f8b8098.png": "/static/media/acbelfastlogo.2f8b8098.png",
-    "static/media/acbelfastlogo35.4ea73ed0.png": "/static/media/acbelfastlogo35.4ea73ed0.png",
     "static/media/appStoreLogo.8c4986ee.svg": "/static/media/appStoreLogo.8c4986ee.svg",
     "static/media/ballymacashrangers.be39206b.jpeg": "/static/media/ballymacashrangers.be39206b.jpeg",
     "static/media/firsts.82656ea0.jpeg": "/static/media/firsts.82656ea0.jpeg",
@@ -28,9 +27,9 @@
     "static/media/stteresa.4094dff2.jpeg": "/static/media/stteresa.4094dff2.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ead95d63.js",
-    "static/js/2.0638423d.chunk.js",
-    "static/css/main.dc51640c.chunk.css",
-    "static/js/main.aee6a0a0.chunk.js"
+    "static/js/runtime-main.d142868a.js",
+    "static/js/2.172ab0ff.chunk.js",
+    "static/css/main.09fceb33.chunk.css",
+    "static/js/main.0d0c6366.chunk.js"
   ]
 }

@@ -2,7 +2,7 @@ import React from "react";
 import moment from "moment";
 import ClubLogoSwitch from "../ClubLogoSwitch";
 
-const ResultItem = ({ result, onDelete }) => {
+const ResultItem = ({ result, onDelete, isLastItem }) => {
   return (
     <React.Fragment>
       <div className="match__details">
@@ -54,7 +54,7 @@ const ResultItem = ({ result, onDelete }) => {
           Delete
         </button>
       )}
-      <hr className="match__divider" />
+      {!isLastItem && <hr className="match__divider" />}
     </React.Fragment>
   );
 };

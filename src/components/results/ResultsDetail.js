@@ -30,19 +30,24 @@ const ResultsDetail = ({ showAllResults }) => {
           {results
             .sort((a, b) => b.dateTime - a.dateTime)
             .slice(0, 2)
-            .map((result) => (
-              <ResultItem key={result.id} result={result} />
+            .map((result, index, array) => (
+              <ResultItem
+                key={result.id}
+                result={result}
+                isLastItem={index === array.length - 1}
+              />
             ))}
         </>
       ) : (
         <>
           {results
             .sort((a, b) => b.dateTime - a.dateTime)
-            .map((result) => (
+            .map((result, index, array) => (
               <ResultItem
                 key={result.id}
                 result={result}
                 onDelete={auth.currentUser ? (id) => deleteResult(id) : null}
+                isLastItem={index === array.length - 1}
               />
             ))}
         </>

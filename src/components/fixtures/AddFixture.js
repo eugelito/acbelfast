@@ -54,6 +54,7 @@ const AddFixture = () => {
 
   const handleVenueSelect = (event) => {
     const selectedOption = event.target.value;
+    setNewVenue(selectedOption);
     setSelectedVenue(selectedOption);
   };
   // const homeImageUpload = () => {

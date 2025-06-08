@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.fad15eba.chunk.css",
-    "main.js": "/static/js/main.26066040.chunk.js",
-    "runtime-main.js": "/static/js/runtime-main.d142868a.js",
-    "static/js/2.172ab0ff.chunk.js": "/static/js/2.172ab0ff.chunk.js",
-    "static/js/3.7bbeeb4e.chunk.js": "/static/js/3.7bbeeb4e.chunk.js",
+    "main.css": "/static/css/main.b91b31f5.chunk.css",
+    "main.js": "/static/js/main.2d0ee985.chunk.js",
+    "runtime-main.js": "/static/js/runtime-main.bf20fcc1.js",
+    "static/js/2.c6280146.chunk.js": "/static/js/2.c6280146.chunk.js",
+    "static/js/3.a68896a9.chunk.js": "/static/js/3.a68896a9.chunk.js",
     "index.html": "/index.html",
-    "static/js/2.172ab0ff.chunk.js.LICENSE.txt": "/static/js/2.172ab0ff.chunk.js.LICENSE.txt",
+    "static/js/2.c6280146.chunk.js.LICENSE.txt": "/static/js/2.c6280146.chunk.js.LICENSE.txt",
     "static/media/acbelfastlogo.2f8b8098.png": "/static/media/acbelfastlogo.2f8b8098.png",
     "static/media/appStoreLogo.8c4986ee.svg": "/static/media/appStoreLogo.8c4986ee.svg",
     "static/media/ballymacashrangers.be39206b.jpeg": "/static/media/ballymacashrangers.be39206b.jpeg",
@@ -27,9 +27,9 @@
     "static/media/stteresa.4094dff2.jpeg": "/static/media/stteresa.4094dff2.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.d142868a.js",
-    "static/js/2.172ab0ff.chunk.js",
-    "static/css/main.fad15eba.chunk.css",
-    "static/js/main.26066040.chunk.js"
+    "static/js/runtime-main.bf20fcc1.js",
+    "static/js/2.c6280146.chunk.js",
+    "static/css/main.b91b31f5.chunk.css",
+    "static/js/main.2d0ee985.chunk.js"
   ]
 }

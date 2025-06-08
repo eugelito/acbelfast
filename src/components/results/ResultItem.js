@@ -2,7 +2,7 @@ import React from "react";
 import moment from "moment";
 import ClubLogoSwitch from "../ClubLogoSwitch";
 
-const ResultItem = ({ result, onDelete, isLastItem }) => {
+const ResultItem = ({ result, onDelete, onEdit, isLastItem }) => {
   return (
     <React.Fragment>
       <div className="match__details">
@@ -40,7 +40,7 @@ const ResultItem = ({ result, onDelete, isLastItem }) => {
           ></img>
           <h4 className="match__result">{result.awayTeamName}</h4>
         </div>
-      </div>{" "}
+      </div>
       {result.goalscorer && (
         <>
           <br />
@@ -49,11 +49,18 @@ const ResultItem = ({ result, onDelete, isLastItem }) => {
           </div>
         </>
       )}
-      {onDelete && (
-        <button className="deleteBtn" onClick={() => onDelete(result.id)}>
-          Delete
-        </button>
-      )}
+      <div className="match__actions">
+        {onEdit && (
+          <button className="primaryBtn" onClick={() => onEdit(result)}>
+            Edit
+          </button>
+        )}
+        {onDelete && (
+          <button className="deleteBtn" onClick={() => onDelete(result.id)}>
+            Delete
+          </button>
+        )}
+      </div>
       {!isLastItem && <hr className="match__divider" />}
     </React.Fragment>
   );

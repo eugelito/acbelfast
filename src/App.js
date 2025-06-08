@@ -10,7 +10,7 @@ import Contact from "./components/contact/Contact";
 import Login from "./components/login/Login";
 import ScrollToTop from "./ScrollToTop";
 import FixtureEdit from "./components/login/secured/FixtureEdit";
-import MessengerCustomerChat from "react-messenger-customer-chat";
+// import MessengerCustomerChat from "react-messenger-customer-chat";
 import PrivacyPolicy from "./components/contact/PrivacyPolicy";
 
 function App() {

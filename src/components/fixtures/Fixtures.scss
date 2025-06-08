@@ -6,6 +6,13 @@
   }
 }
 
+.match__actions {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
 .match__time {
   font-size: 14px;
 }

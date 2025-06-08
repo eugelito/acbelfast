@@ -2,7 +2,13 @@ import React from "react";
 import moment from "moment";
 import ClubLogoSwitch from "../ClubLogoSwitch";
 
-const FixtureItem = ({ fixture, isHomePageFixture, onDelete, isLastItem }) => {
+const FixtureItem = ({
+  fixture,
+  isHomePageFixture,
+  onDelete,
+  onEdit,
+  isLastItem,
+}) => {
   return (
     <React.Fragment>
       <div className="match__details">
@@ -38,11 +44,18 @@ const FixtureItem = ({ fixture, isHomePageFixture, onDelete, isLastItem }) => {
           height="70px"
         ></img>
       </div>
-      {onDelete && (
-        <button className="deleteBtn" onClick={() => onDelete(fixture.id)}>
-          Delete
-        </button>
-      )}
+      <div className="match__actions">
+        {onEdit && (
+          <button className="primaryBtn" onClick={() => onEdit(fixture)}>
+            Edit
+          </button>
+        )}
+        {onDelete && (
+          <button className="deleteBtn" onClick={() => onDelete(fixture.id)}>
+            Delete
+          </button>
+        )}
+      </div>
       {!isLastItem && <hr className="match__divider" />}
     </React.Fragment>
   );
